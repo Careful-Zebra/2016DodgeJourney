@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,21 +37,9 @@ public class TileManager : MonoBehaviour
 
                 tiles[new Vector2(x,y)] = spawnedTile;
 
-    public GameObject getTrafficObj()
-    {
-        if (!m_HasTrafficObj)
-        {
-            return null;
-        } else
-        {
-            return m_TrafficObj;
             }
         }
 
-    public int getSpeed()
-    {
-        return m_SpeedLimit;
-    }
 
         cam.transform.position = new Vector3((float) width/2 - 0.5f, (float) height/2 - 0.5f, -10);
     }
@@ -66,16 +53,5 @@ public class TileManager : MonoBehaviour
         {
             return null;
         }
-
-    public GameObject getNextTile(int direction)
-    {
-        //again, 0 is up, 1 is to the right, 2 is down, 3 is to the left
-        return neighbours[direction];
     }
-
-    #endregion
-
-
-
-
 }
