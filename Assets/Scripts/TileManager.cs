@@ -10,7 +10,7 @@ public class TileManager : MonoBehaviour
 
     [SerializeField] private Transform cam;
 
-    private Dictionary<Vector2, Tile> tiles;
+    private Dictionary<Vector2, Stack<Tile>> tiles;
 
     void Start()
     {
@@ -19,7 +19,12 @@ public class TileManager : MonoBehaviour
 
     void GenerateGrid()
     {
-        tiles = new Dictionary<Vector2, Tile>();
+        //each position corresponds to a stack of tiles at that position
+        tiles = new Dictionary<Vector2, Stack<Tile>>();
+        // foreach (KeyValuePair<Vector2, Stack<Tile>> entry in tiles) 
+        // {
+        //     entry.value = new Stack<Tile>();
+        // }
 
         for (int x = 0; x < width; x++)
         {
@@ -35,7 +40,8 @@ public class TileManager : MonoBehaviour
                 // }
                 spawnedTile.Init(isOffset);
 
-                tiles[new Vector2(x,y)] = spawnedTile;
+                tiles[new Vector2(x,y)] = new Stack<Tile>();
+                tiles[new Vector2(x,y)].Push(spawnedTile);
 
             }
         }
@@ -46,9 +52,9 @@ public class TileManager : MonoBehaviour
 
     public Tile GetTileAtPosition(Vector2 position)
     {
-        if (tiles.TryGetValue(position, out Tile tile))
+        if (tiles.TryGetValue(position, out Stack<Tile> stack))
         {
-            return tile;
+            return stack.Peek();
         } else
         {
             return null;
