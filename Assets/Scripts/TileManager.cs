@@ -3,50 +3,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TileManager : MonoBehaviour
+public class TileManager : MonoBehaviour 
 {
-    #region Editor Variables
-    [SerializeField]
-    [Tooltip("The direction of the road")]
-    private string m_Direction;
+    [SerializeField] private int width;
+    [SerializeField] private int height;
+    [SerializeField] private Tile tilePrefab;
 
-    [SerializeField]
-    [Tooltip("Whether this tile has any traffic objects")]
-    private Boolean m_HasTrafficObj;
+    [SerializeField] private Transform cam;
 
-    [SerializeField]
-    [Tooltip("The traffic object, if any, that this tile has")]
-    private GameObject m_TrafficObj;
+    private Dictionary<Vector2, Tile> tiles;
 
-    [SerializeField]
-    [Tooltip("Whether this tile has a car on it")]
-    private Boolean m_Car;
+    void Start()
+    {
+        GenerateGrid();
+    }
 
-    [SerializeField]
-    [Tooltip("The speed limit of this tile")]
-    private int m_SpeedLimit;
+    void GenerateGrid()
+    {
+        tiles = new Dictionary<Vector2, Tile>();
 
-    [SerializeField]
-    [Tooltip("Whether this road is one way")]
-    private Boolean m_OneWay;
-    #endregion
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                Tile spawnedTile = Instantiate(tilePrefab, new Vector3(x,y), Quaternion.identity);
+                spawnedTile.name = $"Tile {x} {y}";
 
-    #region Private Variables
+                bool isOffset = ((x % 2 == 0 && y % 2 != 0) | (x % 2 != 0 && y % 2 == 0));
+                // if (isOffset)
+                // {
+                //     spawnedTile.GetComponent<SpriteRenderer>.color = 
+                // }
+                spawnedTile.Init(isOffset);
 
-    //array of cars on this tile
-    private ArrayList cars = new ArrayList();
-
-    //all the neighbours of this tile - 0th is one above, 1st is one to the right, 2nd is one below, 3rd is one to the left
-    private GameObject[] neighbours = new GameObject[4];
-
-    #endregion
-
-    #region Methods
-
-    /* 
-    * mostly getter methods so that the car can have some idea of where it is driving,
-    * how it should drive, what it should be looking out for, and so on and so forth.
-    */
+                tiles[new Vector2(x,y)] = spawnedTile;
 
     public GameObject getTrafficObj()
     {
@@ -56,23 +46,26 @@ public class TileManager : MonoBehaviour
         } else
         {
             return m_TrafficObj;
+            }
         }
-    }
 
     public int getSpeed()
     {
         return m_SpeedLimit;
     }
 
-    public void addCar(GameObject car)
-    {
-        cars.Add(car);
+        cam.transform.position = new Vector3((float) width/2 - 0.5f, (float) height/2 - 0.5f, -10);
     }
 
-    public void removeCar(GameObject car)
+    public Tile GetTileAtPosition(Vector2 position)
     {
-        cars.Remove(car);
-    }
+        if (tiles.TryGetValue(position, out Tile tile))
+        {
+            return tile;
+        } else
+        {
+            return null;
+        }
 
     public GameObject getNextTile(int direction)
     {
