@@ -166,11 +166,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 405159284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6817323dc4a89764bb029a2d3150e03a, type: 3}
+  m_Script: {fileID: 11500000, guid: 59c0392aeca970948ab21e434dedff67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Direction: 
-  m_HasTrafficObj: 1
+  m_HasTrafficObj: 0
   m_TrafficObj: {fileID: 590309097}
   m_Car: 0
   m_SpeedLimit: 0
@@ -380,6 +380,10 @@ PrefabInstance:
     - target: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
       propertyPath: m_Name
       value: Traffic light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857590947296515121, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+      propertyPath: m_ChangeTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
