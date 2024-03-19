@@ -1,26 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TileManager : MonoBehaviour 
 {
-    [SerializeField] private int width;
-    [SerializeField] private int height;
-    [SerializeField] private Tile tilePrefab;
+    [SerializeField] private static int width;
+    [SerializeField] private static int height;
+    [SerializeField] private static Tile tilePrefab;
 
-    [SerializeField] private Transform cam;
+    [SerializeField] private static Transform cam;
 
-    private Dictionary<Vector2, Stack<Tile>> tiles;
+    private static Dictionary<Vector2, Stack<Tile>> tiles_stack;
+    private static Dictionary<Vector2, Tile> tiles;
 
     void Start()
     {
         GenerateGrid();
     }
 
-    void GenerateGrid()
+    static void GenerateGrid()
     {
         //each position corresponds to a stack of tiles at that position
-        tiles = new Dictionary<Vector2, Stack<Tile>>();
+        tiles_stack = new Dictionary<Vector2, Stack<Tile>>();
+        tiles = new Dictionary<Vector2, Tile>();
         // foreach (KeyValuePair<Vector2, Stack<Tile>> entry in tiles) 
         // {
         //     entry.value = new Stack<Tile>();
@@ -40,9 +43,10 @@ public class TileManager : MonoBehaviour
                 // }
                 spawnedTile.Init(isOffset);
 
-                tiles[new Vector2(x,y)] = new Stack<Tile>();
-                tiles[new Vector2(x,y)].Push(spawnedTile);
+                tiles_stack[new Vector2(x,y)] = new Stack<Tile>();
+                tiles_stack[new Vector2(x,y)].Push(spawnedTile);
 
+                tiles[new Vector2(x, y)] = spawnedTile;
             }
         }
 
@@ -50,11 +54,11 @@ public class TileManager : MonoBehaviour
         cam.transform.position = new Vector3((float) width/2 - 0.5f, (float) height/2 - 0.5f, -10);
     }
 
-    public Tile GetTileAtPosition(Vector2 position)
+    public static Tile GetTileAtPosition(Vector2 position)
     {
-        if (tiles.TryGetValue(position, out Stack<Tile> stack))
+        if (tiles.TryGetValue(position, out Tile tile))
         {
-            return stack.Peek();
+            return tile;
         } else
         {
             return null;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -6,6 +7,10 @@ using UnityEngine;
 public class ManualDrive : MonoBehaviour {
     [SerializeField]
     private float speed;
+
+    [SerializeField]
+    [Tooltip("The map object that holds all the tiles")]
+    private MapHolder mapHolder;
 
 
     private Rigidbody2D rb;
@@ -22,6 +27,7 @@ public class ManualDrive : MonoBehaviour {
     // Update is called once per frame
     private void FixedUpdate() {
         float t = Time.deltaTime;
+        TileCarIsIn();
 
         if (Input.GetKey(KeyCode.W)) {
             rb.velocity = transform.right * speed;
@@ -41,4 +47,21 @@ public class ManualDrive : MonoBehaviour {
             transform.Rotate(transform.forward, -100.0f * t, Space.World);
         }
     }
+
+    #region Ella things (sorry)
+
+    private Tile currentTile;
+
+    private void TileCarIsIn()
+    {
+        int xPos = (int) Math.Floor(transform.position.x);
+        int yPos = (int) Math.Floor(transform.position.y);
+        print(xPos);
+        print(yPos);
+        currentTile = mapHolder.GetTileAtPos(new Vector2(xPos, yPos));
+        print(currentTile.name);
+    }
+
+
+    #endregion
 }
