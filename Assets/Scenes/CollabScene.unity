@@ -6389,7 +6389,7 @@ Transform:
   m_GameObject: {fileID: 391059297}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 4, z: -10}
+  m_LocalPosition: {x: 7.5, y: 3.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12805,11 +12805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.015
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.009
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12844,12 +12844,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: mapHolder
       value: 
       objectReference: {fileID: 1645628576}
     - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_Name
       value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26126,7 +26134,7 @@ Transform:
   m_GameObject: {fileID: 1645628574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
