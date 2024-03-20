@@ -27,39 +27,53 @@ public class ManualDrive : MonoBehaviour {
     // Update is called once per frame
     private void FixedUpdate() {
         float t = Time.deltaTime;
-        TileCarIsIn();
+        Tile curTile = TileCarIsIn();
 
-        if (Input.GetKey(KeyCode.W)) {
-            rb.velocity = transform.right * speed;
-        } else if (Input.GetKey(KeyCode.S)) {
-            rb.velocity = transform.right * -speed;
-        } else {
-            rb.velocity = Vector3.zero;
-        }
+        /* Commented out input forward drive code but left for later use if wanted
+                if (Input.GetKey(KeyCode.W)) {
+                    rb.velocity = transform.right * speed;
+                } else if (Input.GetKey(KeyCode.S)) {
+                    rb.velocity = transform.right * -speed;
+                } else {
+                    rb.velocity = Vector3.zero;
+                }
 
-        if (Input.GetKey(KeyCode.A)) {
+                */
+
+        if (Input.GetKey(KeyCode.A))
+        {
             //Rotate the current game object's transform, using fixedDeltaTime for consistency across machines.
             transform.Rotate(transform.forward, 100.0f * t, Space.World);
         }
 
-        if (Input.GetKey(KeyCode.D)) {
+        if (Input.GetKey(KeyCode.D))
+        {
             //Rotate the current game object's transform, using fixedDeltaTime for consistency across machines.
             transform.Rotate(transform.forward, -100.0f * t, Space.World);
+
+        }
+        if (curTile.Driveable())
+        {
+            rb.velocity = transform.right * speed;
+        } else
+        {
+            rb.velocity = Vector3.zero;
         }
     }
 
     #region Ella things (sorry)
 
-    private Tile currentTile;
 
-    private void TileCarIsIn()
+    private Tile TileCarIsIn()
     {
+
         int xPos = (int) Math.Floor(transform.position.x);
         int yPos = (int) Math.Floor(transform.position.y);
         print(xPos);
         print(yPos);
-        currentTile = mapHolder.GetTileAtPos(new Vector2(xPos, yPos));
+        Tile currentTile = mapHolder.GetTileAtPos(new Vector2(xPos, yPos));
         print(currentTile.name);
+        return currentTile;
     }
 
 
