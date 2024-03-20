@@ -776,7 +776,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -802,7 +802,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 48656328}
   highlight: {fileID: 1541506131}
-  driveable: 0
+  driveable: 1
 --- !u!1 &49279399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,7 +2537,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2563,7 +2563,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 130332109}
   highlight: {fileID: 1791337150}
-  driveable: 0
+  driveable: 1
 --- !u!1 &131568735
 GameObject:
   m_ObjectHideFlags: 0
@@ -7392,7 +7392,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7418,7 +7418,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 444183876}
   highlight: {fileID: 316329636}
-  driveable: 0
+  driveable: 1
 --- !u!1 &464046643
 GameObject:
   m_ObjectHideFlags: 0
@@ -9061,7 +9061,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 0.13222426, g: 0.6313726, b: 0.1098039, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9359,7 +9359,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9385,7 +9385,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 585445551}
   highlight: {fileID: 1409119332}
-  driveable: 0
+  driveable: 1
 --- !u!1 &588669633
 GameObject:
   m_ObjectHideFlags: 0
@@ -12857,11 +12857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.04
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12903,6 +12903,26 @@ PrefabInstance:
       propertyPath: mapHolder
       value: 
       objectReference: {fileID: 1645628576}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: lTurns.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: rTurns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: lTurns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1944936432}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: rTurns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1887612488}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: rTurns.Array.data[1]
+      value: 
+      objectReference: {fileID: 2026972944}
     - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_Name
       value: Car
@@ -13653,7 +13673,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13679,7 +13699,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 870391643}
   highlight: {fileID: 670339515}
-  driveable: 0
+  driveable: 1
 --- !u!1 &898447896
 GameObject:
   m_ObjectHideFlags: 0
@@ -13802,7 +13822,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13828,7 +13848,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 898447899}
   highlight: {fileID: 1331477947}
-  driveable: 0
+  driveable: 1
 --- !u!1 &898639736
 GameObject:
   m_ObjectHideFlags: 0
@@ -14371,7 +14391,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14397,7 +14417,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 945469133}
   highlight: {fileID: 224906595}
-  driveable: 0
+  driveable: 1
 --- !u!1 &956415815
 GameObject:
   m_ObjectHideFlags: 0
@@ -17297,7 +17317,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17323,7 +17343,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1123660674}
   highlight: {fileID: 1579674562}
-  driveable: 0
+  driveable: 1
 --- !u!1 &1124871172
 GameObject:
   m_ObjectHideFlags: 0
@@ -20429,7 +20449,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20455,7 +20475,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1284722811}
   highlight: {fileID: 1230633063}
-  driveable: 0
+  driveable: 1
 --- !u!1 &1287208666
 GameObject:
   m_ObjectHideFlags: 0
@@ -22190,7 +22210,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22216,7 +22236,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1332233194}
   highlight: {fileID: 1245696365}
-  driveable: 0
+  driveable: 1
 --- !u!1 &1332617100
 GameObject:
   m_ObjectHideFlags: 0
@@ -22591,7 +22611,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22617,7 +22637,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1362935463}
   highlight: {fileID: 755407354}
-  driveable: 0
+  driveable: 1
 --- !u!1 &1365651664
 GameObject:
   m_ObjectHideFlags: 0
@@ -24222,7 +24242,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 0.7058824, g: 0.12156861, b: 0.12899251, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25108,7 +25128,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25134,7 +25154,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1574513417}
   highlight: {fileID: 1789723685}
-  driveable: 0
+  driveable: 1
 --- !u!1 &1576172091
 GameObject:
   m_ObjectHideFlags: 0
@@ -30571,7 +30591,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30597,7 +30617,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1894556487}
   highlight: {fileID: 2075570439}
-  driveable: 0
+  driveable: 1
 --- !u!1 &1909486118
 GameObject:
   m_ObjectHideFlags: 0
@@ -31568,7 +31588,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31594,7 +31614,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1962905604}
   highlight: {fileID: 308539151}
-  driveable: 0
+  driveable: 1
 --- !u!1 &1963853310
 GameObject:
   m_ObjectHideFlags: 0
@@ -32332,7 +32352,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32358,7 +32378,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 2001643963}
   highlight: {fileID: 520345554}
-  driveable: 0
+  driveable: 1
 --- !u!1 &2016681483
 GameObject:
   m_ObjectHideFlags: 0
@@ -32481,7 +32501,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32507,7 +32527,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 2016681486}
   highlight: {fileID: 903919810}
-  driveable: 0
+  driveable: 1
 --- !u!1 &2026972944
 GameObject:
   m_ObjectHideFlags: 0
@@ -32630,7 +32650,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32656,7 +32676,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 2026972947}
   highlight: {fileID: 49597553}
-  driveable: 0
+  driveable: 1
 --- !u!1 &2031626683
 GameObject:
   m_ObjectHideFlags: 0
@@ -34009,7 +34029,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34035,7 +34055,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 2146219958}
   highlight: {fileID: 789034179}
-  driveable: 0
+  driveable: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
