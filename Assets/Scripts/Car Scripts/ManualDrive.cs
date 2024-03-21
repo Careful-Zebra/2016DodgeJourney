@@ -106,10 +106,11 @@ public class ManualDrive : MonoBehaviour {
                 {
                     if (upDown)
                     {
+                        //TRY IT WITH PLUSES
                         if (transform.position.y < (curTile.gameObject.transform.position.y - 0.6) && 
                             transform.position.y > (curTile.gameObject.transform.position.y - 0.4))
                         {
-                            Quaternion leftTurn = Quaternion.Euler(0, 90, 1);
+                            Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
                             justTurned = true;
                             upDown = !upDown;
@@ -119,7 +120,7 @@ public class ManualDrive : MonoBehaviour {
                         if (transform.position.x < (curTile.gameObject.transform.position.x  + 0.6) && 
                             transform.position.x > (curTile.gameObject.transform.position.x + 0.4))
                         {
-                            Quaternion leftTurn = Quaternion.Euler(0, 90, 1);
+                            Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
                             justTurned = true;
                             upDown = !upDown;
@@ -137,7 +138,7 @@ public class ManualDrive : MonoBehaviour {
                             transform.position.y > (curTile.gameObject.transform.position.y - 0.4))
                         {
                             print("TURNING");
-                            Quaternion rightTurn = Quaternion.Euler(0, -90, 1);
+                            Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
                             justTurned = true;
                             upDown = !upDown;
@@ -150,7 +151,7 @@ public class ManualDrive : MonoBehaviour {
                         {
                             print("TURNING");
 
-                            Quaternion rightTurn = Quaternion.Euler(0, -90, 1);
+                            Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
                             justTurned = true;
                             upDown = !upDown;
@@ -177,8 +178,10 @@ public class ManualDrive : MonoBehaviour {
 
         int xPos = (int) Math.Floor(transform.position.x);
         int yPos = (int) Math.Floor(transform.position.y);
-
+/*        print(xPos);
+        print(yPos);*/
         Tile currentTile = mapHolder.GetTileAtPos(new Vector2(xPos, yPos));
+        /*print(currentTile);*/
         return currentTile;
     }
 
