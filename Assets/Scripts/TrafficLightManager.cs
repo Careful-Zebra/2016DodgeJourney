@@ -9,7 +9,7 @@ public class TrafficLightManager : MonoBehaviour
 
     [SerializeField]
     [Tooltip("The time per light change")]
-    private int m_ChangeTime;
+    private float m_ChangeTime;
 
     #endregion
 
@@ -35,7 +35,6 @@ public class TrafficLightManager : MonoBehaviour
     void Update()
     {
         countdown = countdown - Time.deltaTime;
-
         if (countdown < 0)
         {
             state = (state + 1) % 3;
@@ -58,10 +57,15 @@ public class TrafficLightManager : MonoBehaviour
         }
     }
 
-    public int getState()
+    public int GetState()
     {
         //again, 0 is red, 1 is green, 2 is amber
         return state;
+    }
+
+    public string Type()
+    {
+        return "Traffic Light";
     }
 
     #endregion

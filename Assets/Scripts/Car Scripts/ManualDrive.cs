@@ -107,8 +107,8 @@ public class ManualDrive : MonoBehaviour {
                     if (upDown)
                     {
                         //TRY IT WITH PLUSES
-                        if (transform.position.y < (curTile.gameObject.transform.position.y - 0.6) && 
-                            transform.position.y > (curTile.gameObject.transform.position.y - 0.4))
+                        if (transform.position.y < (curTile.gameObject.transform.position.y + 0.1) && 
+                            transform.position.y > (curTile.gameObject.transform.position.y - 0.1))
                         {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
@@ -117,8 +117,8 @@ public class ManualDrive : MonoBehaviour {
                         }
                     } else
                     {
-                        if (transform.position.x < (curTile.gameObject.transform.position.x  + 0.6) && 
-                            transform.position.x > (curTile.gameObject.transform.position.x + 0.4))
+                        if (transform.position.x < (curTile.gameObject.transform.position.x  + 0.1) && 
+                            transform.position.x > (curTile.gameObject.transform.position.x - 0.1))
                         {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
@@ -134,10 +134,9 @@ public class ManualDrive : MonoBehaviour {
                 {
                     if (upDown)
                     {
-                        if (transform.position.y < (curTile.gameObject.transform.position.y - 0.6) &&
-                            transform.position.y > (curTile.gameObject.transform.position.y - 0.4))
+                        if (transform.position.y < (curTile.gameObject.transform.position.y + 0.1) &&
+                            transform.position.y > (curTile.gameObject.transform.position.y - 0.1))
                         {
-                            print("TURNING");
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
                             justTurned = true;
@@ -146,10 +145,9 @@ public class ManualDrive : MonoBehaviour {
                     }
                     else
                     {
-                        if (transform.position.x < (curTile.gameObject.transform.position.x + 0.6) &&
-                            transform.position.x > (curTile.gameObject.transform.position.x + 0.4))
+                        if (transform.position.x < (curTile.gameObject.transform.position.x + 0.1) &&
+                            transform.position.x > (curTile.gameObject.transform.position.x - 0.1))
                         {
-                            print("TURNING");
 
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
@@ -163,11 +161,41 @@ public class ManualDrive : MonoBehaviour {
                 justTurned = false;
             }
 
-            rb.velocity = transform.right * speed;
+            Vector2 tempVelocity = transform.right * speed;
+
+            rb.velocity = HandleTraffic(tempVelocity, curTile);
+
+            
+
         } else
         {
-            rb.velocity = Vector3.zero;
+            //flip the car around at the end.
+            Quaternion oneEighty = Quaternion.Euler(0, 0, -180);
+            transform.rotation = transform.rotation * oneEighty;
+            GameObject[] temp = lTurns;
+            lTurns = rTurns;
+            rTurns = temp;
+            rb.velocity = transform.right * speed;
         }
+    }
+
+    private Vector2 HandleTraffic(Vector2 tempVelocity, Tile curTile)
+    {
+        if (!curTile.HasTrafficObj())
+        {
+            return tempVelocity;
+        } else
+        {
+            if (curTile.TrafficObj() == "Traffic Light")
+            {
+                /*print(curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState());*/
+                if (curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState() == 0)
+                {
+                    return Vector2.zero;
+                }
+            }
+        }
+        return tempVelocity;
     }
 
     #region Ella things (sorry)

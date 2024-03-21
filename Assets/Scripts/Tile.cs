@@ -23,14 +23,32 @@ public class Tile : MonoBehaviour
     [Tooltip("Whether this tile is a road tile or not")]
     private Boolean driveable;
 
+    [SerializeField]
+    [Tooltip("The traffic light prefab")]
+    private GameObject trafficLightPrefab;
+
+    //DEBUGGING PURPOSES ONLY
+/*    [SerializeField]
+    private GameObject trafficObj;
+    [SerializeField]
+    private Boolean hasTrafficObj;*/
+
+    #endregion
+
+    #region Private Variables
+    //the traffic object this tile holds, if any
+    private GameObject trafficObj;
+
+    //whether or not this tile has a traffic obj
+    private Boolean hasTrafficObj;
     #endregion
 
     private void Awake()
     {
-        if (driveable)
+        /*if (driveable)
         {
             GetComponent<Renderer>().material.color = new Color(31f, 171f, 190f);
-        }
+        }*/
         highlight.SetActive(false);
     }
 
@@ -47,6 +65,8 @@ public class Tile : MonoBehaviour
         rend.color = isOffset ? offsetColor : baseColor;
     }
 
+    #region Mouse Methods
+
     void OnMouseEnter()
     {
         highlight.SetActive(true);
@@ -57,9 +77,48 @@ public class Tile : MonoBehaviour
         highlight.SetActive(false);
     }
 
+    private void OnMouseDown()
+    {
+        if (driveable)
+        {
+            hasTrafficObj = true;
+            trafficObj = Instantiate(trafficLightPrefab, gameObject.transform, false);
+        }
+
+    }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            hasTrafficObj = false;
+            Destroy(trafficObj);
+        }
+    }
+
+    #endregion
+
     //method to say if it's driveable or not
     public Boolean Driveable()
     {
         return driveable;
+    }
+
+    //getter for the car to check if there is a traffic obj
+    public Boolean HasTrafficObj()
+    {
+        return hasTrafficObj;
+    }
+
+    public string TrafficObj()
+    {
+        //will need to be updated to accommodate different traffic objects
+        return trafficObj.GetComponent<TrafficLightManager>().Type();
+    }
+
+    //Above only gives string type, this gives the obj
+    public GameObject TrafficGO()
+    {
+        return trafficObj;
     }
 }
