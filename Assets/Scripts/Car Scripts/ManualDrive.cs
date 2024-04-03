@@ -217,4 +217,27 @@ public class ManualDrive : MonoBehaviour {
 
 
     #endregion
+
+    #region A*
+    private void aStar(Tile destination)
+    {
+        
+
+        ArrayList visited = new ArrayList();
+        Tile currentTile = TileCarIsIn();
+        Dictionary<float, Tile> neighbours = new Dictionary<float, Tile>();
+        float tileSize = currentTile.GetComponent<SpriteRenderer>().bounds.max.x - currentTile.GetComponent<SpriteRenderer>().bounds.min.x;
+        visited.Add(currentTile);
+
+        //get the values off of the dest
+        int destX = (int)destination.transform.position.x;
+        int destY = (int)destination.transform.position.y;
+
+        //add all of the neighbours of the starting tile
+        int xPos = (int)Math.Floor(transform.position.x);
+        int yPos = (int)Math.Floor(transform.position.y);
+
+
+    }
+    #endregion
 }

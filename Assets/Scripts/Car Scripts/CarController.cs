@@ -54,13 +54,5 @@ public class CarController : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    #region A*
-    private void aStar()
-    {
-        ArrayList visited = new ArrayList();
 
-
-
-    }
-    #endregion
 }
