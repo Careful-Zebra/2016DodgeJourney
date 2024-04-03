@@ -237,7 +237,23 @@ public class ManualDrive : MonoBehaviour {
         int xPos = (int)Math.Floor(transform.position.x);
         int yPos = (int)Math.Floor(transform.position.y);
 
+        Vector2 belowPos = new Vector2(xPos, yPos - tileSize);
+        Tile tileBelow = mapHolder.GetTileAtPos(belowPos);
+        
 
+
+    }
+
+    //straight line distance to the destination
+    private float heuristic(Tile current, Tile destination)
+    {
+        float curX = current.transform.position.x;
+        float curY = current.transform.position.y;
+        float destX = destination.transform.position.x;
+        float destY = destination.transform.position.y;
+        float diffX = Math.Abs(curX - destX);
+        float diffY = Math.Abs(curY - destY);
+        return (float)Math.Sqrt(diffX + diffY);
     }
     #endregion
 }
