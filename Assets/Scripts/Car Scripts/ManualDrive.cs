@@ -236,11 +236,27 @@ public class ManualDrive : MonoBehaviour {
         //add all of the neighbours of the starting tile
         int xPos = (int)Math.Floor(transform.position.x);
         int yPos = (int)Math.Floor(transform.position.y);
-
         Vector2 belowPos = new Vector2(xPos, yPos - tileSize);
         Tile tileBelow = mapHolder.GetTileAtPos(belowPos);
+        if (tileBelow.Driveable())
+        {
+            neighbours.Add(1 + heuristic(tileBelow, destination), tileBelow);
+        }
         
+        Tile tileAbove = mapHolder.GetTileAtPos(new Vector2(xPos, yPos + tileSize));
+        if (tileAbove.Driveable())
+        {
+            neighbours.Add(1 + heuristic(tileAbove, destination), tileAbove);
+        }
+        Tile tileLeft = mapHolder.GetTileAtPos(new Vector2(xPos - tileSize, yPos));
+        if (tileLeft.Driveable())
+        {
+            neighbours.Add(1 + heuristic(tileLeft, destination), tileLeft);
+        }
+        Tile tileRight = mapHolder.GetTileAtPos(new Vector2(xPos + tileSize, yPos));
 
+        //main loop
+        
 
     }
 
