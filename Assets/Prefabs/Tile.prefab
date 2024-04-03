@@ -135,6 +135,8 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 6009939018647384177}
   highlight: {fileID: 1190528191399351889}
+  driveable: 0
+  trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
 --- !u!212 &6009939018647384177
 SpriteRenderer:
   m_ObjectHideFlags: 0

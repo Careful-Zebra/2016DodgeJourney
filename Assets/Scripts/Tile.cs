@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Tile : MonoBehaviour
@@ -41,6 +42,9 @@ public class Tile : MonoBehaviour
 
     //whether or not this tile has a traffic obj
     private Boolean hasTrafficObj;
+
+    //whether or not it is valid to place a traffic light on ANY instance of a tile
+    private static bool canPlaceTrafficLight = false;
     #endregion
 
     private void Awake()
@@ -121,4 +125,18 @@ public class Tile : MonoBehaviour
     {
         return trafficObj;
     }
+
+    #region UI Button Relevant Methods
+
+    public static void SetStoplightPlaceable()
+    {
+        canPlaceTrafficLight = true;
+    }
+
+    public static void SetStoplightUnplaceable()
+    {
+        canPlaceTrafficLight = false;
+    }
+
+    #endregion
 }
