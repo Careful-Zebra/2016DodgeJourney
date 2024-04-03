@@ -12,6 +12,7 @@ public class CarController : MonoBehaviour {
 
     #region Object Vars
     private bool isDead = false;
+    private bool isStopped = false;
     #endregion
 
     #region Cached Vars
@@ -52,6 +53,11 @@ public class CarController : MonoBehaviour {
         }
         // Finally, delete the car
         Destroy(gameObject);
+    }
+
+    public void Stop()
+    {
+        isStopped = true;
     }
 
 
