@@ -79,7 +79,7 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (driveable)
+        if (driveable && !hasTrafficObj)
         {
             hasTrafficObj = true;
             trafficObj = Instantiate(trafficLightPrefab, gameObject.transform, false);

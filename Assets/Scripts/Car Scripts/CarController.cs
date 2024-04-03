@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CarController : MonoBehaviour {
@@ -51,4 +53,14 @@ public class CarController : MonoBehaviour {
         // Finally, delete the car
         Destroy(gameObject);
     }
+
+    #region A*
+    private void aStar()
+    {
+        ArrayList visited = new ArrayList();
+
+
+
+    }
+    #endregion
 }
