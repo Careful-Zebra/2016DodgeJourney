@@ -9,12 +9,13 @@ public class TileManager : MonoBehaviour
     [SerializeField] private static int height;
     [SerializeField] private static Tile tilePrefab;
 
-    [SerializeField] private static Transform cam;
+    [SerializeField]
+    private static Transform cam;
 
     private static Dictionary<Vector2, Stack<Tile>> tiles_stack;
     private static Dictionary<Vector2, Tile> tiles;
 
-    void Start()
+    static void Start()
     {
         GenerateGrid();
     }
