@@ -25,7 +25,7 @@ public class MapHolder : MonoBehaviour
         {
             /*print((int) child.transform.position.x);
             print((int) child.transform.position.y);*/
-            tiles[new Vector2((int) child.transform.position.x, (int) child.transform.position.y)] = child;
+            tiles[new Vector2((int) Math.Floor(child.transform.position.x), (int) Math.Floor(child.transform.position.y))] = child;
         }
     }
 

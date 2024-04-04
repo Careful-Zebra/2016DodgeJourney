@@ -33,6 +33,8 @@ public class ManualDrive : MonoBehaviour {
     [Tooltip("The destination tile")]
     private Tile destination;
 
+
+
     #region private variables
     //whether the car has just rotated or not
     private Boolean justTurned;
@@ -102,7 +104,6 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
-        print("break");
         
     }
 
@@ -110,10 +111,8 @@ public class ManualDrive : MonoBehaviour {
     private void FixedUpdate() {
         float t = Time.deltaTime;
         Tile curTile = TileCarIsIn();
-        print("curtile");
-        print(curTile);
-        print("lturns[0]");
-        print(lTurns[0]);
+
+
 
         /* Commented out input forward drive code but left for later use if wanted
                 if (Input.GetKey(KeyCode.W)) {
@@ -168,42 +167,65 @@ public class ManualDrive : MonoBehaviour {
             //if the tile we are in is a left turning one
             if (lTurns.Contains(curTile))
             {
-                print("TURNING");
+                print("car");
+                print(transform.position.x);
+                print(transform.position.y);
+                print("curtile");
+                print(curTile.gameObject.transform.position.x);
+                print(curTile.gameObject.transform.position.y);
+
                 if (!justTurned)
                 {
-                    if (dir == 0 | dir == 2)
+                    if (dir == 0)
                     {
-                        
-                        if (transform.position.y < (curTile.gameObject.transform.position.y + 0.1) && 
-                            transform.position.y > (curTile.gameObject.transform.position.y - 0.1))
+
+                        if (transform.position.y > (curTile.gameObject.transform.position.y - 0.4) &&
+                            transform.position.y < (curTile.gameObject.transform.position.y - 0.2))
                         {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
                             justTurned = true;
-                            if (dir == 0)
-                            {
-                                dir = 3;
-                            } else
-                            {
-                                dir = 1;
-                            }
+
+                            dir = 3;
+
                         }
-                    } else
-                    {
-                        if (transform.position.x < (curTile.gameObject.transform.position.x  + 0.1) && 
-                            transform.position.x > (curTile.gameObject.transform.position.x - 0.1))
+                    }
+                    else if (dir == 2) {
+                        if (transform.position.y < (curTile.gameObject.transform.position.y + 0.4) &&
+                            transform.position.y > (curTile.gameObject.transform.position.y + 0.2))
                         {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
                             justTurned = true;
-                            if (dir == 1)
+
+                            dir = 1;
+
+                        }
+                    }
+                    else
+                    {
+                        if (dir == 1)
+                        {
+                            if (transform.position.x > (curTile.gameObject.transform.position.x - 0.4) &&
+                            transform.position.x < (curTile.gameObject.transform.position.x - 0.2))
                             {
+                                Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
+                                transform.rotation = transform.rotation * leftTurn;
+                                justTurned = true;
                                 dir = 0;
-                            } else
+                            }
+                        } else
+                        {
+                            if (transform.position.x < (curTile.gameObject.transform.position.x + 0.4) &&
+                            transform.position.x > (curTile.gameObject.transform.position.x + 0.2))
                             {
+                                Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
+                                transform.rotation = transform.rotation * leftTurn;
+                                justTurned = true;
                                 dir = 2;
                             }
                         }
+                        
                     }
                 }      
             //if the tile we are in is a right turning one
@@ -211,45 +233,65 @@ public class ManualDrive : MonoBehaviour {
             {
                 if (!justTurned)
                 {
-                    if (dir == 0 | dir == 2)
+                    if (dir == 0)
                     {
-                        if (transform.position.y < (curTile.gameObject.transform.position.y + 0.1) &&
-                            transform.position.y > (curTile.gameObject.transform.position.y - 0.1))
+                        if (transform.position.y < (curTile.gameObject.transform.position.y + 0.4) &&
+                            transform.position.y > (curTile.gameObject.transform.position.y + 0.2))
                         {
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
                             justTurned = true;
-                            if (dir == 0)
-                            {
-                                dir = 1;
-                            }
-                            else
-                            {
-                                dir = 3;
-                            }
+                            dir = 1;
+                        }
+                    } else if (dir == 2)
+                    {
+                        if (transform.position.y > (curTile.gameObject.transform.position.y - 0.4) &&
+                            transform.position.y < (curTile.gameObject.transform.position.y - 0.2))
+                        {
+                            Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
+                            transform.rotation = transform.rotation * rightTurn;
+                            justTurned = true;
+                            dir = 3;
                         }
                     }
-                    else
+                    else if (dir == 1) 
                     {
-                        if (transform.position.x < (curTile.gameObject.transform.position.x + 0.1) &&
-                            transform.position.x > (curTile.gameObject.transform.position.x - 0.1))
+                        if (transform.position.x < (curTile.gameObject.transform.position.x + 0.4) &&
+                            transform.position.x > (curTile.gameObject.transform.position.x + 0.2))
                         {
 
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
                             justTurned = true;
-                            if (dir == 1)
-                            {
-                                dir = 2;
-                            }
-                            else
-                            {
-                                dir = 0;
-                            }
+                            dir = 2;
+                        }
+                    } else
+                    {
+                        if (transform.position.x > (curTile.gameObject.transform.position.x - 0.4) &&
+                            transform.position.x < (curTile.gameObject.transform.position.x - 0.2))
+                        {
+
+                            Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
+                            transform.rotation = transform.rotation * rightTurn;
+                            justTurned = true;
+                            dir = 0;
                         }
                     }
                 }
-            } else
+            }
+            else if (curTile == destination)
+            {
+                //flip the car around at the end.
+                Quaternion oneEighty = Quaternion.Euler(0, 0, -180);
+                transform.rotation = transform.rotation * oneEighty;
+                ArrayList temp = lTurns;
+                lTurns = rTurns;
+                rTurns = temp;
+                rb.velocity = transform.right * speed;
+                justTurned = false;
+                dir = (dir + 2) % 4;
+            }
+            else
             {
                 justTurned = false;
             }
@@ -260,7 +302,8 @@ public class ManualDrive : MonoBehaviour {
 
             
 
-        } else
+        }
+        else
         {
             //flip the car around at the end.
             Quaternion oneEighty = Quaternion.Euler(0, 0, -180);
@@ -269,8 +312,12 @@ public class ManualDrive : MonoBehaviour {
             lTurns = rTurns;
             rTurns = temp;
             rb.velocity = transform.right * speed;
+            dir = (dir + 2) % 4;
+            justTurned = false;
         }
     }
+
+    
 
     private Vector2 HandleTraffic(Vector2 tempVelocity, Tile curTile)
     {
@@ -328,26 +375,26 @@ public class ManualDrive : MonoBehaviour {
         int yPos = (int)Math.Floor(transform.position.y);
         Vector2 belowPos = new Vector2(xPos, yPos - tileSize);
         Tile tileBelow = mapHolder.GetTileAtPos(belowPos);
-        if (tileBelow.Driveable())
+        if (tileBelow.Driveable() | tileBelow == destination)
         {
             neighbours.Add(tileBelow, 1 + heuristic(tileBelow, destination));
             prev.Add(tileBelow, currentTile);
         }
         
         Tile tileAbove = mapHolder.GetTileAtPos(new Vector2(xPos, yPos + tileSize));
-        if (tileAbove.Driveable())
+        if (tileAbove.Driveable() | tileAbove == destination)
         {
             neighbours.Add(tileAbove, 1 + heuristic(tileAbove, destination));
             prev.Add(tileAbove, currentTile);
         }
         Tile tileLeft = mapHolder.GetTileAtPos(new Vector2(xPos - tileSize, yPos));
-        if (tileLeft.Driveable())
+        if (tileLeft.Driveable() | tileLeft == destination)
         {
             neighbours.Add(tileLeft, 1 + heuristic(tileLeft, destination));
             prev.Add(tileLeft, currentTile);
         }
         Tile tileRight = mapHolder.GetTileAtPos(new Vector2(xPos + tileSize, yPos));
-        if (tileRight.Driveable())
+        if (tileRight.Driveable() | tileRight == destination)
         {
             neighbours.Add(tileRight, 1 + heuristic(tileRight, destination));
             prev.Add(tileRight, currentTile);
@@ -374,7 +421,7 @@ public class ManualDrive : MonoBehaviour {
             xPos = (int)Math.Floor(currentTile.transform.position.x);
             yPos = (int)Math.Floor(currentTile.transform.position.y);
             tileBelow = mapHolder.GetTileAtPos(new Vector2(xPos, (float)(yPos - tileSize)));
-            if (tileBelow != null && !visited.Contains(tileBelow) && tileBelow.Driveable() && 
+            if (tileBelow != null && !visited.Contains(tileBelow) && (tileBelow.Driveable() | tileBelow == destination) && 
                 (!neighbours.ContainsKey(tileBelow) | neighbours.GetValueOrDefault(tileBelow) < dist + heuristic(tileBelow, destination)))
             {
                 if (!neighbours.TryAdd(tileBelow, dist + heuristic(tileBelow, destination)))
@@ -391,7 +438,7 @@ public class ManualDrive : MonoBehaviour {
             }
 
             tileAbove = mapHolder.GetTileAtPos(new Vector2(xPos, yPos + tileSize));
-            if (tileAbove != null && !visited.Contains(tileAbove) && tileAbove.Driveable() && 
+            if (tileAbove != null && !visited.Contains(tileAbove) && (tileAbove.Driveable() | tileAbove == destination) && 
                 (!neighbours.ContainsKey(tileAbove) | neighbours.GetValueOrDefault(tileAbove) < dist + heuristic(tileAbove, destination)))
             {
                 if (!neighbours.TryAdd(tileAbove, dist + heuristic(tileAbove, destination)))
@@ -407,7 +454,7 @@ public class ManualDrive : MonoBehaviour {
                 }
             }
             tileLeft = mapHolder.GetTileAtPos(new Vector2(xPos - tileSize, yPos));
-            if (tileLeft != null && !visited.Contains(tileLeft) && tileLeft.Driveable() && 
+            if (tileLeft != null && !visited.Contains(tileLeft) && (tileLeft.Driveable() | tileLeft == destination) && 
                 (!neighbours.ContainsKey(tileLeft) | neighbours.GetValueOrDefault(tileLeft) < dist + heuristic(tileLeft, destination)))
             {
                 if (!neighbours.TryAdd(tileLeft, dist + heuristic(tileLeft, destination)))
@@ -423,7 +470,7 @@ public class ManualDrive : MonoBehaviour {
                 }
             }
             tileRight = mapHolder.GetTileAtPos(new Vector2(xPos + tileSize, yPos));
-            if (tileRight != null && !visited.Contains(tileRight) && tileRight.Driveable() && 
+            if (tileRight != null && !visited.Contains(tileRight) && (tileRight.Driveable() | tileRight == destination) && 
                 (!neighbours.ContainsKey(tileRight) | neighbours.GetValueOrDefault(tileRight) < dist + heuristic(tileRight, destination)))
             {
                 if (!neighbours.TryAdd(tileRight, dist + heuristic(tileRight, destination)))
