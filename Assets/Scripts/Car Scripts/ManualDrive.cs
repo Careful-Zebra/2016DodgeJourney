@@ -38,6 +38,7 @@ public class ManualDrive : MonoBehaviour {
     #region private variables
     //whether the car has just rotated or not
     private Boolean justTurned;
+    private float actualSpeed;
     #endregion
 
 
@@ -50,6 +51,8 @@ public class ManualDrive : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+
+        actualSpeed = speed;
 
         lTurns = new ArrayList();
         rTurns = new ArrayList();
@@ -167,12 +170,7 @@ public class ManualDrive : MonoBehaviour {
             //if the tile we are in is a left turning one
             if (lTurns.Contains(curTile))
             {
-                print("car");
-                print(transform.position.x);
-                print(transform.position.y);
-                print("curtile");
-                print(curTile.gameObject.transform.position.x);
-                print(curTile.gameObject.transform.position.y);
+
 
                 if (!justTurned)
                 {
@@ -296,7 +294,12 @@ public class ManualDrive : MonoBehaviour {
                 justTurned = false;
             }
 
-            Vector2 tempVelocity = transform.right * speed;
+            if (dir == 0)
+            {
+
+            }
+
+            Vector2 tempVelocity = transform.right * actualSpeed;
 
             rb.velocity = HandleTraffic(tempVelocity, curTile);
 
@@ -315,9 +318,42 @@ public class ManualDrive : MonoBehaviour {
             dir = (dir + 2) % 4;
             justTurned = false;
         }
+
+        //RAYCAST TO CHECK ONCOMING TRAFFIC -- SEEMS TO JUST BE BROKEN I HAVE NO FUCKING CLUE WHAT THE FUCK IS WRONG WITH IT
+/*        int layerMask = 1 << 9;
+        Ray checkTraffic = new Ray(transform.position, transform.right);
+        float dist = float.MaxValue;
+
+        Debug.DrawRay(transform.position, transform.right, Color.red);
+        if (Physics.Raycast(checkTraffic, out RaycastHit hit))
+        {
+            print("Hit object: " + hit.collider.gameObject.name);
+        }
+        else
+        {
+            print("no hit");
+        }*/
     }
 
-    
+    //oh yeah, it's big collider time
+    private void OnTriggerEnter(Collider other)
+    {
+        print("whoa hold up");
+        if (other.gameObject.CompareTag("Car"))
+        {
+            rb.velocity = Vector2.zero;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        print("whoa hold up");
+
+        if (other.gameObject.CompareTag("Car") && UnityEngine.Random.Range(0,1) > 0.5)
+        {
+            rb.velocity = Vector2.zero;
+        }
+    }
+
 
     private Vector2 HandleTraffic(Vector2 tempVelocity, Tile curTile)
     {
@@ -538,4 +574,6 @@ public class ManualDrive : MonoBehaviour {
         return (float)Math.Sqrt((diffX *diffX) + (diffY *diffY));
     }
     #endregion
+
+    
 }
