@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -225,9 +226,10 @@ public class ManualDrive : MonoBehaviour {
 
         ArrayList visited = new ArrayList();
         Tile currentTile = TileCarIsIn();
-        Dictionary<float, Tile> neighbours = new Dictionary<float, Tile>();
+        Dictionary<Tile, float> neighbours = new Dictionary<Tile, float>();
         float tileSize = currentTile.GetComponent<SpriteRenderer>().bounds.max.x - currentTile.GetComponent<SpriteRenderer>().bounds.min.x;
         visited.Add(currentTile);
+        Dictionary<Tile, Tile> prev = new Dictionary<Tile, Tile>();
 
         //get the values off of the dest
         int destX = (int)destination.transform.position.x;
@@ -240,23 +242,87 @@ public class ManualDrive : MonoBehaviour {
         Tile tileBelow = mapHolder.GetTileAtPos(belowPos);
         if (tileBelow.Driveable())
         {
-            neighbours.Add(1 + heuristic(tileBelow, destination), tileBelow);
+            neighbours.Add(tileBelow, 1 + heuristic(tileBelow, destination));
+            prev.Add(tileBelow, currentTile);
         }
         
         Tile tileAbove = mapHolder.GetTileAtPos(new Vector2(xPos, yPos + tileSize));
         if (tileAbove.Driveable())
         {
-            neighbours.Add(1 + heuristic(tileAbove, destination), tileAbove);
+            neighbours.Add(tileAbove, 1 + heuristic(tileAbove, destination));
+            prev.Add(tileAbove, currentTile);
         }
         Tile tileLeft = mapHolder.GetTileAtPos(new Vector2(xPos - tileSize, yPos));
         if (tileLeft.Driveable())
         {
-            neighbours.Add(1 + heuristic(tileLeft, destination), tileLeft);
+            neighbours.Add(tileLeft, 1 + heuristic(tileLeft, destination));
+            prev.Add(tileLeft, currentTile);
         }
         Tile tileRight = mapHolder.GetTileAtPos(new Vector2(xPos + tileSize, yPos));
+        if (tileRight.Driveable())
+        {
+            neighbours.Add(tileRight, 1 + heuristic(tileRight, destination));
+            prev.Add(tileRight, currentTile);
+        }
 
         //main loop
-        currentTile = neighbours.Min().Value;
+        currentTile = neighbours.Min().Key;
+        neighbours.Remove(currentTile);
+        float dist = 1;
+        while (currentTile != destination)
+        {
+            xPos = (int)Math.Floor(currentTile.transform.position.x);
+            yPos = (int)Math.Floor(currentTile.transform.position.y);
+            tileBelow = mapHolder.GetTileAtPos(new Vector2(xPos, yPos - tileSize));
+            if (tileBelow.Driveable() && (!neighbours.ContainsKey(tileBelow) | neighbours.GetValueOrDefault(tileBelow) < dist + heuristic(tileBelow, destination)))
+            {
+                neighbours.Add(tileBelow, dist + heuristic(tileBelow, destination));
+                if (!prev.TryAdd(tileBelow, currentTile))
+                {
+                    prev.Remove(tileBelow);
+                    prev.Add(tileBelow, currentTile);
+                }
+            }
+
+            tileAbove = mapHolder.GetTileAtPos(new Vector2(xPos, yPos + tileSize));
+            if (tileAbove.Driveable() && (!neighbours.ContainsKey(tileAbove) | neighbours.GetValueOrDefault(tileAbove) < dist + heuristic(tileAbove, destination)))
+            {
+                neighbours.Add(tileAbove, dist + heuristic(tileAbove, destination));
+                if (!prev.TryAdd(tileAbove, currentTile))
+                {
+                    prev.Remove(tileAbove);
+                    prev.Add(tileAbove, currentTile);
+                }
+            }
+            tileLeft = mapHolder.GetTileAtPos(new Vector2(xPos - tileSize, yPos));
+            if (tileLeft.Driveable() && (!neighbours.ContainsKey(tileLeft) | neighbours.GetValueOrDefault(tileLeft) < dist + heuristic(tileLeft, destination)))
+            {
+                neighbours.Add(tileLeft, dist + heuristic(tileLeft, destination));
+                if (!prev.TryAdd(tileLeft, currentTile))
+                {
+                    prev.Remove(tileLeft);
+                    prev.Add(tileLeft, currentTile);
+                }
+            }
+            tileRight = mapHolder.GetTileAtPos(new Vector2(xPos + tileSize, yPos));
+            if (tileRight.Driveable() && (!neighbours.ContainsKey(tileRight) | neighbours.GetValueOrDefault(tileRight) < dist + heuristic(tileRight, destination)))
+            {
+                neighbours.Add(tileRight, dist + heuristic(tileRight, destination));
+                
+                if (!prev.TryAdd(tileRight, currentTile))
+                {
+                    prev.Remove(tileRight);
+                    prev.Add(tileRight, currentTile);
+                }
+            }
+
+            //update the values
+            currentTile = neighbours.Min().Key;
+            dist = neighbours.Min().Value - heuristic(currentTile, destination);
+            neighbours.Remove(currentTile);
+            
+            
+        }
 
     }
 
