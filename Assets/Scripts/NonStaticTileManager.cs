@@ -38,7 +38,7 @@ public class NonStaticTileManager : MonoBehaviour
                 //spawnedTile.MakeDriveable();
                 spawnedTile.name = $"Tile {x} {y}";
 
-                bool isOffset = ((x % 2 == 0 && y % 2 != 0) | (x % 2 != 0 && y % 2 == 0));
+                bool isOffset = (x % 2 == 0 && y % 2 != 0) | (x % 2 != 0 && y % 2 == 0);
                 // if (isOffset)
                 // {
                 //     spawnedTile.GetComponent<SpriteRenderer>.color = 
