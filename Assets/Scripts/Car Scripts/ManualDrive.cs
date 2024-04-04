@@ -256,7 +256,7 @@ public class ManualDrive : MonoBehaviour {
         Tile tileRight = mapHolder.GetTileAtPos(new Vector2(xPos + tileSize, yPos));
 
         //main loop
-        
+        currentTile = neighbours.Min().Value;
 
     }
 
