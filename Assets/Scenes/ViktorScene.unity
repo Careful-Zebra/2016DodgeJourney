@@ -30644,6 +30644,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: dir
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
@@ -30651,6 +30655,10 @@ PrefabInstance:
       propertyPath: mapHolder
       value: 
       objectReference: {fileID: 1014564132}
+    - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: destination
+      value: 
+      objectReference: {fileID: 2056621878}
     - target: {fileID: 7270796420703480402, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: lTurns.Array.size
       value: 1

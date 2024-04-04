@@ -19,15 +19,19 @@ public class ManualDrive : MonoBehaviour {
 
     [SerializeField]
     [Tooltip("The left turns the car needs to make")]
-    private GameObject[] lTurns;
+    private ArrayList lTurns;
 
     [SerializeField]
     [Tooltip("The right turns the car needs to make")]
-    private GameObject[] rTurns;
+    private ArrayList rTurns;
 
     [SerializeField]
-    [Tooltip("The starting orientation of the car (true for up/down, false for sideysidey)")]
-    private Boolean upDown;
+    [Tooltip("The starting direction of the car 0 north, 1 east, etc")]
+    private int dir;
+
+    [SerializeField]
+    [Tooltip("The destination tile")]
+    private Tile destination;
 
     #region private variables
     //whether the car has just rotated or not
@@ -44,6 +48,61 @@ public class ManualDrive : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+
+        lTurns = new ArrayList();
+        rTurns = new ArrayList();
+
+        //setup the left and right turns
+        Tile[] path = aStar(destination);
+
+        int tempDir = dir;
+        for (int i = 0; i < path.Length - 1; i++)
+        {
+            if (path[i].transform.position.x < path[i + 1].transform.position.x)
+            {
+                if (tempDir == 0)
+                {
+                    rTurns.Add(path[i]);
+                } else if (tempDir == 2)
+                {
+                    lTurns.Add(path[i]);
+                }
+                tempDir = 1;
+            } else if (path[i].transform.position.x > path[i + 1].transform.position.x)
+            {
+                if (tempDir == 0)
+                {
+                    lTurns.Add(path[i]);
+                }
+                else if (tempDir == 2)
+                {
+                    rTurns.Add(path[i]);
+                }
+                tempDir = 3;
+            } else if (path[i].transform.position.y > path[i + 1].transform.position.y)
+            {
+                if (tempDir == 1)
+                {
+                    rTurns.Add(path[i]);
+                } else if (tempDir == 3)
+                {
+                    lTurns.Add(path[i]);
+                }
+                tempDir = 2;
+            } else
+            {
+                if (tempDir == 1)
+                {
+                    lTurns.Add(path[i]);
+                }
+                else if (tempDir == 3)
+                {
+                    rTurns.Add(path[i]);
+                }
+                tempDir = 0;
+            }
+        }
+        print("break");
         
     }
 
@@ -51,6 +110,10 @@ public class ManualDrive : MonoBehaviour {
     private void FixedUpdate() {
         float t = Time.deltaTime;
         Tile curTile = TileCarIsIn();
+        print("curtile");
+        print(curTile);
+        print("lturns[0]");
+        print(lTurns[0]);
 
         /* Commented out input forward drive code but left for later use if wanted
                 if (Input.GetKey(KeyCode.W)) {
@@ -103,20 +166,27 @@ public class ManualDrive : MonoBehaviour {
 
 
             //if the tile we are in is a left turning one
-            if (lTurns.Contains(curTile.gameObject))
+            if (lTurns.Contains(curTile))
             {
+                print("TURNING");
                 if (!justTurned)
                 {
-                    if (upDown)
+                    if (dir == 0 | dir == 2)
                     {
-                        //TRY IT WITH PLUSES
+                        
                         if (transform.position.y < (curTile.gameObject.transform.position.y + 0.1) && 
                             transform.position.y > (curTile.gameObject.transform.position.y - 0.1))
                         {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
                             justTurned = true;
-                            upDown = !upDown;
+                            if (dir == 0)
+                            {
+                                dir = 3;
+                            } else
+                            {
+                                dir = 1;
+                            }
                         }
                     } else
                     {
@@ -126,16 +196,22 @@ public class ManualDrive : MonoBehaviour {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
                             justTurned = true;
-                            upDown = !upDown;
+                            if (dir == 1)
+                            {
+                                dir = 0;
+                            } else
+                            {
+                                dir = 2;
+                            }
                         }
                     }
                 }      
             //if the tile we are in is a right turning one
-            } else if (rTurns.Contains(curTile.gameObject))
+            } else if (rTurns.Contains(curTile))
             {
                 if (!justTurned)
                 {
-                    if (upDown)
+                    if (dir == 0 | dir == 2)
                     {
                         if (transform.position.y < (curTile.gameObject.transform.position.y + 0.1) &&
                             transform.position.y > (curTile.gameObject.transform.position.y - 0.1))
@@ -143,7 +219,14 @@ public class ManualDrive : MonoBehaviour {
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
                             justTurned = true;
-                            upDown = !upDown;
+                            if (dir == 0)
+                            {
+                                dir = 1;
+                            }
+                            else
+                            {
+                                dir = 3;
+                            }
                         }
                     }
                     else
@@ -155,7 +238,14 @@ public class ManualDrive : MonoBehaviour {
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
                             justTurned = true;
-                            upDown = !upDown;
+                            if (dir == 1)
+                            {
+                                dir = 2;
+                            }
+                            else
+                            {
+                                dir = 0;
+                            }
                         }
                     }
                 }
@@ -175,7 +265,7 @@ public class ManualDrive : MonoBehaviour {
             //flip the car around at the end.
             Quaternion oneEighty = Quaternion.Euler(0, 0, -180);
             transform.rotation = transform.rotation * oneEighty;
-            GameObject[] temp = lTurns;
+            ArrayList temp = lTurns;
             lTurns = rTurns;
             rTurns = temp;
             rb.velocity = transform.right * speed;
@@ -220,7 +310,7 @@ public class ManualDrive : MonoBehaviour {
     #endregion
 
     #region A*
-    private void aStar(Tile destination)
+    private Tile[] aStar(Tile destination)
     {
         
 
@@ -231,9 +321,7 @@ public class ManualDrive : MonoBehaviour {
         visited.Add(currentTile);
         Dictionary<Tile, Tile> prev = new Dictionary<Tile, Tile>();
 
-        //get the values off of the dest
-        int destX = (int)destination.transform.position.x;
-        int destY = (int)destination.transform.position.y;
+
 
         //add all of the neighbours of the starting tile
         int xPos = (int)Math.Floor(transform.position.x);
@@ -266,17 +354,35 @@ public class ManualDrive : MonoBehaviour {
         }
 
         //main loop
-        currentTile = neighbours.Min().Key;
-        neighbours.Remove(currentTile);
+
+        Tile minTile = currentTile;
+        float minDist = int.MaxValue;
+        foreach (KeyValuePair<Tile, float> pair in neighbours)
+        {
+            if (pair.Value < minDist)
+            {
+                minTile = pair.Key;
+                minDist = pair.Value;
+            }
+        }
+        currentTile = minTile;
         float dist = 1;
+        neighbours.Remove(currentTile);
+        visited.Add(currentTile);
         while (currentTile != destination)
         {
             xPos = (int)Math.Floor(currentTile.transform.position.x);
             yPos = (int)Math.Floor(currentTile.transform.position.y);
-            tileBelow = mapHolder.GetTileAtPos(new Vector2(xPos, yPos - tileSize));
-            if (tileBelow.Driveable() && (!neighbours.ContainsKey(tileBelow) | neighbours.GetValueOrDefault(tileBelow) < dist + heuristic(tileBelow, destination)))
+            tileBelow = mapHolder.GetTileAtPos(new Vector2(xPos, (float)(yPos - tileSize)));
+            if (tileBelow != null && !visited.Contains(tileBelow) && tileBelow.Driveable() && 
+                (!neighbours.ContainsKey(tileBelow) | neighbours.GetValueOrDefault(tileBelow) < dist + heuristic(tileBelow, destination)))
             {
-                neighbours.Add(tileBelow, dist + heuristic(tileBelow, destination));
+                if (!neighbours.TryAdd(tileBelow, dist + heuristic(tileBelow, destination)))
+                {
+                    neighbours.Remove(tileBelow);
+                    neighbours.Add(tileBelow, dist + heuristic(tileBelow, destination));
+                }
+
                 if (!prev.TryAdd(tileBelow, currentTile))
                 {
                     prev.Remove(tileBelow);
@@ -285,9 +391,15 @@ public class ManualDrive : MonoBehaviour {
             }
 
             tileAbove = mapHolder.GetTileAtPos(new Vector2(xPos, yPos + tileSize));
-            if (tileAbove.Driveable() && (!neighbours.ContainsKey(tileAbove) | neighbours.GetValueOrDefault(tileAbove) < dist + heuristic(tileAbove, destination)))
+            if (tileAbove != null && !visited.Contains(tileAbove) && tileAbove.Driveable() && 
+                (!neighbours.ContainsKey(tileAbove) | neighbours.GetValueOrDefault(tileAbove) < dist + heuristic(tileAbove, destination)))
             {
-                neighbours.Add(tileAbove, dist + heuristic(tileAbove, destination));
+                if (!neighbours.TryAdd(tileAbove, dist + heuristic(tileAbove, destination)))
+                {
+                    neighbours.Remove(tileAbove);
+                    neighbours.Add(tileAbove, dist + heuristic(tileAbove, destination));
+                }
+
                 if (!prev.TryAdd(tileAbove, currentTile))
                 {
                     prev.Remove(tileAbove);
@@ -295,9 +407,15 @@ public class ManualDrive : MonoBehaviour {
                 }
             }
             tileLeft = mapHolder.GetTileAtPos(new Vector2(xPos - tileSize, yPos));
-            if (tileLeft.Driveable() && (!neighbours.ContainsKey(tileLeft) | neighbours.GetValueOrDefault(tileLeft) < dist + heuristic(tileLeft, destination)))
+            if (tileLeft != null && !visited.Contains(tileLeft) && tileLeft.Driveable() && 
+                (!neighbours.ContainsKey(tileLeft) | neighbours.GetValueOrDefault(tileLeft) < dist + heuristic(tileLeft, destination)))
             {
-                neighbours.Add(tileLeft, dist + heuristic(tileLeft, destination));
+                if (!neighbours.TryAdd(tileLeft, dist + heuristic(tileLeft, destination)))
+                {
+                    neighbours.Remove(tileLeft);
+                    neighbours.Add(tileLeft, dist + heuristic(tileLeft, destination));
+                }
+
                 if (!prev.TryAdd(tileLeft, currentTile))
                 {
                     prev.Remove(tileLeft);
@@ -305,9 +423,14 @@ public class ManualDrive : MonoBehaviour {
                 }
             }
             tileRight = mapHolder.GetTileAtPos(new Vector2(xPos + tileSize, yPos));
-            if (tileRight.Driveable() && (!neighbours.ContainsKey(tileRight) | neighbours.GetValueOrDefault(tileRight) < dist + heuristic(tileRight, destination)))
+            if (tileRight != null && !visited.Contains(tileRight) && tileRight.Driveable() && 
+                (!neighbours.ContainsKey(tileRight) | neighbours.GetValueOrDefault(tileRight) < dist + heuristic(tileRight, destination)))
             {
-                neighbours.Add(tileRight, dist + heuristic(tileRight, destination));
+                if (!neighbours.TryAdd(tileRight, dist + heuristic(tileRight, destination)))
+                {
+                    neighbours.Remove(tileRight);
+                    neighbours.Add(tileRight, dist + heuristic(tileRight, destination));
+                }
                 
                 if (!prev.TryAdd(tileRight, currentTile))
                 {
@@ -317,12 +440,42 @@ public class ManualDrive : MonoBehaviour {
             }
 
             //update the values
-            currentTile = neighbours.Min().Key;
-            dist = neighbours.Min().Value - heuristic(currentTile, destination);
+            minTile = currentTile;
+            minDist = int.MaxValue;
+            foreach (KeyValuePair<Tile, float> pair in neighbours)
+            {
+                if (pair.Value < minDist)
+                {
+                    minTile = pair.Key;
+                    minDist = pair.Value;
+                }
+            }
+            currentTile = minTile;
+            visited.Add(currentTile);
+            dist =  1 + neighbours.GetValueOrDefault(currentTile) - heuristic(currentTile, destination);
             neighbours.Remove(currentTile);
             
             
         }
+
+
+        //stack bc we are reversing thru the list
+        Stack<Tile> path = new Stack<Tile>();
+
+        while (currentTile != TileCarIsIn())
+        {
+            path.Push(currentTile);
+            prev.TryGetValue(currentTile, out currentTile);
+        }
+        
+        int len = path.Count;
+        Tile[] returner = new Tile[len];
+        for (int i = 0; i < len; i++)
+        {
+            returner[i] = path.Pop();
+        }
+
+        return returner;
 
     }
 
@@ -335,7 +488,7 @@ public class ManualDrive : MonoBehaviour {
         float destY = destination.transform.position.y;
         float diffX = Math.Abs(curX - destX);
         float diffY = Math.Abs(curY - destY);
-        return (float)Math.Sqrt(diffX + diffY);
+        return (float)Math.Sqrt((diffX *diffX) + (diffY *diffY));
     }
     #endregion
 }
