@@ -83,7 +83,7 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (driveable && !hasTrafficObj)
+        if (canPlaceTrafficLight && driveable && !hasTrafficObj)
         {
             hasTrafficObj = true;
             trafficObj = Instantiate(trafficLightPrefab, gameObject.transform, false);
@@ -128,15 +128,17 @@ public class Tile : MonoBehaviour
 
     #region UI Button Relevant Methods
 
-    public static void SetStoplightPlaceable()
+    public static void PressTrafficLightButton()
     {
-        canPlaceTrafficLight = true;
+        canPlaceTrafficLight = !canPlaceTrafficLight;
     }
+    #endregion
 
-    public static void SetStoplightUnplaceable()
+    #region Ella Scene Methods
+    public void MakeDriveable()
     {
-        canPlaceTrafficLight = false;
+        driveable = true;
+        rend.color = Color.white;
     }
-
     #endregion
 }

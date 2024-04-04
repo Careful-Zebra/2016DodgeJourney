@@ -35,6 +35,7 @@ public class NonStaticTileManager : MonoBehaviour
             for (int y = 0; y < height; y++)
             {
                 Tile spawnedTile = Instantiate(tilePrefab, new Vector3(x,y), Quaternion.identity);
+                //spawnedTile.MakeDriveable();
                 spawnedTile.name = $"Tile {x} {y}";
 
                 bool isOffset = ((x % 2 == 0 && y % 2 != 0) | (x % 2 != 0 && y % 2 == 0));
