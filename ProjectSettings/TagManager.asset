@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Car
+  - House
+  - Office
   layers:
   - Default
   - TransparentFX
@@ -39,6 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 491181607
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Cars
+    uniqueID: 3181833337
+    locked: 0
+  - name: Buildings
+    uniqueID: 1624466455
     locked: 0
