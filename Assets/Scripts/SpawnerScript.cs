@@ -26,7 +26,7 @@ public class SpawnerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Random.Range(0, 10) == 3)
+        if (Random.Range(0, 1000) == 3)
         {
             print("spawning");
             int index = Random.Range(0, sources.Length - 1);
