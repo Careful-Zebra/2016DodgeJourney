@@ -45,13 +45,13 @@ public class HUDManager : MonoBehaviour
 
     void FixedUpdate()
     {
-/*        meanCarSpeed = 0;
+        meanCarSpeed = 0;
         foreach (CarController car in cars)
         {
             Vector2 velocity = car.gameObject.GetComponent<Rigidbody2D>().velocity;
             meanCarSpeed += AbsoluteValue(velocity.x) + AbsoluteValue(velocity.y);
         }
         meanCarSpeed /= cars.Length;
-        meanCarSpeedText.text = defaultCarSpeedString.Replace("%S", meanCarSpeed.ToString());*/
+        meanCarSpeedText.text = defaultCarSpeedString.Replace("%S", meanCarSpeed.ToString());
     }
 }
