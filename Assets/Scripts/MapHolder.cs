@@ -25,6 +25,9 @@ public class MapHolder : MonoBehaviour
         {
             /*print((int) child.transform.position.x);
             print((int) child.transform.position.y);*/
+            Color childSpriteColor = child.GetComponent<SpriteRenderer>().color;
+            childSpriteColor.a = 0.5f;
+            child.GetComponent<SpriteRenderer>().color = childSpriteColor;
             tiles[new Vector2((int) Math.Floor(child.transform.position.x), (int) Math.Floor(child.transform.position.y))] = child;
         }
     }
