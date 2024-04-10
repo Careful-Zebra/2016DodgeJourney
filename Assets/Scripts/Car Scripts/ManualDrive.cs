@@ -319,20 +319,23 @@ public class ManualDrive : MonoBehaviour {
             justTurned = false;
         }
 
-        //RAYCAST TO CHECK ONCOMING TRAFFIC -- SEEMS TO JUST BE BROKEN I HAVE NO FUCKING CLUE WHAT THE FUCK IS WRONG WITH IT
-/*        int layerMask = 1 << 9;
-        Ray checkTraffic = new Ray(transform.position, transform.right);
-        float dist = float.MaxValue;
-
-        Debug.DrawRay(transform.position, transform.right, Color.red);
-        if (Physics.Raycast(checkTraffic, out RaycastHit hit))
-        {
-            print("Hit object: " + hit.collider.gameObject.name);
-        }
-        else
-        {
-            print("no hit");
-        }*/
+        // //RAYCAST TO CHECK ONCOMING TRAFFIC -- SEEMS TO JUST BE BROKEN I HAVE NO FUCKING CLUE WHAT THE FUCK IS WRONG WITH IT
+        // int layerMask = 1 << 9;
+        // Ray checkTraffic = new Ray(transform.position, transform.right);
+        // float dist = float.MaxValue;
+        // Vector2 pos = transform.position;
+        
+        // RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100);
+        // // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
+        // if (hit.collider.gameObject.tag == "Car" && hit.collider.gameObject != gameObject)
+        // {
+        //     print("yeowch");
+        //     rb.velocity = Vector2.zero;
+        // }
+        // else
+        // {
+        //     print("no hit");
+        // }
     }
 
     //oh yeah, it's big collider time
