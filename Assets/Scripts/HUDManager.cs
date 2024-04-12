@@ -15,7 +15,7 @@ public class HUDManager : MonoBehaviour
 
     [SerializeField]
     [Tooltip("The cars on the map")]
-    private CarController[] cars;
+    private HashSet<CarController> cars;
     #endregion
 
     #region Private Variables
@@ -51,7 +51,7 @@ public class HUDManager : MonoBehaviour
             Vector2 velocity = car.gameObject.GetComponent<Rigidbody2D>().velocity;
             meanCarSpeed += AbsoluteValue(velocity.x) + AbsoluteValue(velocity.y);
         }
-        meanCarSpeed /= cars.Length;
+        meanCarSpeed /= cars.Count;
         meanCarSpeedText.text = defaultCarSpeedString.Replace("%S", meanCarSpeed.ToString());
     }
 }
