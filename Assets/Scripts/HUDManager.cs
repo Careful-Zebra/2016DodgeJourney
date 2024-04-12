@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -15,7 +16,7 @@ public class HUDManager : MonoBehaviour
 
     [SerializeField]
     [Tooltip("The cars on the map")]
-    private HashSet<CarController> cars;
+    private CarController[] cars;
     #endregion
 
     #region Private Variables
@@ -23,17 +24,6 @@ public class HUDManager : MonoBehaviour
     private string meanCarSpeedString;
     private float meanCarSpeed = 0;
     #endregion
-
-    float AbsoluteValue(float num)
-    {
-        if (num >= 0)
-        {
-            return num;
-        } else
-        {
-            return -1 * num;
-        }
-    }
 
     void Awake()
     {
@@ -49,9 +39,9 @@ public class HUDManager : MonoBehaviour
         foreach (CarController car in cars)
         {
             Vector2 velocity = car.gameObject.GetComponent<Rigidbody2D>().velocity;
-            meanCarSpeed += AbsoluteValue(velocity.x) + AbsoluteValue(velocity.y);
+            meanCarSpeed += Math.Abs(velocity.x) + Math.Abs(velocity.y);
         }
-        meanCarSpeed /= cars.Count;
+        meanCarSpeed /= cars.Length;
         meanCarSpeedText.text = defaultCarSpeedString.Replace("%S", meanCarSpeed.ToString());
     }
 }
