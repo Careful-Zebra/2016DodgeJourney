@@ -62115,8 +62115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce062ee7bb162db48b93718dd76c8ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ch: {fileID: 1775677908}
   meanCarSpeedText: {fileID: 1400043841}
-  cars: []
 --- !u!1 &1021743366
 GameObject:
   m_ObjectHideFlags: 0
@@ -75829,11 +75829,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.45866722
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.22012585
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7195850820880817755, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -79084,7 +79084,7 @@ Transform:
   m_GameObject: {fileID: 1302730633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: -0.05, z: 0}
+  m_LocalPosition: {x: -3.82, y: 1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -110465,6 +110465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775677907}
+  - component: {fileID: 1775677908}
   m_Layer: 0
   m_Name: CarHolder
   m_TagString: Untagged
@@ -110489,6 +110490,18 @@ Transform:
   - {fileID: 1478564287}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1775677908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775677906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6801ba11f69044c9ceb7d203ab815d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1775924484
 GameObject:
   m_ObjectHideFlags: 0
