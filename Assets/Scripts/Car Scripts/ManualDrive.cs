@@ -319,22 +319,26 @@ public class ManualDrive : MonoBehaviour {
             justTurned = false;
         }
 
+        rb.velocity = checkAhead(rb.velocity);
+
+    }
+
+    private Vector2 checkAhead(Vector2 tempVelocity) {
         // //RAYCAST TO CHECK ONCOMING TRAFFIC -- SEEMS TO JUST BE BROKEN I HAVE NO FUCKING CLUE WHAT THE FUCK IS WRONG WITH IT
         int layerMask = 1 << 9;
         float dist = 1;
         Vector2 pos = transform.GetChild(0).position;
         RaycastHit2D hit = Physics2D.Raycast(pos, transform.right, dist, layerMask);
         // Debug.DrawRay(pos, transform.right * dist, Color.red, 10.0f);
-        print(hit.ToString());
+        Vector2 velocity = tempVelocity;
         // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
-        if (hit.collider.gameObject.tag == "Car" && hit.collider.gameObject != gameObject)
+        if (hit.collider.gameObject.CompareTag("Car") && hit.collider.gameObject != gameObject)
         {
-            rb.velocity = Vector2.zero;
+            velocity = Vector2.zero;
         }
 
+        return velocity;
     }
-
-
 
     private Vector2 HandleTraffic(Vector2 tempVelocity, Tile curTile)
     {
