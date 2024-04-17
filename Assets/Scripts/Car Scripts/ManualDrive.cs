@@ -112,6 +112,11 @@ public class ManualDrive : MonoBehaviour {
 
     // Update is called once per frame
     private void FixedUpdate() {
+        if (!justTurned) {
+            print("we haven't just turned!");
+        } else {
+            print("we have just turned!");
+        }
         float t = Time.deltaTime;
         Tile curTile = TileCarIsIn();
 
@@ -170,7 +175,7 @@ public class ManualDrive : MonoBehaviour {
             //if the tile we are in is a left turning one
             if (lTurns.Contains(curTile))
             {
-
+                print("Turning!");
 
                 if (!justTurned)
                 {
@@ -229,6 +234,7 @@ public class ManualDrive : MonoBehaviour {
             //if the tile we are in is a right turning one
             } else if (rTurns.Contains(curTile))
             {
+                print("Turning!");
                 if (!justTurned)
                 {
                     if (dir == 0)
