@@ -28,8 +28,16 @@ public class TrafficLightManager : MonoBehaviour
     void Start()
     {
         state[0] = 0;
+        state[1] = 1;
+        state[2] = 0; 
+        state[3] = 1;
         countdown = m_ChangeTime;
-        gameObject.GetComponent<Renderer>().material.color = Color.red;
+        transform.GetChild(0).GetComponent<Renderer>().material.color = Color.red;
+        transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
+        transform.GetChild(2).GetComponent<Renderer>().material.color = Color.red;
+        transform.GetChild(3).GetComponent<Renderer>().material.color = Color.green;
+
+       
     }
 
     void Update()
@@ -37,23 +45,25 @@ public class TrafficLightManager : MonoBehaviour
         countdown = countdown - Time.deltaTime;
         if (countdown < 0)
         {
-            state[0] = (state[0] + 1) % 3;
+            for (int i = 0; i < 4; i++) {
 
-            Renderer sr = gameObject.GetComponent<Renderer>();
+                state[i] = (state[i] + 1) % 3;
 
-            //set colour
-            if (state[0] == 0)
-            {
-                sr.material.color = Color.red;
+                Renderer sr = gameObject.transform.GetChild(i).GetComponent<Renderer>();
+
+                //set colour
+                if (state[i] == 0)
+                {
+                    sr.material.color = Color.red;
+                } else if (state[i] == 1)
+                {
+                    sr.material.color = Color.green;
+                    
+                } else
+                {
+                    sr.material.color = Color.yellow;
+                }
                 countdown = m_ChangeTime;
-            } else if (state[0] == 1)
-            {
-                sr.material.color = Color.green;
-                countdown = m_ChangeTime;
-            } else
-            {
-                sr.material.color = Color.yellow;
-                countdown = m_ChangeTime / 2;
             }
 
             
