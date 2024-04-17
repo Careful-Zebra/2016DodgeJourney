@@ -334,7 +334,7 @@ public class ManualDrive : MonoBehaviour {
         // Debug.DrawRay(pos, transform.right * dist, Color.red, 10.0f);
         Vector2 velocity = tempVelocity;
         // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
-        if (hit.collider.gameObject.CompareTag("Car") && hit.collider.gameObject != gameObject)
+        if (hit.collider != null && hit.collider.gameObject.CompareTag("Car"))
         {
             velocity = Vector2.zero;
         }

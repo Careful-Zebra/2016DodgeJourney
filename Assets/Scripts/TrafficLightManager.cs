@@ -15,8 +15,8 @@ public class TrafficLightManager : MonoBehaviour
 
     #region Private Variables
 
-    //current state of light (0 is red, 1 is green, 2 is amber)
-    private int state;
+    //list of current states of light (0 is red, 1 is green, 2 is amber) [index 0 is N, index 1 is E, index 2 is S, index 3 is W]
+    private int[] state;
 
     //the timer used to change light
     private float countdown;
@@ -27,9 +27,17 @@ public class TrafficLightManager : MonoBehaviour
 
     void Start()
     {
-        state = 0;
+        state[0] = 0;
+        state[1] = 1;
+        state[2] = 0; 
+        state[3] = 1;
         countdown = m_ChangeTime;
-        gameObject.GetComponent<Renderer>().material.color = Color.red;
+        transform.GetChild(0).GetComponent<Renderer>().material.color = Color.red;
+        transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
+        transform.GetChild(2).GetComponent<Renderer>().material.color = Color.red;
+        transform.GetChild(3).GetComponent<Renderer>().material.color = Color.green;
+
+       
     }
 
     void Update()
@@ -37,30 +45,35 @@ public class TrafficLightManager : MonoBehaviour
         countdown = countdown - Time.deltaTime;
         if (countdown < 0)
         {
-            state = (state + 1) % 3;
+            for (int i = 0; i < 4; i++) {
 
-            Renderer sr = gameObject.GetComponent<Renderer>();
+                state[i] = (state[i] + 1) % 3;
 
-            //set colour
-            if (state == 0)
-            {
-                sr.material.color = Color.red;
-            } else if (state == 1)
-            {
-                sr.material.color = Color.green;
-            } else
-            {
-                sr.material.color = Color.yellow;
+                Renderer sr = gameObject.transform.GetChild(i).GetComponent<Renderer>();
+
+                //set colour
+                if (state[i] == 0)
+                {
+                    sr.material.color = Color.red;
+                } else if (state[i] == 1)
+                {
+                    sr.material.color = Color.green;
+                    
+                } else
+                {
+                    sr.material.color = Color.yellow;
+                }
+                countdown = m_ChangeTime;
             }
 
-            countdown = m_ChangeTime;
+            
         }
     }
 
     public int GetState()
     {
         //again, 0 is red, 1 is green, 2 is amber
-        return state;
+        return state[0];
     }
 
     public string Type()
