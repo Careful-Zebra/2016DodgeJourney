@@ -323,8 +323,10 @@ public class ManualDrive : MonoBehaviour {
 
     }
 
+
+    //Use a raycast in order to check if there are cars in front of us, and if so stop
     private Vector2 checkAhead(Vector2 tempVelocity) {
-        // //RAYCAST TO CHECK ONCOMING TRAFFIC -- SEEMS TO JUST BE BROKEN I HAVE NO FUCKING CLUE WHAT THE FUCK IS WRONG WITH IT
+
         int layerMask = 1 << 9;
         float dist = 1;
         Vector2 pos = transform.GetChild(0).position;
