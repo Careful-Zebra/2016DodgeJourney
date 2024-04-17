@@ -321,12 +321,10 @@ public class ManualDrive : MonoBehaviour {
 
         // //RAYCAST TO CHECK ONCOMING TRAFFIC -- SEEMS TO JUST BE BROKEN I HAVE NO FUCKING CLUE WHAT THE FUCK IS WRONG WITH IT
         int layerMask = 1 << 9;
-        Ray checkTraffic = new Ray(transform.position, transform.right);
-        float dist = float.MaxValue;
-        Vector2 pos = transform.position;
-        
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100, layerMask);
-        Debug.DrawRay(transform.position, transform.right * 100, Color.red, 10.0f);
+        float dist = 1;
+        Vector2 pos = transform.GetChild(0).position;
+        RaycastHit2D hit = Physics2D.Raycast(pos, transform.right, dist, layerMask);
+        // Debug.DrawRay(pos, transform.right * dist, Color.red, 10.0f);
         print(hit.ToString());
         // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
         if (hit.collider.gameObject.tag == "Car" && hit.collider.gameObject != gameObject)
