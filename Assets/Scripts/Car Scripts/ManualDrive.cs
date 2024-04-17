@@ -112,11 +112,7 @@ public class ManualDrive : MonoBehaviour {
 
     // Update is called once per frame
     private void FixedUpdate() {
-        if (!justTurned) {
-            print("we haven't just turned!");
-        } else {
-            print("we have just turned!");
-        }
+
         float t = Time.deltaTime;
         Tile curTile = TileCarIsIn();
 
@@ -175,7 +171,6 @@ public class ManualDrive : MonoBehaviour {
             //if the tile we are in is a left turning one
             if (lTurns.Contains(curTile))
             {
-                print("Turning!");
 
                 if (!justTurned)
                 {
@@ -234,7 +229,6 @@ public class ManualDrive : MonoBehaviour {
             //if the tile we are in is a right turning one
             } else if (rTurns.Contains(curTile))
             {
-                print("Turning!");
                 if (!justTurned)
                 {
                     if (dir == 0)
@@ -326,22 +320,24 @@ public class ManualDrive : MonoBehaviour {
         }
 
         // //RAYCAST TO CHECK ONCOMING TRAFFIC -- SEEMS TO JUST BE BROKEN I HAVE NO FUCKING CLUE WHAT THE FUCK IS WRONG WITH IT
-        // int layerMask = 1 << 9;
-        // Ray checkTraffic = new Ray(transform.position, transform.right);
-        // float dist = float.MaxValue;
-        // Vector2 pos = transform.position;
+        int layerMask = 1 << 9;
+        Ray checkTraffic = new Ray(transform.position, transform.right);
+        float dist = float.MaxValue;
+        Vector2 pos = transform.position;
         
-        // RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100);
-        // // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
-        // if (hit.collider.gameObject.tag == "Car" && hit.collider.gameObject != gameObject)
-        // {
-        //     print("yeowch");
-        //     rb.velocity = Vector2.zero;
-        // }
-        // else
-        // {
-        //     print("no hit");
-        // }
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right);
+        Debug.DrawRay(transform.position, transform.right, Color.red, 10.0f);
+        print(hit.ToString());
+        // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
+        if (hit.collider.gameObject.tag == "Car" && hit.collider.gameObject != gameObject)
+        {
+            print("yeowch");
+            rb.velocity = Vector2.zero;
+        }
+        else
+        {
+            print("no hit");
+        }
     }
 
     //oh yeah, it's big collider time
