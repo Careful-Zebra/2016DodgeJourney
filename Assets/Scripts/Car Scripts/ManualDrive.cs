@@ -329,33 +329,11 @@ public class ManualDrive : MonoBehaviour {
         // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
         if (hit.collider.gameObject.tag == "Car" && hit.collider.gameObject != gameObject)
         {
-            print("yeowch");
             rb.velocity = Vector2.zero;
         }
-        else
-        {
-            print("no hit");
-        }
+
     }
 
-    //oh yeah, it's big collider time
-    private void OnTriggerEnter(Collider other)
-    {
-        print("whoa hold up");
-        if (other.gameObject.CompareTag("Car"))
-        {
-            rb.velocity = Vector2.zero;
-        }
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        print("whoa hold up");
-
-        if (other.gameObject.CompareTag("Car") && UnityEngine.Random.Range(0,1) > 0.5)
-        {
-            rb.velocity = Vector2.zero;
-        }
-    }
 
 
     private Vector2 HandleTraffic(Vector2 tempVelocity, Tile curTile)
