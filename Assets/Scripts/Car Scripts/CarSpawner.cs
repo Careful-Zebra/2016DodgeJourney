@@ -12,13 +12,16 @@ public class CarSpawner : MonoBehaviour {
     [SerializeField] private GameObject car;
     [SerializeField] private float spawnCooldown;  // How long building should wait before spawning another car
 
+    private MapHolder mapHolder;  // Script that contains the tiles
     private LevelInfo levelInfo;  // Script that contains level info
 
     private string destinationTag;  // Determines what type of building the car spawned here should go to
     private float spawnTime;  // How much time left before spawning another car is allowed
 
     private void Awake() {
-        levelInfo = GameObject.Find("LevelInfo").GetComponent<LevelInfo>();
+        GameObject mapHolderObject = GameObject.Find("MapHolder");
+        levelInfo = mapHolderObject.GetComponent<LevelInfo>();
+        mapHolder = mapHolderObject.GetComponent<MapHolder>();
 
         if (gameObject.tag == "House") {
             destinationTag = "Office";
@@ -38,8 +41,17 @@ public class CarSpawner : MonoBehaviour {
             return;
         }
         if (levelInfo.ProbabilisticallySpawnCar()) {
-            Instantiate(car, transform.position, Quaternion.identity);
+            GameObject newCar = Instantiate(car, transform.position, Quaternion.identity);
+            //newCar.destinationTile = GetRandomDestinationTile();
             spawnTime = spawnCooldown;
         }
+    }
+
+    private Tile GetRandomDestinationTile() {
+        List<GameObject> destinationList = (levelInfo.buildings)[destinationTag];
+        int randIndex = Random.Range(0, destinationList.Count);
+        Vector3 destPos = destinationList[randIndex].transform.position;
+        Tile destTile = mapHolder.GetTileFromGeneralPos(destPos);
+        return destTile;
     }
 }

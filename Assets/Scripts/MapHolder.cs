@@ -29,6 +29,11 @@ public class MapHolder : MonoBehaviour
         }
     }
 
+    public Tile GetTileFromGeneralPos(Vector3 pos) {
+        Vector2 pos2d = new Vector2((int) Math.Floor(pos.x), (int)Math.Floor(pos.y));
+        return GetTileAtPos(pos2d);
+    }
+
     public Tile GetTileAtPos(Vector2 position)
     {
         if (tiles.TryGetValue(position, out Tile tile))
