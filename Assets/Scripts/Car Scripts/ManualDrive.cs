@@ -39,6 +39,9 @@ public class ManualDrive : MonoBehaviour {
     //whether the car has just rotated or not
     private Boolean justTurned;
     private float actualSpeed;
+
+    //yeah sorry
+    private int stopSignCount = 0;
     #endregion
 
 
@@ -346,6 +349,7 @@ public class ManualDrive : MonoBehaviour {
     {
         if (!curTile.HasTrafficObj())
         {
+            stopSignCount = 0;
             return tempVelocity;
         } else
         {
@@ -359,8 +363,12 @@ public class ManualDrive : MonoBehaviour {
             } else if (curTile.TrafficObj() == "Stop Sign") {
                 if (!curTile.TrafficGO().GetComponent<StopSignManager>().CanIGo(gameObject)) {
                     return Vector2.zero;
+                } else if (stopSignCount < 100) {
+                    stopSignCount++;
+                    return Vector2.zero;
                 }
-            }
+                
+            } 
         }
         return tempVelocity;
     }

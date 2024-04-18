@@ -28,6 +28,10 @@ public class Tile : MonoBehaviour
     [Tooltip("The traffic light prefab")]
     private GameObject trafficLightPrefab;
 
+    [SerializeField]
+    [Tooltip("The stop sign prefab")]
+    private GameObject stopSignPrefab;
+
     //DEBUGGING PURPOSES ONLY
 /*    [SerializeField]
     private GameObject trafficObj;
@@ -43,8 +47,14 @@ public class Tile : MonoBehaviour
     //whether or not this tile has a traffic obj
     private Boolean hasTrafficObj;
 
-    //whether or not it is valid to place a traffic light on ANY instance of a tile
+    //whether it is valid to place a traffic light on ANY instance of a tile
     private static bool canPlaceTrafficLight = false;
+
+    //whether it is valid to place a stop sign on ANY instance of a tile
+    private static bool canPlaceStopSign = false;
+
+    //the string of the traffic obj
+    private string trafficObjStr;
     #endregion
 
     private void Awake()
@@ -87,6 +97,12 @@ public class Tile : MonoBehaviour
         {
             hasTrafficObj = true;
             trafficObj = Instantiate(trafficLightPrefab, gameObject.transform, false);
+            trafficObjStr = "Traffic Light";
+        } else if (canPlaceStopSign && driveable && !hasTrafficObj) {
+            hasTrafficObj = true;
+            trafficObj = Instantiate(stopSignPrefab, gameObject.transform, false);
+            trafficObjStr = "Stop Sign";
+
         }
 
     }
@@ -116,8 +132,7 @@ public class Tile : MonoBehaviour
 
     public string TrafficObj()
     {
-        //will need to be updated to accommodate different traffic objects
-        return trafficObj.GetComponent<TrafficLightManager>().Type();
+        return trafficObjStr;
     }
 
     //Above only gives string type, this gives the obj
@@ -131,6 +146,16 @@ public class Tile : MonoBehaviour
     public static void PressTrafficLightButton()
     {
         canPlaceTrafficLight = !canPlaceTrafficLight;
+        if (canPlaceStopSign) {
+            canPlaceStopSign = false;
+        }
+    }
+
+    public static void PressStopSignButton() {
+        canPlaceStopSign = !canPlaceStopSign;
+        if (canPlaceTrafficLight) {
+            canPlaceTrafficLight = false;
+        }
     }
     #endregion
 
