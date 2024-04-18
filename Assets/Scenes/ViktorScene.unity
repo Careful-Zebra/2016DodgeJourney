@@ -8345,7 +8345,7 @@ GameObject:
   - component: {fileID: 166775924}
   - component: {fileID: 166775923}
   m_Layer: 0
-  m_Name: Tile 22 5
+  m_Name: Tile 22 5 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8480,7 +8480,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 166775924}
   highlight: {fileID: 601644527}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &167289518
@@ -10325,7 +10325,7 @@ GameObject:
   - component: {fileID: 187155205}
   - component: {fileID: 187155204}
   m_Layer: 0
-  m_Name: Tile 8 16
+  m_Name: Tile 8 16 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10460,7 +10460,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 187155205}
   highlight: {fileID: 463780367}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &188806700
@@ -19724,7 +19724,7 @@ GameObject:
   - component: {fileID: 363916859}
   - component: {fileID: 363916858}
   m_Layer: 0
-  m_Name: Tile 7 13
+  m_Name: Tile 7 13 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19859,7 +19859,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 363916859}
   highlight: {fileID: 1063214561}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &364421468
@@ -19875,7 +19875,7 @@ GameObject:
   - component: {fileID: 364421471}
   - component: {fileID: 364421470}
   m_Layer: 0
-  m_Name: Tile 4 10
+  m_Name: Tile 4 10 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20010,7 +20010,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 364421471}
   highlight: {fileID: 1301843229}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &371225774
@@ -24390,7 +24390,7 @@ GameObject:
   - component: {fileID: 425942359}
   - component: {fileID: 425942358}
   m_Layer: 0
-  m_Name: Tile 7 8
+  m_Name: Tile 7 8 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24525,7 +24525,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 425942359}
   highlight: {fileID: 1009896484}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &429180992
@@ -33097,6 +33097,10 @@ PrefabInstance:
     - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_Name
       value: Car 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47303,7 +47307,7 @@ GameObject:
   - component: {fileID: 807908436}
   - component: {fileID: 807908435}
   m_Layer: 0
-  m_Name: Tile 21 3
+  m_Name: Tile 21 3 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47438,7 +47442,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 807908436}
   highlight: {fileID: 1772809642}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &808676432
@@ -61184,7 +61188,7 @@ GameObject:
   - component: {fileID: 997439381}
   - component: {fileID: 997439380}
   m_Layer: 0
-  m_Name: Tile 20 13
+  m_Name: Tile 20 13 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61319,7 +61323,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 997439381}
   highlight: {fileID: 393138932}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &998733462
@@ -62493,7 +62497,7 @@ GameObject:
   - component: {fileID: 1021649397}
   - component: {fileID: 1021649396}
   m_Layer: 0
-  m_Name: Tile 25 8
+  m_Name: Tile 25 8 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62628,7 +62632,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1021649397}
   highlight: {fileID: 1316767999}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1023037831
@@ -63265,7 +63269,7 @@ GameObject:
   - component: {fileID: 1032567255}
   - component: {fileID: 1032567254}
   m_Layer: 0
-  m_Name: Tile 4 8
+  m_Name: Tile 4 8 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63400,7 +63404,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1032567255}
   highlight: {fileID: 1895898406}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1032789228
@@ -64855,6 +64859,10 @@ PrefabInstance:
     - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_Name
       value: Car 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76977,7 +76985,7 @@ GameObject:
   - component: {fileID: 1213681387}
   - component: {fileID: 1213681386}
   m_Layer: 0
-  m_Name: Tile 27 13
+  m_Name: Tile 27 13 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77112,7 +77120,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1213681387}
   highlight: {fileID: 1981405444}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1216326803
@@ -78054,6 +78062,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e722fe39fba244f949be36d7243581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locations:
+  - {fileID: 807908437}
+  - {fileID: 166775925}
+  - {fileID: 1021649398}
+  - {fileID: 1785341492}
+  - {fileID: 1213681388}
+  - {fileID: 1032567256}
+  - {fileID: 364421472}
+  - {fileID: 1349152353}
+  - {fileID: 425942360}
+  - {fileID: 363916860}
+  - {fileID: 1535679152}
+  - {fileID: 1747583590}
+  - {fileID: 187155206}
+  - {fileID: 1478557318}
+  - {fileID: 1804916796}
+  - {fileID: 1866065558}
+  - {fileID: 1392161701}
+  - {fileID: 997439382}
+  - {fileID: 2132147220}
+  - {fileID: 2053629611}
+  directions: 0300000000000000030000000000000003000000010000000100000000000000020000000100000001000000010000000200000001000000000000000200000000000000020000000000000000000000
+  car: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
 --- !u!1 &1226003111
 GameObject:
   m_ObjectHideFlags: 0
@@ -85705,7 +85736,7 @@ GameObject:
   - component: {fileID: 1349152352}
   - component: {fileID: 1349152351}
   m_Layer: 0
-  m_Name: Tile 6 6
+  m_Name: Tile 6 6 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85840,7 +85871,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1349152352}
   highlight: {fileID: 1289837372}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1349721671
@@ -88508,7 +88539,7 @@ GameObject:
   - component: {fileID: 1392161700}
   - component: {fileID: 1392161699}
   m_Layer: 0
-  m_Name: Tile 18 4
+  m_Name: Tile 18 4 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88643,7 +88674,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1392161700}
   highlight: {fileID: 1055952937}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1395262188
@@ -94500,7 +94531,7 @@ GameObject:
   - component: {fileID: 1478557317}
   - component: {fileID: 1478557316}
   m_Layer: 0
-  m_Name: Tile 11 3
+  m_Name: Tile 11 3 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94635,7 +94666,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1478557317}
   highlight: {fileID: 1712108404}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1479211819
@@ -98529,7 +98560,7 @@ GameObject:
   - component: {fileID: 1535679151}
   - component: {fileID: 1535679150}
   m_Layer: 0
-  m_Name: Tile 8 5
+  m_Name: Tile 8 5 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98664,7 +98695,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1535679151}
   highlight: {fileID: 1669971373}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1545613852
@@ -111989,7 +112020,7 @@ GameObject:
   - component: {fileID: 1747583589}
   - component: {fileID: 1747583588}
   m_Layer: 0
-  m_Name: Tile 8 9
+  m_Name: Tile 8 9 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112124,7 +112155,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1747583589}
   highlight: {fileID: 1667987055}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1001 &1748488715
@@ -112202,6 +112233,10 @@ PrefabInstance:
     - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_Name
       value: Car 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -114940,7 +114975,7 @@ GameObject:
   - component: {fileID: 1785341491}
   - component: {fileID: 1785341490}
   m_Layer: 0
-  m_Name: Tile 26 10
+  m_Name: Tile 26 10 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115075,7 +115110,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1785341491}
   highlight: {fileID: 557474422}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1793304708
@@ -116199,7 +116234,7 @@ GameObject:
   - component: {fileID: 1804916795}
   - component: {fileID: 1804916794}
   m_Layer: 0
-  m_Name: Tile 13 11
+  m_Name: Tile 13 11 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116334,7 +116369,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1804916795}
   highlight: {fileID: 784144354}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1809813176
@@ -117982,7 +118017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -119310,7 +119345,7 @@ GameObject:
   - component: {fileID: 1866065557}
   - component: {fileID: 1866065556}
   m_Layer: 0
-  m_Name: Tile 15 16
+  m_Name: Tile 15 16 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119445,7 +119480,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 1866065557}
   highlight: {fileID: 2107282524}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &1868077782
@@ -126653,6 +126688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -130700,7 +130739,7 @@ GameObject:
   - component: {fileID: 2053629610}
   - component: {fileID: 2053629609}
   m_Layer: 0
-  m_Name: Tile 22 14
+  m_Name: Tile 22 14 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130835,7 +130874,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 2053629610}
   highlight: {fileID: 781614852}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &2058228232
@@ -136424,7 +136463,7 @@ GameObject:
   - component: {fileID: 2132147219}
   - component: {fileID: 2132147218}
   m_Layer: 0
-  m_Name: Tile 22 11
+  m_Name: Tile 22 11 special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136559,7 +136598,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 2132147219}
   highlight: {fileID: 1136983825}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &2135768507
@@ -136895,7 +136934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -141,6 +141,21 @@ public class Tile : MonoBehaviour
         return trafficObj;
     }
 
+    public void spawnCar(GameObject car, int dir, Tile destination, MapHolder holder) {
+        Quaternion rot;
+        if (dir == 0) {
+            rot = Quaternion.Euler(0, 0, 90);
+        } else if (dir == 1) {
+            rot = Quaternion.Euler(0, 0, 0);
+        } else if (dir == 2) {
+            rot = Quaternion.Euler(0, 0, 270);
+        } else {
+            rot = Quaternion.Euler(0, 0, 180);
+        }
+        GameObject vroom = Instantiate(car, transform.position, rot);
+        vroom.GetComponent<ManualDrive>().setDest(destination, holder, dir);
+    }
+
     #region UI Button Relevant Methods
 
     public static void PressTrafficLightButton()

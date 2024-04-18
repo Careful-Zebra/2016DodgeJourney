@@ -13,9 +13,7 @@ public class ManualDrive : MonoBehaviour {
     [SerializeField]
     private float speed;
 
-    [SerializeField]
-    [Tooltip("The map object that holds all the tiles")]
-    private MapHolder mapHolder;
+    
 
     [SerializeField]
     [Tooltip("The left turns the car needs to make")]
@@ -25,13 +23,11 @@ public class ManualDrive : MonoBehaviour {
     [Tooltip("The right turns the car needs to make")]
     private ArrayList rTurns;
 
-    [SerializeField]
-    [Tooltip("The starting direction of the car 0 north, 1 east, etc")]
-    private int dir;
 
-    [SerializeField]
-    [Tooltip("The destination tile")]
-    private Tile destination;
+    
+
+
+    
 
 
 
@@ -39,9 +35,15 @@ public class ManualDrive : MonoBehaviour {
     //whether the car has just rotated or not
     private Boolean justTurned;
     private float actualSpeed;
+    private MapHolder mapHolder;
+
+    private Tile destination;
+    private int dir;
 
     //yeah sorry
     private int stopSignCount = 0;
+
+    private int killCount = 0;
     #endregion
 
 
@@ -57,8 +59,18 @@ public class ManualDrive : MonoBehaviour {
 
         actualSpeed = speed;
 
+
+
+        
+        
+    }
+
+    public void setDest(Tile dest, MapHolder holder, int direction) {
         lTurns = new ArrayList();
         rTurns = new ArrayList();
+        destination = dest;
+        mapHolder = holder;
+        dir = direction;
 
         //setup the left and right turns
         Tile[] path = aStar(destination);
@@ -110,7 +122,6 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
-        
     }
 
     // Update is called once per frame
@@ -118,6 +129,10 @@ public class ManualDrive : MonoBehaviour {
 
         float t = Time.deltaTime;
         Tile curTile = TileCarIsIn();
+
+        if (curTile == destination) {
+            Destroy(gameObject);
+        }
 
 
 
@@ -318,8 +333,26 @@ public class ManualDrive : MonoBehaviour {
             lTurns = rTurns;
             rTurns = temp;
             rb.velocity = transform.right * speed;
+            // if (dir == 0 ) {
+            //     transform.Translate(new Vector3(0.6f, 0, 0));
+            // } else if (dir == 1) {
+            //     transform.Translate(new Vector3(0, -0.6f, 0));
+            // } else if (dir == 2) {
+            //     transform.Translate(new Vector3(-0.6f, 0, 0));
+            // } else {
+            //     transform.Translate(new Vector3(0, 0.6f, 0));
+            // }
             dir = (dir + 2) % 4;
             justTurned = false;
+        }
+
+        if (rb.velocity == Vector2.zero) {
+            killCount++;
+            if (killCount == 100) {
+                Destroy(gameObject);
+            }
+        } else {
+            killCount = 0;
         }
 
         
