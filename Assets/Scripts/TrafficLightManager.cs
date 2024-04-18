@@ -27,6 +27,7 @@ public class TrafficLightManager : MonoBehaviour
 
     void Start()
     {
+        state = new int[4];
         state[0] = 0;
         state[1] = 1;
         state[2] = 0; 
@@ -42,7 +43,8 @@ public class TrafficLightManager : MonoBehaviour
 
     void Update()
     {
-        countdown = countdown - Time.deltaTime;
+        print(state.ToString());
+        countdown -= Time.deltaTime;
         if (countdown < 0)
         {
             for (int i = 0; i < 4; i++) {
@@ -70,10 +72,10 @@ public class TrafficLightManager : MonoBehaviour
         }
     }
 
-    public int GetState()
+    public int GetState(int dir)
     {
         //again, 0 is red, 1 is green, 2 is amber
-        return state[0];
+        return state[dir];
     }
 
     public string Type()

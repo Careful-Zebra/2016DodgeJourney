@@ -302,7 +302,7 @@ public class ManualDrive : MonoBehaviour {
             Vector2 tempVelocity = transform.right * actualSpeed;
 
             rb.velocity = HandleTraffic(tempVelocity, curTile);
-
+            rb.velocity = checkAhead(rb.velocity);
             
 
         }
@@ -319,7 +319,7 @@ public class ManualDrive : MonoBehaviour {
             justTurned = false;
         }
 
-        rb.velocity = checkAhead(rb.velocity);
+        
 
     }
 
@@ -352,8 +352,12 @@ public class ManualDrive : MonoBehaviour {
             if (curTile.TrafficObj() == "Traffic Light")
             {
                 /*print(curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState());*/
-                if (curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState() == 0)
+                if (curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState(dir) == 0)
                 {
+                    return Vector2.zero;
+                }
+            } else if (curTile.TrafficObj() == "Stop Sign") {
+                if (!curTile.TrafficGO().GetComponent<StopSignManager>().CanIGo(gameObject)) {
                     return Vector2.zero;
                 }
             }
@@ -377,6 +381,12 @@ public class ManualDrive : MonoBehaviour {
     }
 
 
+    #endregion
+
+    #region Public Methods
+    public Tile curTile() {
+        return TileCarIsIn();
+    }
     #endregion
 
     #region A*
