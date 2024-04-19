@@ -396,7 +396,7 @@ public class ManualDrive : MonoBehaviour {
             } else if (curTile.TrafficObj() == "Stop Sign") {
                 if (!curTile.TrafficGO().GetComponent<StopSignManager>().CanIGo(gameObject)) {
                     return Vector2.zero;
-                } else if (stopSignCount < 100) {
+                } else if (stopSignCount < 25) {
                     stopSignCount++;
                     return Vector2.zero;
                 }
