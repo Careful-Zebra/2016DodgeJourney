@@ -5,6 +5,7 @@ using System.Linq;
 using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Apple;
 using UnityEngine.UIElements;
 
 
@@ -15,7 +16,11 @@ public class ManualDrive : MonoBehaviour {
 
     [SerializeField]
     [Tooltip("The map object that holds all the tiles")]
-    private MapHolder mapHolder;
+    public MapHolder mapHolder;
+    public MapHolder MapHolder {
+        get { return mapHolder; }
+        set { mapHolder = value; }
+    }
 
     [SerializeField]
     [Tooltip("The left turns the car needs to make")]
@@ -27,11 +32,19 @@ public class ManualDrive : MonoBehaviour {
 
     [SerializeField]
     [Tooltip("The starting direction of the car 0 north, 1 east, etc")]
-    private int dir;
+    public int dir;
+    public int direction {
+        get { return dir; }
+        set { dir = value; }
+    }
 
     [SerializeField]
     [Tooltip("The destination tile")]
-    private Tile destination;
+    public Tile destination;
+    public Tile Destination {
+        get { return destination; }
+        set { destination = value; }
+    }
 
 
 
@@ -51,6 +64,9 @@ public class ManualDrive : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        Debug.Log("called from manual drive's start() " + dir);
+        Debug.Log("called from manual drive's start() " + mapHolder);
+        Debug.Log("called from manual drive's start() " + destination);
 
         actualSpeed = speed;
 
@@ -369,8 +385,8 @@ public class ManualDrive : MonoBehaviour {
 
         int xPos = (int) Math.Floor(transform.position.x);
         int yPos = (int) Math.Floor(transform.position.y);
-/*        print(xPos);
-        print(yPos);*/
+        /*        print(xPos);
+                print(yPos);*/
         Tile currentTile = mapHolder.GetTileAtPos(new Vector2(xPos, yPos));
         /*print(currentTile);*/
         return currentTile;
