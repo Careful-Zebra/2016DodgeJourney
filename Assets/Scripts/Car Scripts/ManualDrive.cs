@@ -52,6 +52,15 @@ public class ManualDrive : MonoBehaviour {
     //whether the car has just rotated or not
     private Boolean justTurned;
     private float actualSpeed;
+    private MapHolder mapHolder;
+
+    private Tile destination;
+    private int dir;
+
+    //yeah sorry
+    private int stopSignCount = 0;
+
+    private int killCount = 0;
     #endregion
 
 
@@ -70,8 +79,18 @@ public class ManualDrive : MonoBehaviour {
 
         actualSpeed = speed;
 
+
+
+        
+        
+    }
+
+    public void setDest(Tile dest, MapHolder holder, int direction) {
         lTurns = new ArrayList();
         rTurns = new ArrayList();
+        destination = dest;
+        mapHolder = holder;
+        dir = direction;
 
         //setup the left and right turns
         Tile[] path = aStar(destination);
@@ -123,7 +142,6 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
-        
     }
 
     // Update is called once per frame
@@ -131,6 +149,10 @@ public class ManualDrive : MonoBehaviour {
 
         float t = Time.deltaTime;
         Tile curTile = TileCarIsIn();
+
+        if (curTile == destination) {
+            Destroy(gameObject);
+        }
 
 
 
@@ -318,7 +340,7 @@ public class ManualDrive : MonoBehaviour {
             Vector2 tempVelocity = transform.right * actualSpeed;
 
             rb.velocity = HandleTraffic(tempVelocity, curTile);
-
+            rb.velocity = checkAhead(rb.velocity);
             
 
         }
@@ -331,11 +353,29 @@ public class ManualDrive : MonoBehaviour {
             lTurns = rTurns;
             rTurns = temp;
             rb.velocity = transform.right * speed;
+            // if (dir == 0 ) {
+            //     transform.Translate(new Vector3(0.6f, 0, 0));
+            // } else if (dir == 1) {
+            //     transform.Translate(new Vector3(0, -0.6f, 0));
+            // } else if (dir == 2) {
+            //     transform.Translate(new Vector3(-0.6f, 0, 0));
+            // } else {
+            //     transform.Translate(new Vector3(0, 0.6f, 0));
+            // }
             dir = (dir + 2) % 4;
             justTurned = false;
         }
 
-        rb.velocity = checkAhead(rb.velocity);
+        if (rb.velocity == Vector2.zero) {
+            killCount++;
+            if (killCount == 100) {
+                Destroy(gameObject);
+            }
+        } else {
+            killCount = 0;
+        }
+
+        
 
     }
 
@@ -350,7 +390,7 @@ public class ManualDrive : MonoBehaviour {
         // Debug.DrawRay(pos, transform.right * dist, Color.red, 10.0f);
         Vector2 velocity = tempVelocity;
         // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
-        if (hit.collider.gameObject.CompareTag("Car") && hit.collider.gameObject != gameObject)
+        if (hit.collider != null && hit.collider.gameObject.CompareTag("Car"))
         {
             velocity = Vector2.zero;
         }
@@ -362,17 +402,26 @@ public class ManualDrive : MonoBehaviour {
     {
         if (!curTile.HasTrafficObj())
         {
+            stopSignCount = 0;
             return tempVelocity;
         } else
         {
             if (curTile.TrafficObj() == "Traffic Light")
             {
                 /*print(curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState());*/
-                if (curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState() == 0)
+                if (curTile.TrafficGO().GetComponent<TrafficLightManager>().GetState(dir) == 0)
                 {
                     return Vector2.zero;
                 }
-            }
+            } else if (curTile.TrafficObj() == "Stop Sign") {
+                if (!curTile.TrafficGO().GetComponent<StopSignManager>().CanIGo(gameObject)) {
+                    return Vector2.zero;
+                } else if (stopSignCount < 25) {
+                    stopSignCount++;
+                    return Vector2.zero;
+                }
+                
+            } 
         }
         return tempVelocity;
     }
@@ -393,6 +442,12 @@ public class ManualDrive : MonoBehaviour {
     }
 
 
+    #endregion
+
+    #region Public Methods
+    public Tile curTile() {
+        return TileCarIsIn();
+    }
     #endregion
 
     #region A*
