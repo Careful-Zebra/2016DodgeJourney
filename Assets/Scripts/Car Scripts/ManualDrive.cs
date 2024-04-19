@@ -52,6 +52,10 @@ public class ManualDrive : MonoBehaviour {
     //whether the car has just rotated or not
     private Boolean justTurned;
     private float actualSpeed;
+    private MapHolder mapHolder;
+
+    private Tile destination;
+    private int dir;
 
     //yeah sorry
     private int stopSignCount = 0;
@@ -75,18 +79,8 @@ public class ManualDrive : MonoBehaviour {
 
         actualSpeed = speed;
 
-
-
-        
-        
-    }
-
-    public void setDest(Tile dest, MapHolder holder, int direction) {
         lTurns = new ArrayList();
         rTurns = new ArrayList();
-        destination = dest;
-        mapHolder = holder;
-        dir = direction;
 
         //setup the left and right turns
         Tile[] path = aStar(destination);
@@ -138,6 +132,18 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
+
+
+
+        
+        
+    }
+
+
+    public void setDest(Tile dest, MapHolder holder, int direction) {
+
+
+        
     }
 
     // Update is called once per frame
