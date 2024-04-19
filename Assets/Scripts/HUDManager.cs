@@ -18,21 +18,31 @@ public class HUDManager : MonoBehaviour
     [Tooltip("The text object that displays the average speed of all cars")]
     private TextMeshProUGUI meanCarSpeedText;
 
+    [SerializeField]
+    [Tooltip("The text object that displays the current score")]
+    private TextMeshProUGUI scoreText;
+
     //[SerializeField]
     //[Tooltip("The cars on the map")]
     //private CarController[] cars;
     #endregion
 
     #region Private Variables
-    private string defaultCarSpeedString;
     private string meanCarSpeedString;
     private float meanCarSpeed = 0;
+
+    private float score;
+    private string scoreString;
     #endregion
 
     void Awake()
     {
-        defaultCarSpeedString = meanCarSpeedText.text;
-        meanCarSpeedText.text = defaultCarSpeedString.Replace("%S", "0");
+        meanCarSpeedString = meanCarSpeedText.text;
+        meanCarSpeedText.text = meanCarSpeedString.Replace("%S", "0");
+
+        score = 0;
+        scoreString = scoreText.text;
+        scoreText.text = scoreString.Replace("%S", "0");
     }
 
     void FixedUpdate()
@@ -43,7 +53,13 @@ public class HUDManager : MonoBehaviour
             Vector2 velocity = car.gameObject.GetComponent<Rigidbody2D>().velocity;
             meanCarSpeed += Math.Abs(velocity.x) + Math.Abs(velocity.y);
         }
+
+        //updating average car velocity
         meanCarSpeed /= ch.setOfCars.Count;
-        meanCarSpeedText.text = defaultCarSpeedString.Replace("%S", Math.Round(meanCarSpeed, 2).ToString());
+        meanCarSpeedText.text = meanCarSpeedString.Replace("%S", Math.Round(meanCarSpeed, 2).ToString());
+
+        //updating score
+        score += Time.deltaTime;
+        scoreText.text = scoreString.Replace("%S", Math.Round(score, 2).ToString());
     }
 }
