@@ -20,14 +20,12 @@ public class StopSignManager : MonoBehaviour
     void Update() {
         if (cars.Count != 0) {
             GameObject frontCar = (GameObject) cars.Peek();
-            print("frontCar.GetComponent<ManualDrive>().curTile()");
-            print(frontCar.GetComponent<ManualDrive>().curTile());
-            print("transform.parent");
-            print(transform.parent);
-            if (frontCar.GetComponent<ManualDrive>().curTile().transform != transform.parent) {
+            if (frontCar == null) { 
                 cars.Dequeue();
             }
-            print("removing");
+            else if (frontCar.GetComponent<ManualDrive>().curTile().transform != transform.parent) {
+                cars.Dequeue();
+            } 
         }
     }
 
@@ -36,7 +34,6 @@ public class StopSignManager : MonoBehaviour
     public Boolean CanIGo(GameObject asker) {
         // if (cars.Count > 0) { Debug.Log(cars.Peek()); } else { Debug.Log("Empty!"); }
         if (!cars.Contains(asker)) {
-            print("adding");
             cars.Enqueue(asker);
             return false;
         } else {

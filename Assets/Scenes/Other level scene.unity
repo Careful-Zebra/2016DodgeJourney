@@ -24124,7 +24124,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24150,7 +24150,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 374194724}
   highlight: {fileID: 1134438609}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &374593255
@@ -50878,7 +50878,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6313726, g: 0.10980392, b: 0.10980392, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -50904,7 +50904,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 820434558}
   highlight: {fileID: 1668288195}
-  driveable: 1
+  driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &820529863
