@@ -24,6 +24,12 @@ public class CarSpawner : MonoBehaviour {
         mapHolder = mapHolderObject.GetComponent<MapHolder>();
         levelInfo = mapHolderObject.GetComponent<LevelInfo>();
 
+        Debug.Log(gameObject.tag);
+        List<GameObject> building_list;
+        bool exists = levelInfo.buildings.TryGetValue(gameObject.tag, out building_list);
+        if (!exists) {
+            levelInfo.buildings[gameObject.tag] = new List<GameObject>();
+        }
         levelInfo.buildings[gameObject.tag].Add(gameObject);  // Add self to list of building type
 
         if (gameObject.tag == "House") {

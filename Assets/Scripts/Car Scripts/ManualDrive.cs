@@ -14,9 +14,10 @@ public class ManualDrive : MonoBehaviour {
     [SerializeField]
     private float speed;
 
-    [SerializeField]
-    [Tooltip("The map object that holds all the tiles")]
-    public MapHolder mapHolder;
+    // [SerializeField]
+    // [Tooltip("The map object that holds all the tiles")]
+    // public MapHolder mapHolder;
+    private MapHolder mapHolder;
     public MapHolder MapHolder {
         get { return mapHolder; }
         set { mapHolder = value; }
@@ -30,17 +31,19 @@ public class ManualDrive : MonoBehaviour {
     [Tooltip("The right turns the car needs to make")]
     private ArrayList rTurns;
 
-    [SerializeField]
-    [Tooltip("The starting direction of the car 0 north, 1 east, etc")]
-    public int dir;
+    // [SerializeField]
+    // [Tooltip("The starting direction of the car 0 north, 1 east, etc")]
+    // public int dir;
+    private int dir;
     public int direction {
         get { return dir; }
         set { dir = value; }
     }
 
-    [SerializeField]
-    [Tooltip("The destination tile")]
-    public Tile destination;
+    // [SerializeField]
+    // [Tooltip("The destination tile")]
+    // public Tile destination;
+    private Tile destination;
     public Tile Destination {
         get { return destination; }
         set { destination = value; }
@@ -52,10 +55,7 @@ public class ManualDrive : MonoBehaviour {
     //whether the car has just rotated or not
     private Boolean justTurned;
     private float actualSpeed;
-    private MapHolder mapHolder;
 
-    private Tile destination;
-    private int dir;
 
     //yeah sorry
     private int stopSignCount = 0;
@@ -73,13 +73,31 @@ public class ManualDrive : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        // mapHolder = GameObject.Find("MapHolder").GetComponent<MapHolder>();
+
         Debug.Log("called from manual drive's start() " + dir);
         Debug.Log("called from manual drive's start() " + mapHolder);
         Debug.Log("called from manual drive's start() " + destination);
 
         actualSpeed = speed;
 
-        lTurns = new ArrayList();
+
+
+
+
+        
+        
+    }
+
+
+    public void setDest(Tile dest, MapHolder holder, int direction) {
+
+        destination = dest;
+
+        mapHolder = holder;
+        dir = direction;
+
+                lTurns = new ArrayList();
         rTurns = new ArrayList();
 
         //setup the left and right turns
@@ -132,17 +150,6 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
-
-
-
-        
-        
-    }
-
-
-    public void setDest(Tile dest, MapHolder holder, int direction) {
-
-
         
     }
 
@@ -627,6 +634,7 @@ public class ManualDrive : MonoBehaviour {
     {
         float curX = current.transform.position.x;
         float curY = current.transform.position.y;
+
         float destX = destination.transform.position.x;
         float destY = destination.transform.position.y;
         float diffX = Math.Abs(curX - destX);

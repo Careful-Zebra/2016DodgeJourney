@@ -61,21 +61,28 @@ public class MapHolder : MonoBehaviour {
 
     #endregion
     
-    //void Update() {
-    //    int spawnChance = UnityEngine.Random.Range(0, 10);
-    //    if (spawnChance ==7) {
-    //        int count = locations.Count;
-    //        int spawnIndex = UnityEngine.Random.Range(0, count);
-    //        int endIndex = spawnIndex;
-    //        while (endIndex == spawnIndex) {
-    //            endIndex = UnityEngine.Random.Range(0, count);
-    //        }
-    //        Tile spawnTile = locations[spawnIndex];
-    //        int dir = directions[spawnIndex];
-    //        Tile destination = locations[endIndex];
-    //        spawnTile.spawnCar(car, dir, destination, this);
+    void Update() {
+       int spawnChance = UnityEngine.Random.Range(0, 20);
+       if (spawnChance ==7) {
+           int count = locations.Count;
+           int spawnIndex = UnityEngine.Random.Range(0, count);
+           int endIndex = spawnIndex;
+           while (endIndex == spawnIndex) {
+               endIndex = UnityEngine.Random.Range(0, count);
+           }
+           Tile spawnTile = locations[spawnIndex];
+           int dir = directions[spawnIndex];
+           Tile destination = locations[endIndex];
+           spawnTile.spawnCar(car, dir, destination, this);
+       }
+
+       childTiles = GetComponentsInChildren<Tile>();
+    //    foreach (Tile child in childTiles) {
+    //     if (child.Driveable()) {
+    //         child.GetComponent<SpriteRenderer>().material.color = Color.black;
+    //     }
     //    }
-    //}
+    }
 
 
 }
