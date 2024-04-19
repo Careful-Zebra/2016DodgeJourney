@@ -14948,7 +14948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &215828697
 Transform:
   m_ObjectHideFlags: 0
@@ -15552,6 +15552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e722fe39fba244f949be36d7243581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locations: []
+  directions: 
+  car: {fileID: 0}
 --- !u!114 &215828699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87915,6 +87918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
+    - target: {fileID: 3683501747172633303, guid: 2a1e9300b6b6e4e4b9db1a646ebf5645, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88465,6 +88472,10 @@ PrefabInstance:
     - target: {fileID: 2480091501768233050, guid: f92af2447457a5643aa829ada319c9cd, type: 3}
       propertyPath: m_Name
       value: Office
+      objectReference: {fileID: 0}
+    - target: {fileID: 2480091501768233050, guid: f92af2447457a5643aa829ada319c9cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3097953665823104706, guid: f92af2447457a5643aa829ada319c9cd, type: 3}
       propertyPath: m_LocalPosition.x

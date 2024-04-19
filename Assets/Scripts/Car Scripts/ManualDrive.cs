@@ -52,10 +52,6 @@ public class ManualDrive : MonoBehaviour {
     //whether the car has just rotated or not
     private Boolean justTurned;
     private float actualSpeed;
-    private MapHolder mapHolder;
-
-    private Tile destination;
-    private int dir;
 
     //yeah sorry
     private int stopSignCount = 0;

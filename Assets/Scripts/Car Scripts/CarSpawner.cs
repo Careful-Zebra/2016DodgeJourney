@@ -46,7 +46,7 @@ public class CarSpawner : MonoBehaviour {
             return;
         }
         if (levelInfo.ProbabilisticallySpawnCar()) {
-            GameObject newCar = Instantiate(car, transform.position, Quaternion.identity);
+            GameObject newCar = Instantiate(car, transform.position, transform.rotation);
             ManualDrive newCarManualDrive = newCar.GetComponent<ManualDrive>();
             // Initialize newCar's parameters.
             newCarManualDrive.Destination = GetRandomDestinationTile();
