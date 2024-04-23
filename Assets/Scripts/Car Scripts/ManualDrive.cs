@@ -32,6 +32,10 @@ public class ManualDrive : MonoBehaviour {
     private ArrayList rTurns;
 
     // [SerializeField]
+    // [Tooltip("The object that holds references to the CarController scripts of all cars")]
+    // private CarHolder carHolder;
+
+    // [SerializeField]
     // [Tooltip("The starting direction of the car 0 north, 1 east, etc")]
     // public int dir;
     private int dir;
@@ -160,6 +164,7 @@ public class ManualDrive : MonoBehaviour {
         Tile curTile = TileCarIsIn();
 
         if (curTile == destination) {
+            //carHolder.RemoveCarFromSet(gameObject.GetComponent<CarController>());
             Destroy(gameObject);
         }
 
@@ -378,6 +383,7 @@ public class ManualDrive : MonoBehaviour {
         if (rb.velocity == Vector2.zero) {
             killCount++;
             if (killCount == 100) {
+                //carHolder.RemoveCarFromSet(gameObject.GetComponent<CarController>());
                 Destroy(gameObject);
             }
         } else {

@@ -8,11 +8,15 @@ public class CarController : MonoBehaviour {
     #region Serialized Vars
     [SerializeField]
     float fadeOutTime;
+
+    // [SerializeField]
+    // [Tooltip("The object that holds references to the CarController scripts of all cars")]
+    // private CarHolder carHolder;
     #endregion
 
     #region Object Vars
     private bool isDead = false;
-    private bool isStopped = false;
+    //private bool isStopped = false;
     #endregion
 
     #region Cached Vars
@@ -21,10 +25,20 @@ public class CarController : MonoBehaviour {
     private Material mat;
     #endregion
 
+    #region Not sure what to call this, private variables? Currently it just has the CarHolder - ella
+
+    private CarHolder carHolder;
+
+    #endregion
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         mat = GetComponent<Material>();
+        carHolder = GameObject.Find("CarHolderObject").GetComponent<CarHolder>();
+
+        //adds this carcontroller script to the set of all carcontroller scripts used for score and hud
+        carHolder.AddCarToSet(this);
     }
 
     // Start is called before the first frame update
@@ -55,10 +69,21 @@ public class CarController : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    public void Stop()
+    // public void Stop()
+    // {
+    //     isStopped = true;
+    // }
+
+    #region Enable/Disable
+
+    void OnDestroy()
     {
-        isStopped = true;
+
+        //removes this carcontroller script from the set of carcontroller scripts used for score and hud
+        carHolder.RemoveCarFromSet(this);
     }
+
+    #endregion
 
 
 }

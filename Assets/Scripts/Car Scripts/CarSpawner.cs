@@ -12,6 +12,10 @@ public class CarSpawner : MonoBehaviour {
     [SerializeField] private GameObject car;
     [SerializeField] private float spawnCooldown;  // How long building should wait before spawning another car
 
+    // [SerializeField]
+    // [Tooltip("The object that holds references to the CarController scripts of all cars")]
+    // private CarHolder carHolder;
+
     private MapHolder mapHolder;  // Script that contains the tiles
     private LevelInfo levelInfo;  // Script that contains level info
 
@@ -58,6 +62,7 @@ public class CarSpawner : MonoBehaviour {
             newCarManualDrive.Destination = GetRandomDestinationTile();
             newCarManualDrive.MapHolder = mapHolder;
             newCarManualDrive.direction = facingDirection;
+            //carHolder.AddCarToSet(car.GetComponent<CarController>());
             Debug.Log("Initializing new car");
 
             spawnTime = spawnCooldown;

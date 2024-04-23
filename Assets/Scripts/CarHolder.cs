@@ -10,7 +10,7 @@ public class CarHolder : MonoBehaviour
 
     #region Methods
 
-    void AddChildrenToList()
+    void AddChildrenToSet()
     {
         CarController[] childCars = GetComponentsInChildren<CarController>();
         foreach (CarController childCar in childCars)
@@ -18,13 +18,25 @@ public class CarHolder : MonoBehaviour
             setOfCars.Add(childCar);
         }
     }
+
+
+    public void AddCarToSet(CarController carc)
+    {
+        setOfCars.Add(carc);
+    }
+
+    public void RemoveCarFromSet(CarController carc)
+    {
+        setOfCars.Remove(carc);
+    }
+
     #endregion
 
     #region Initialization (with a z)
 
     void Awake()
     {
-        AddChildrenToList();
+        AddChildrenToSet();
     }
 
     #endregion
