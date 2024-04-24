@@ -12687,6 +12687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ch: {fileID: 0}
   meanCarSpeedText: {fileID: 1090426218}
+  scoreText: {fileID: 0}
 --- !u!114 &202175577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14472,7 +14473,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.74509805, g: 0.12156863, b: 0.12156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14498,7 +14499,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 224534780}
   highlight: {fileID: 1991192557}
-  driveable: 1
+  driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &225494769
@@ -55846,7 +55847,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6313726, g: 0.10980392, b: 0.10980392, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55872,7 +55873,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 870558851}
   highlight: {fileID: 109753751}
-  driveable: 1
+  driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &870842776
@@ -133493,7 +133494,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7433963, g: 0.12202916, b: 0.12202916, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133519,7 +133520,7 @@ MonoBehaviour:
   offsetColor: {r: 0.6301887, g: 0.1082022, b: 0.1082022, a: 1}
   rend: {fileID: 2109060201}
   highlight: {fileID: 179298709}
-  driveable: 0
+  driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
   stopSignPrefab: {fileID: 2417326865387036759, guid: bf0357d216aa21349a779f1dfcb4e0cd, type: 3}
 --- !u!1 &2109975026

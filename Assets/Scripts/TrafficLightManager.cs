@@ -43,7 +43,6 @@ public class TrafficLightManager : MonoBehaviour
 
     void Update()
     {
-        print(state.ToString());
         countdown -= Time.deltaTime;
         if (countdown < 0)
         {
