@@ -6,6 +6,7 @@ using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Apple;
+using UnityEngine.Assertions;
 using UnityEngine.UIElements;
 
 
@@ -83,25 +84,11 @@ public class ManualDrive : MonoBehaviour {
         Debug.Log("called from manual drive's start() " + mapHolder);
         Debug.Log("called from manual drive's start() " + destination);
 
+
         actualSpeed = speed;
 
 
-
-
-
-        
-        
-    }
-
-
-    public void setDest(Tile dest, MapHolder holder, int direction) {
-
-        destination = dest;
-
-        mapHolder = holder;
-        dir = direction;
-
-                lTurns = new ArrayList();
+        lTurns = new ArrayList();
         rTurns = new ArrayList();
 
         //setup the left and right turns
@@ -154,8 +141,75 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
+
+
+        
         
     }
+
+
+    // public void setDest(Tile dest, MapHolder holder, int direction) {
+
+    //     destination = dest;
+
+    //     mapHolder = holder;
+    //     dir = direction;
+
+    //             lTurns = new ArrayList();
+    //     rTurns = new ArrayList();
+
+    //     //setup the left and right turns
+    //     Tile[] path = aStar(destination);
+
+    //     int tempDir = dir;
+    //     for (int i = 0; i < path.Length - 1; i++)
+    //     {
+    //         if (path[i].transform.position.x < path[i + 1].transform.position.x)
+    //         {
+    //             if (tempDir == 0)
+    //             {
+    //                 rTurns.Add(path[i]);
+    //             } else if (tempDir == 2)
+    //             {
+    //                 lTurns.Add(path[i]);
+    //             }
+    //             tempDir = 1;
+    //         } else if (path[i].transform.position.x > path[i + 1].transform.position.x)
+    //         {
+    //             if (tempDir == 0)
+    //             {
+    //                 lTurns.Add(path[i]);
+    //             }
+    //             else if (tempDir == 2)
+    //             {
+    //                 rTurns.Add(path[i]);
+    //             }
+    //             tempDir = 3;
+    //         } else if (path[i].transform.position.y > path[i + 1].transform.position.y)
+    //         {
+    //             if (tempDir == 1)
+    //             {
+    //                 rTurns.Add(path[i]);
+    //             } else if (tempDir == 3)
+    //             {
+    //                 lTurns.Add(path[i]);
+    //             }
+    //             tempDir = 2;
+    //         } else
+    //         {
+    //             if (tempDir == 1)
+    //             {
+    //                 lTurns.Add(path[i]);
+    //             }
+    //             else if (tempDir == 3)
+    //             {
+    //                 rTurns.Add(path[i]);
+    //             }
+    //             tempDir = 0;
+    //         }
+    //     }
+        
+    // }
 
     // Update is called once per frame
     private void FixedUpdate() {
@@ -452,6 +506,7 @@ public class ManualDrive : MonoBehaviour {
         /*        print(xPos);
                 print(yPos);*/
         Tile currentTile = mapHolder.GetTileAtPos(new Vector2(xPos, yPos));
+        Assert.IsTrue(currentTile != null);
         /*print(currentTile);*/
         return currentTile;
     }
@@ -465,7 +520,7 @@ public class ManualDrive : MonoBehaviour {
     }
     #endregion
 
-    #region A*
+    #region A* (No touch section)
     private Tile[] aStar(Tile destination)
     {
         

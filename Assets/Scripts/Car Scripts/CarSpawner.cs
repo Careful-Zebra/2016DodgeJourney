@@ -23,17 +23,18 @@ public class CarSpawner : MonoBehaviour {
     private float spawnTime;  // How much time left before spawning another car is allowed
     private int facingDirection;  // Direction building is facing. 0 North, 1 East, 2 South, 3 West
 
-    private void Awake() {
+    private void Start() {
         GameObject mapHolderObject = GameObject.Find("MapHolder");
         mapHolder = mapHolderObject.GetComponent<MapHolder>();
         levelInfo = mapHolderObject.GetComponent<LevelInfo>();
 
         Debug.Log(gameObject.tag);
-        List<GameObject> building_list;
-        bool exists = levelInfo.buildings.TryGetValue(gameObject.tag, out building_list);
-        if (!exists) {
-            levelInfo.buildings[gameObject.tag] = new List<GameObject>();
-        }
+        // List<GameObject> building_list;
+        // // check if the dictionary of buildings has a list of homes/offices, depending on whether the object this script is attached to is a house or office
+        // bool exists = levelInfo.buildings.TryGetValue(gameObject.tag, out building_list);
+        // if (!exists) {
+        //     levelInfo.buildings[gameObject.tag] = new List<GameObject>();
+        // }
         levelInfo.buildings[gameObject.tag].Add(gameObject);  // Add self to list of building type
 
         if (gameObject.tag == "House") {
