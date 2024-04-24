@@ -220,6 +220,8 @@ public class ManualDrive : MonoBehaviour {
         if (curTile == destination) {
             //carHolder.RemoveCarFromSet(gameObject.GetComponent<CarController>());
             Destroy(gameObject);
+
+            SoundManager.instance.CarDestArriveSFX();
         }
 
 

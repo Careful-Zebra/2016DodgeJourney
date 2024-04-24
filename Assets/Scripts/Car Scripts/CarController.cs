@@ -49,6 +49,9 @@ public class CarController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
         Debug.Log("collsion detected");
         if (isDead) return; // Prevent Re-collisions
+
+        SoundManager.instance.CarCrashSFX();
+
         Destroy(GetComponent<ManualDrive>()); // Stops all movements
         gameObject.layer = LayerMask.NameToLayer("TrafficObjects");
         rb.velocity = Vector3.zero;
