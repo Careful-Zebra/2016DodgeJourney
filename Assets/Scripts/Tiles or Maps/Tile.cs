@@ -98,21 +98,27 @@ public class Tile : MonoBehaviour
             hasTrafficObj = true;
             trafficObj = Instantiate(trafficLightPrefab, gameObject.transform, false);
             trafficObjStr = "Traffic Light";
-        } else if (canPlaceStopSign && driveable && !hasTrafficObj) {
+
+            SoundManager.instance.PlaceTrafficObjectSFX();
+        }
+        else if (canPlaceStopSign && driveable && !hasTrafficObj) {
             hasTrafficObj = true;
             trafficObj = Instantiate(stopSignPrefab, gameObject.transform, false);
             trafficObjStr = "Stop Sign";
 
+            SoundManager.instance.PlaceTrafficObjectSFX();
         }
 
     }
 
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && hasTrafficObj)
         {
             hasTrafficObj = false;
             Destroy(trafficObj);
+
+            SoundManager.instance.RemoveTrafficObjectSFX();
         }
     }
 
