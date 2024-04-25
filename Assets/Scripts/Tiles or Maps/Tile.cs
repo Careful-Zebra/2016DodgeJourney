@@ -59,10 +59,10 @@ public class Tile : MonoBehaviour
 
     private void Awake()
     {
-        /*if (driveable)
-        {
-            GetComponent<Renderer>().material.color = new Color(31f, 171f, 190f);
-        }*/
+        // if (driveable)
+        // {
+        //     GetComponent<Renderer>().material.color = Color.black;
+        // }
         highlight.SetActive(false);
     }
 

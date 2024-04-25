@@ -90,9 +90,7 @@ public class ManualDrive : MonoBehaviour {
 
         actualSpeed = speed;
 
-        lTurns = new ArrayList();
-        rTurns = new ArrayList();
-        //ModifiedSetDest(Destination, mapHolder, direction);
+        ModifiedSetDest();
     }
 
 
@@ -159,12 +157,10 @@ public class ManualDrive : MonoBehaviour {
         
     // }
 
-    private void ModifiedSetDest(Tile dest, MapHolder holder, int direction)
+    private void ModifiedSetDest()
     {
-        destination = dest;
 
-        mapHolder = holder;
-        dir = direction;
+
 
         lTurns = new ArrayList();
         rTurns = new ArrayList();
@@ -219,6 +215,7 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
+        print("finished setdest");
     }
 
     // Update is called once per frame
