@@ -22,6 +22,10 @@ public class HUDManager : MonoBehaviour
     [Tooltip("The text object that displays the current score")]
     private TextMeshProUGUI scoreText;
 
+    [SerializeField]
+    [Tooltip("Displays the number of collisions")]
+    private TextMeshProUGUI collisionText;
+
     //[SerializeField]
     //[Tooltip("The cars on the map")]
     //private CarController[] cars;
@@ -33,6 +37,9 @@ public class HUDManager : MonoBehaviour
 
     public float score;
     private string scoreString;
+
+    private int numCollisions;
+    private string numCollisionsString;
     #endregion
 
     void Awake()
@@ -44,6 +51,10 @@ public class HUDManager : MonoBehaviour
         score = 0;
         scoreString = scoreText.text;
         scoreText.text = scoreString.Replace("%S", "0");
+
+        numCollisions = 0;
+        numCollisionsString = collisionText.text;
+        collisionText.text = numCollisionsString.Replace("%S", "0");
     }
 
     void FixedUpdate()
@@ -63,4 +74,14 @@ public class HUDManager : MonoBehaviour
         score += Time.deltaTime;
         scoreText.text = scoreString.Replace("%S", Math.Round(score, 2).ToString());
     }
+
+    #region Public Methods
+
+    public void AddCollision()
+    {
+        numCollisions += 1;
+        collisionText.text = numCollisionsString.Replace("%S", numCollisions.ToString());
+    }
+
+    #endregion
 }

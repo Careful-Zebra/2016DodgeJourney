@@ -20,6 +20,10 @@ public class MapHolder : MonoBehaviour {
     [SerializeField]
     [Tooltip("Car prefab")]
     private GameObject car;
+
+    [SerializeField]
+    [Tooltip("stores references to necessary prefabs")]
+    private PrefabManager pfabber;
     #endregion
 
     private Dictionary<Vector2, Tile> tiles;
@@ -34,7 +38,7 @@ public class MapHolder : MonoBehaviour {
         childTiles = GetComponentsInChildren<Tile>();
         tiles = new Dictionary<Vector2, Tile>();
 
-        foreach (Tile child in childTiles) {
+        foreach (Tile child in childTiles) { // runtime processing/updating for each tile
             if (!child.Driveable())
             {
                 Color desiredColor = new Color();
@@ -48,10 +52,8 @@ public class MapHolder : MonoBehaviour {
                 child.gameObject.GetComponent<SpriteRenderer>().color = desiredColor2;
             }
 
-            // if (child.gameObject.transform.childCount > 0) // makes a tile driveable if it has children objects
-            // {
-            //     child.MakeDriveable(); // currently empty tiles do not have children (not true)
-            // }
+            child.SetStopSignPrefab(pfabber.GiveMeAStopSignPrefab()); 
+            // one liner that accesses 
         
 
             tiles[new Vector2((int) Math.Floor(child.transform.position.x), (int) Math.Floor(child.transform.position.y))] = child;

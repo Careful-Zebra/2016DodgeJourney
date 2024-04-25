@@ -58,7 +58,11 @@ public class CarController : MonoBehaviour {
         gameObject.layer = LayerMask.NameToLayer("TrafficObjects");
         rb.velocity = Vector3.zero;
         isDead = true;
+
+        // subtract 5 from the score and add 1 to the collisions
         hman.score -= 5;
+        hman.AddCollision();
+
         StartCoroutine(Die());
     }
 

@@ -187,7 +187,7 @@ public class Tile : MonoBehaviour
         //rend.color = Color.white;
     }
 
-    public void SetStopSign(GameObject stopSign)
+    public void SetStopSignPrefab(GameObject stopSign)
     {
         stopSignPrefab = stopSign;
     }
