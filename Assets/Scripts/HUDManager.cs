@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour
@@ -71,8 +72,18 @@ public class HUDManager : MonoBehaviour
         meanCarSpeedText.text = meanCarSpeedString.Replace("%S", Math.Round(meanCarSpeed, 2).ToString());
 
         //updating score
-        score += Time.deltaTime;
+        score +=  2 * Time.deltaTime;
         scoreText.text = scoreString.Replace("%S", Math.Round(score, 2).ToString());
+
+        // win/loss conditions:
+        if (score > 100)
+        {
+            SceneManager.LoadScene("You Win");
+        } else if (score < -100)
+        {
+            SceneManager.LoadScene("Game Over");
+        }
+
     }
 
     #region Public Methods

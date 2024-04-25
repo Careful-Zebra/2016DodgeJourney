@@ -9,7 +9,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("ViktorScene");
+        SceneManager.LoadScene("CollabScene");
     }
 
     public void BackToMainMenu()
