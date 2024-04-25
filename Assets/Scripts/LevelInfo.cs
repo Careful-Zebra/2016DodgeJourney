@@ -13,7 +13,7 @@ public class LevelInfo : MonoBehaviour {
         buildings["Office"] = new List<GameObject>();
     }
 
-    /* Called by buildings. Returns true if car should be spawned. Function is in this scirpt bc prabability curve is different for each level. */
+    /* Called by buildings. Returns true if car should be spawned. Function is in this script bc prabability curve is different for each level. */
     public bool ProbabilisticallySpawnCar() {
         return true;
     }

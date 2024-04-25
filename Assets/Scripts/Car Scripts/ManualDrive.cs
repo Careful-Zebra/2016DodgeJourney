@@ -66,12 +66,15 @@ public class ManualDrive : MonoBehaviour {
     private int stopSignCount = 0;
 
     private int killCount = 0;
+
+    private HUDManager hman;
     #endregion
 
 
     private Rigidbody2D rb;
 
     private void Awake() {
+        hman = GameObject.Find("Canvas (HUD)").GetComponent<HUDManager>();
         rb = GetComponent<Rigidbody2D>();
         justTurned = false;
     }
@@ -80,71 +83,16 @@ public class ManualDrive : MonoBehaviour {
     void Start() {
         // mapHolder = GameObject.Find("MapHolder").GetComponent<MapHolder>();
 
-        Debug.Log("called from manual drive's start() " + dir);
-        Debug.Log("called from manual drive's start() " + mapHolder);
-        Debug.Log("called from manual drive's start() " + destination);
+        //Debug.Log("called from manual drive's start() " + dir);
+        //Debug.Log("called from manual drive's start() " + mapHolder);
+        //Debug.Log("called from manual drive's start() " + destination);
 
 
         actualSpeed = speed;
 
-
         lTurns = new ArrayList();
         rTurns = new ArrayList();
-
-        //setup the left and right turns
-        Tile[] path = aStar(destination);
-
-        int tempDir = dir;
-        for (int i = 0; i < path.Length - 1; i++)
-        {
-            if (path[i].transform.position.x < path[i + 1].transform.position.x)
-            {
-                if (tempDir == 0)
-                {
-                    rTurns.Add(path[i]);
-                } else if (tempDir == 2)
-                {
-                    lTurns.Add(path[i]);
-                }
-                tempDir = 1;
-            } else if (path[i].transform.position.x > path[i + 1].transform.position.x)
-            {
-                if (tempDir == 0)
-                {
-                    lTurns.Add(path[i]);
-                }
-                else if (tempDir == 2)
-                {
-                    rTurns.Add(path[i]);
-                }
-                tempDir = 3;
-            } else if (path[i].transform.position.y > path[i + 1].transform.position.y)
-            {
-                if (tempDir == 1)
-                {
-                    rTurns.Add(path[i]);
-                } else if (tempDir == 3)
-                {
-                    lTurns.Add(path[i]);
-                }
-                tempDir = 2;
-            } else
-            {
-                if (tempDir == 1)
-                {
-                    lTurns.Add(path[i]);
-                }
-                else if (tempDir == 3)
-                {
-                    rTurns.Add(path[i]);
-                }
-                tempDir = 0;
-            }
-        }
-
-
-        
-        
+        //ModifiedSetDest(Destination, mapHolder, direction);
     }
 
 
@@ -211,6 +159,68 @@ public class ManualDrive : MonoBehaviour {
         
     // }
 
+    private void ModifiedSetDest(Tile dest, MapHolder holder, int direction)
+    {
+        destination = dest;
+
+        mapHolder = holder;
+        dir = direction;
+
+        lTurns = new ArrayList();
+        rTurns = new ArrayList();
+
+        //setup the left and right turns
+        Tile[] path = aStar(destination); // an array of tiles from start to destination: we then use it to determine the turns
+
+        int tempDir = dir;  //reference direction: direction at that point in the path
+        for (int i = 0; i < path.Length - 1; i++)
+        {
+            if (path[i].transform.position.x < path[i + 1].transform.position.x) // if the tile we're moving to is to the right of the tile we're on
+            {
+                if (tempDir == 0) // if the car is oriented north -> it's in the left lane
+                {
+                    rTurns.Add(path[i]); // we make a right turn (viktor this does not make sense to me)
+                } else if (tempDir == 2) // if the car is oriented south/down -> it's in the right lane (from a birds eye view) //zvezda reference
+                {
+                    lTurns.Add(path[i]); // we make a left turn (from the car's perspective, it turns to the right from a bird's eye view) // zvezda reference
+                }
+                tempDir = 1; // the car is now facing east/right
+            } else if (path[i].transform.position.x > path[i + 1].transform.position.x) // if the tile we're moving to is to the left of the tile we're on
+            {
+                if (tempDir == 0) // if the car is facing north -> is in the left lane
+                {
+                    lTurns.Add(path[i]); // make a left turn to go left
+                }
+                else if (tempDir == 2) // if the car is facing south -> is in the right lane
+                {
+                    rTurns.Add(path[i]); // make a right turn (from the car's perspective) to go left 
+                }
+                tempDir = 3; // the car is now facing west/left
+            } else if (path[i].transform.position.y > path[i + 1].transform.position.y) // if next tile is below current tile
+            {
+                if (tempDir == 1) // car facing east/right -> in the left/top lane
+                {
+                    rTurns.Add(path[i]); // make a right turn
+                } else if (tempDir == 3) // car facing west/left -> in the right/bottom lane
+                {
+                    lTurns.Add(path[i]); // make a left turn
+                }
+                tempDir = 2; // now the car is facing south
+            } else
+            {
+                if (tempDir == 1)
+                {
+                    lTurns.Add(path[i]);
+                }
+                else if (tempDir == 3)
+                {
+                    rTurns.Add(path[i]);
+                }
+                tempDir = 0;
+            }
+        }
+    }
+
     // Update is called once per frame
     private void FixedUpdate() {
 
@@ -235,18 +245,18 @@ public class ManualDrive : MonoBehaviour {
 
                 */
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            //Rotate the current game object's transform, using fixedDeltaTime for consistency across machines.
-            transform.Rotate(transform.forward, 100.0f * t, Space.World);
-        }
+        // if (Input.GetKey(KeyCode.A))
+        // {
+        //     //Rotate the current game object's transform, using fixedDeltaTime for consistency across machines.
+        //     transform.Rotate(transform.forward, 100.0f * t, Space.World);
+        // }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            //Rotate the current game object's transform, using fixedDeltaTime for consistency across machines.
-            transform.Rotate(transform.forward, -100.0f * t, Space.World);
+        // if (Input.GetKey(KeyCode.D))
+        // {
+        //     //Rotate the current game object's transform, using fixedDeltaTime for consistency across machines.
+        //     transform.Rotate(transform.forward, -100.0f * t, Space.World);
 
-        }
+        // }
         if (curTile.Driveable())
         {
             /*print("Current transform.rotation: " + transform.rotation.eulerAngles.ToString());*/
@@ -394,6 +404,8 @@ public class ManualDrive : MonoBehaviour {
                 rb.velocity = transform.right * speed;
                 justTurned = false;
                 dir = (dir + 2) % 4;
+
+                hman.score += 5;
             }
             else
             {

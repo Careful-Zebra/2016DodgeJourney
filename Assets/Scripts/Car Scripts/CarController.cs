@@ -23,6 +23,7 @@ public class CarController : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Material mat;
+    private HUDManager hman;
     #endregion
 
     #region Not sure what to call this, private variables? Currently it just has the CarHolder - ella
@@ -32,6 +33,7 @@ public class CarController : MonoBehaviour {
     #endregion
 
     private void Awake() {
+        hman = GameObject.Find("Canvas (HUD)").GetComponent<HUDManager>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         mat = GetComponent<Material>();
@@ -53,6 +55,7 @@ public class CarController : MonoBehaviour {
         gameObject.layer = LayerMask.NameToLayer("TrafficObjects");
         rb.velocity = Vector3.zero;
         isDead = true;
+        hman.score -= 5;
         StartCoroutine(Die());
     }
 
@@ -81,6 +84,7 @@ public class CarController : MonoBehaviour {
 
         //removes this carcontroller script from the set of carcontroller scripts used for score and hud
         carHolder.RemoveCarFromSet(this);
+        
     }
 
     #endregion

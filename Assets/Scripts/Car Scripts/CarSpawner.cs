@@ -23,10 +23,11 @@ public class CarSpawner : MonoBehaviour {
     private float spawnTime;  // How much time left before spawning another car is allowed
     private int facingDirection;  // Direction building is facing. 0 North, 1 East, 2 South, 3 West
 
-    private void Start() {
+    private void Start() { // this seemingly needs to be start rather than OnEnable, as levelinfo needs to populate the buildings dictionary with the two keys
         GameObject mapHolderObject = GameObject.Find("MapHolder");
         mapHolder = mapHolderObject.GetComponent<MapHolder>();
         levelInfo = mapHolderObject.GetComponent<LevelInfo>();
+        spawnTime += Random.Range(0f, spawnCooldown);
 
         Debug.Log(gameObject.tag);
         // List<GameObject> building_list;

@@ -29,14 +29,15 @@ public class HUDManager : MonoBehaviour
 
     #region Private Variables
     private string meanCarSpeedString;
-    private float meanCarSpeed = 0;
+    private float meanCarSpeed;
 
-    private float score;
+    public float score;
     private string scoreString;
     #endregion
 
     void Awake()
     {
+        meanCarSpeed = 0;
         meanCarSpeedString = meanCarSpeedText.text;
         meanCarSpeedText.text = meanCarSpeedString.Replace("%S", "0");
 
