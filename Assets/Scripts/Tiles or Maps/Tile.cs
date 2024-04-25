@@ -81,7 +81,7 @@ public class Tile : MonoBehaviour
 
     #region Mouse Methods
 
-    void OnMouseEnter()
+    void OnMouseEnter() // got the idea for the highlighting and general tile generation from a youtube video
     {
         highlight.SetActive(true);
     }
@@ -184,7 +184,12 @@ public class Tile : MonoBehaviour
     public void MakeDriveable()
     {
         driveable = true;
-        rend.color = Color.white;
+        //rend.color = Color.white;
+    }
+
+    public void SetStopSign(GameObject stopSign)
+    {
+        stopSignPrefab = stopSign;
     }
     #endregion
 }

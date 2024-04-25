@@ -160,8 +160,6 @@ public class ManualDrive : MonoBehaviour {
     private void ModifiedSetDest()
     {
 
-
-
         lTurns = new ArrayList();
         rTurns = new ArrayList();
 

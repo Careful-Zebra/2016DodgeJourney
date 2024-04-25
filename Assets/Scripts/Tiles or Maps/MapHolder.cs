@@ -35,11 +35,25 @@ public class MapHolder : MonoBehaviour {
         tiles = new Dictionary<Vector2, Tile>();
 
         foreach (Tile child in childTiles) {
-            /*print((int) child.transform.position.x);
-            print((int) child.transform.position.y);*/
-/*            Color childSpriteColor = child.GetComponent<SpriteRenderer>().color;
-*//*            childSpriteColor.a = 0.5f;*//*
-            child.GetComponent<SpriteRenderer>().color = childSpriteColor;*/
+            if (!child.Driveable())
+            {
+                Color desiredColor = new Color();
+                desiredColor.r = 123;
+                desiredColor.g = 123;
+                desiredColor.b = 123;
+                desiredColor.a = 1f;
+
+                Color desiredColor2 = Color.yellow;
+                desiredColor2.a = 1f;
+                child.gameObject.GetComponent<SpriteRenderer>().color = desiredColor2;
+            }
+
+            // if (child.gameObject.transform.childCount > 0) // makes a tile driveable if it has children objects
+            // {
+            //     child.MakeDriveable(); // currently empty tiles do not have children (not true)
+            // }
+        
+
             tiles[new Vector2((int) Math.Floor(child.transform.position.x), (int) Math.Floor(child.transform.position.y))] = child;
         }
     }
