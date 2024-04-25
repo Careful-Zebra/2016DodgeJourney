@@ -67,7 +67,7 @@ public class TrafficLightManager : MonoBehaviour
                 countdown = m_ChangeTime;
             }
 
-            
+            SoundManager.instance.TrafficLightColorChangeSFX();
         }
     }
 

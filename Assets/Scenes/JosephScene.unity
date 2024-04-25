@@ -357,6 +357,7 @@ MonoBehaviour:
   highlight: {fileID: 1358345700}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &5800110
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +760,7 @@ MonoBehaviour:
   highlight: {fileID: 1112839721}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &15106388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1079,7 @@ MonoBehaviour:
   highlight: {fileID: 774555879}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &17345528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,6 +1314,7 @@ MonoBehaviour:
   highlight: {fileID: 540184114}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &18888253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1549,7 @@ MonoBehaviour:
   highlight: {fileID: 1956549971}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &21808565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,6 +1700,7 @@ MonoBehaviour:
   highlight: {fileID: 1266714156}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &32067189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,6 +2019,7 @@ MonoBehaviour:
   highlight: {fileID: 2055539569}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &34993897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,6 +2170,7 @@ MonoBehaviour:
   highlight: {fileID: 1752374331}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &35777612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,6 +2405,7 @@ MonoBehaviour:
   highlight: {fileID: 103442918}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &42935398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,6 +2556,7 @@ MonoBehaviour:
   highlight: {fileID: 11854616}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &44057070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,6 +2707,7 @@ MonoBehaviour:
   highlight: {fileID: 1521594930}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &44287940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,6 +2942,7 @@ MonoBehaviour:
   highlight: {fileID: 102857259}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &45276477
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,6 +3177,7 @@ MonoBehaviour:
   highlight: {fileID: 2125883572}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &49247160
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,6 +3328,7 @@ MonoBehaviour:
   highlight: {fileID: 658944089}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &49988314
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,6 +3563,7 @@ MonoBehaviour:
   highlight: {fileID: 15106388}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &56099694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,6 +3714,7 @@ MonoBehaviour:
   highlight: {fileID: 5800110}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &56119075
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,6 +3865,7 @@ MonoBehaviour:
   highlight: {fileID: 604865188}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &56539878
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,6 +4016,7 @@ MonoBehaviour:
   highlight: {fileID: 880166869}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &58514334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,6 +4167,7 @@ MonoBehaviour:
   highlight: {fileID: 2089370820}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &61333743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,6 +4318,7 @@ MonoBehaviour:
   highlight: {fileID: 940086201}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &66438637
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,6 +4637,7 @@ MonoBehaviour:
   highlight: {fileID: 1167156213}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &76065232
 GameObject:
   m_ObjectHideFlags: 0
@@ -4935,6 +4956,7 @@ MonoBehaviour:
   highlight: {fileID: 1989332186}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &81925576
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,6 +5107,7 @@ MonoBehaviour:
   highlight: {fileID: 1069256673}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &83591704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,6 +5510,7 @@ MonoBehaviour:
   highlight: {fileID: 770667356}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &88397950
 GameObject:
   m_ObjectHideFlags: 0
@@ -5721,6 +5745,7 @@ MonoBehaviour:
   highlight: {fileID: 731304688}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &89977178
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,6 +5980,7 @@ MonoBehaviour:
   highlight: {fileID: 1636398334}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &90158167
 GameObject:
   m_ObjectHideFlags: 0
@@ -6105,6 +6131,7 @@ MonoBehaviour:
   highlight: {fileID: 499069533}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &90253562
 GameObject:
   m_ObjectHideFlags: 0
@@ -6226,6 +6253,7 @@ MonoBehaviour:
   highlight: {fileID: 1789884086}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!4 &94695706
 Transform:
   m_ObjectHideFlags: 0
@@ -6489,6 +6517,7 @@ MonoBehaviour:
   highlight: {fileID: 840567969}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &96236758
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,6 +6752,7 @@ MonoBehaviour:
   highlight: {fileID: 117489279}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &98336861
 GameObject:
   m_ObjectHideFlags: 0
@@ -6873,6 +6903,7 @@ MonoBehaviour:
   highlight: {fileID: 1083572152}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &100487493
 GameObject:
   m_ObjectHideFlags: 0
@@ -7443,6 +7474,7 @@ MonoBehaviour:
   highlight: {fileID: 873756578}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &104368174
 GameObject:
   m_ObjectHideFlags: 0
@@ -7677,6 +7709,7 @@ MonoBehaviour:
   highlight: {fileID: 88397950}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &105473539
 GameObject:
   m_ObjectHideFlags: 0
@@ -7911,6 +7944,7 @@ MonoBehaviour:
   highlight: {fileID: 163499809}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &108929938
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,6 +8179,7 @@ MonoBehaviour:
   highlight: {fileID: 485730231}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &109118235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8463,6 +8498,7 @@ MonoBehaviour:
   highlight: {fileID: 363024778}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &117489279
 GameObject:
   m_ObjectHideFlags: 0
@@ -8865,6 +8901,7 @@ MonoBehaviour:
   highlight: {fileID: 1421376903}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &124972427
 GameObject:
   m_ObjectHideFlags: 0
@@ -9015,6 +9052,7 @@ MonoBehaviour:
   highlight: {fileID: 1681450333}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &130050508
 GameObject:
   m_ObjectHideFlags: 0
@@ -9165,6 +9203,7 @@ MonoBehaviour:
   highlight: {fileID: 1267526796}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &136041230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9315,6 +9354,7 @@ MonoBehaviour:
   highlight: {fileID: 669062912}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &136541756
 GameObject:
   m_ObjectHideFlags: 0
@@ -9549,6 +9589,7 @@ MonoBehaviour:
   highlight: {fileID: 778017289}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &138228848
 GameObject:
   m_ObjectHideFlags: 0
@@ -9783,6 +9824,7 @@ MonoBehaviour:
   highlight: {fileID: 463715632}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &139660932
 GameObject:
   m_ObjectHideFlags: 0
@@ -10185,6 +10227,7 @@ MonoBehaviour:
   highlight: {fileID: 1116659546}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &143985048
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,6 +10462,7 @@ MonoBehaviour:
   highlight: {fileID: 1366791303}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &145650994
 GameObject:
   m_ObjectHideFlags: 0
@@ -10569,6 +10613,7 @@ MonoBehaviour:
   highlight: {fileID: 1036618186}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &148023660
 GameObject:
   m_ObjectHideFlags: 0
@@ -10719,6 +10764,7 @@ MonoBehaviour:
   highlight: {fileID: 794175184}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &148813594
 GameObject:
   m_ObjectHideFlags: 0
@@ -10869,6 +10915,7 @@ MonoBehaviour:
   highlight: {fileID: 366667012}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &148876875
 GameObject:
   m_ObjectHideFlags: 0
@@ -11019,6 +11066,7 @@ MonoBehaviour:
   highlight: {fileID: 1594560295}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &154649609
 GameObject:
   m_ObjectHideFlags: 0
@@ -11253,6 +11301,7 @@ MonoBehaviour:
   highlight: {fileID: 1913543778}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &159603757
 GameObject:
   m_ObjectHideFlags: 0
@@ -11403,6 +11452,7 @@ MonoBehaviour:
   highlight: {fileID: 507373059}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &163499809
 GameObject:
   m_ObjectHideFlags: 0
@@ -11721,6 +11771,7 @@ MonoBehaviour:
   highlight: {fileID: 618627109}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &165442864
 GameObject:
   m_ObjectHideFlags: 0
@@ -11871,6 +11922,7 @@ MonoBehaviour:
   highlight: {fileID: 933021406}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &166497711
 GameObject:
   m_ObjectHideFlags: 0
@@ -12021,6 +12073,7 @@ MonoBehaviour:
   highlight: {fileID: 1888220664}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &167053917
 GameObject:
   m_ObjectHideFlags: 0
@@ -12171,6 +12224,7 @@ MonoBehaviour:
   highlight: {fileID: 1918513219}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &168417231
 GameObject:
   m_ObjectHideFlags: 0
@@ -12405,6 +12459,7 @@ MonoBehaviour:
   highlight: {fileID: 666681347}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &175012445
 GameObject:
   m_ObjectHideFlags: 0
@@ -12639,6 +12694,7 @@ MonoBehaviour:
   highlight: {fileID: 952234191}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &180046567
 GameObject:
   m_ObjectHideFlags: 0
@@ -12873,6 +12929,7 @@ MonoBehaviour:
   highlight: {fileID: 1096493283}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &185852550
 GameObject:
   m_ObjectHideFlags: 0
@@ -13275,6 +13332,7 @@ MonoBehaviour:
   highlight: {fileID: 528588919}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &191651629
 GameObject:
   m_ObjectHideFlags: 0
@@ -13677,6 +13735,7 @@ MonoBehaviour:
   highlight: {fileID: 369203227}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &195305990
 GameObject:
   m_ObjectHideFlags: 0
@@ -13827,6 +13886,7 @@ MonoBehaviour:
   highlight: {fileID: 274619814}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &196120367
 GameObject:
   m_ObjectHideFlags: 0
@@ -13977,6 +14037,7 @@ MonoBehaviour:
   highlight: {fileID: 523954770}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &197707161
 GameObject:
   m_ObjectHideFlags: 0
@@ -14295,6 +14356,7 @@ MonoBehaviour:
   highlight: {fileID: 382189403}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &203599986
 GameObject:
   m_ObjectHideFlags: 0
@@ -14445,6 +14507,7 @@ MonoBehaviour:
   highlight: {fileID: 1422587618}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &205584824
 GameObject:
   m_ObjectHideFlags: 0
@@ -14595,6 +14658,7 @@ MonoBehaviour:
   highlight: {fileID: 197707161}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &206039505
 GameObject:
   m_ObjectHideFlags: 0
@@ -15801,6 +15865,7 @@ MonoBehaviour:
   highlight: {fileID: 1618249810}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &222486673
 GameObject:
   m_ObjectHideFlags: 0
@@ -16119,6 +16184,7 @@ MonoBehaviour:
   highlight: {fileID: 450719905}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &226370469
 GameObject:
   m_ObjectHideFlags: 0
@@ -16437,6 +16503,7 @@ MonoBehaviour:
   highlight: {fileID: 1634514995}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &230959068
 GameObject:
   m_ObjectHideFlags: 0
@@ -16587,6 +16654,7 @@ MonoBehaviour:
   highlight: {fileID: 1828424822}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &231313554
 GameObject:
   m_ObjectHideFlags: 0
@@ -17493,6 +17561,7 @@ MonoBehaviour:
   highlight: {fileID: 1278483242}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &257274901
 GameObject:
   m_ObjectHideFlags: 0
@@ -17811,6 +17880,7 @@ MonoBehaviour:
   highlight: {fileID: 1244953246}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &261254788
 GameObject:
   m_ObjectHideFlags: 0
@@ -18129,6 +18199,7 @@ MonoBehaviour:
   highlight: {fileID: 1655222690}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &266520667
 GameObject:
   m_ObjectHideFlags: 0
@@ -18279,6 +18350,7 @@ MonoBehaviour:
   highlight: {fileID: 568903308}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &268676211
 GameObject:
   m_ObjectHideFlags: 0
@@ -18513,6 +18585,7 @@ MonoBehaviour:
   highlight: {fileID: 1890399083}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &272425899
 GameObject:
   m_ObjectHideFlags: 0
@@ -18663,6 +18736,7 @@ MonoBehaviour:
   highlight: {fileID: 1034049079}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &272570357
 GameObject:
   m_ObjectHideFlags: 0
@@ -18813,6 +18887,7 @@ MonoBehaviour:
   highlight: {fileID: 1540174292}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &273757617
 GameObject:
   m_ObjectHideFlags: 0
@@ -19131,6 +19206,7 @@ MonoBehaviour:
   highlight: {fileID: 891257098}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &279041867
 GameObject:
   m_ObjectHideFlags: 0
@@ -19467,6 +19543,751 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &283273139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 283273147}
+  - component: {fileID: 283273148}
+  - component: {fileID: 283273146}
+  - component: {fileID: 283273145}
+  - component: {fileID: 283273144}
+  - component: {fileID: 283273143}
+  - component: {fileID: 283273142}
+  - component: {fileID: 283273141}
+  - component: {fileID: 283273140}
+  - component: {fileID: 283273149}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &283273140
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 09adff80ee5e54a4385e29a756dc7c4a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &283273141
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 372caeb1c39644742b3219f7a2618382, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.45
+  m_Pitch: 0.8
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &283273142
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1e419bf6481e700469586e50a7d1d449, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &283273143
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f369a50807c02314381df900dc0ab36b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.75
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &283273144
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c5ed96ae453463746bc72d542fc507d4, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &283273145
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ff5abdf04e467a840adf7c7a4401f62c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &283273146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4eb253cd96b01419cdc606d383e387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carCrashSounds:
+  - {fileID: 283273145}
+  - {fileID: 283273144}
+  carArriveSound: {fileID: 283273143}
+  placeTraffObjSound: {fileID: 283273142}
+  removeTraffObjSound: {fileID: 283273141}
+  TraffLightChangeSound: {fileID: 283273140}
+  LowPitchRange: 0.8
+  HighPitchRange: 1
+--- !u!4 &283273147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.975718, y: 5.7164392, z: 0.038564872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &283273148
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7888158ecee375843a1af2a49b01808a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &283273149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283273139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcda7b340099f6d4785ac88010327e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &289984469
 GameObject:
   m_ObjectHideFlags: 0
@@ -19869,6 +20690,7 @@ MonoBehaviour:
   highlight: {fileID: 1848734494}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &307265262
 GameObject:
   m_ObjectHideFlags: 0
@@ -20019,6 +20841,7 @@ MonoBehaviour:
   highlight: {fileID: 446076793}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &309207293
 GameObject:
   m_ObjectHideFlags: 0
@@ -20169,6 +20992,7 @@ MonoBehaviour:
   highlight: {fileID: 600702021}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &310458524
 GameObject:
   m_ObjectHideFlags: 0
@@ -20319,6 +21143,7 @@ MonoBehaviour:
   highlight: {fileID: 2146136538}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &313779883
 GameObject:
   m_ObjectHideFlags: 0
@@ -20637,6 +21462,7 @@ MonoBehaviour:
   highlight: {fileID: 395177449}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &316043979
 GameObject:
   m_ObjectHideFlags: 0
@@ -20787,6 +21613,7 @@ MonoBehaviour:
   highlight: {fileID: 2014016443}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &316454908
 GameObject:
   m_ObjectHideFlags: 0
@@ -21357,6 +22184,7 @@ MonoBehaviour:
   highlight: {fileID: 1430612776}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &333589399
 GameObject:
   m_ObjectHideFlags: 0
@@ -21507,6 +22335,7 @@ MonoBehaviour:
   highlight: {fileID: 320107083}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &333918484
 GameObject:
   m_ObjectHideFlags: 0
@@ -21657,6 +22486,7 @@ MonoBehaviour:
   highlight: {fileID: 1793916226}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &334686170
 GameObject:
   m_ObjectHideFlags: 0
@@ -21807,6 +22637,7 @@ MonoBehaviour:
   highlight: {fileID: 839489062}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &337372252
 GameObject:
   m_ObjectHideFlags: 0
@@ -21957,6 +22788,7 @@ MonoBehaviour:
   highlight: {fileID: 2037649081}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &340052809
 GameObject:
   m_ObjectHideFlags: 0
@@ -22275,6 +23107,7 @@ MonoBehaviour:
   highlight: {fileID: 2083826500}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &346344129
 GameObject:
   m_ObjectHideFlags: 0
@@ -22425,6 +23258,7 @@ MonoBehaviour:
   highlight: {fileID: 1804041399}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &351667937
 GameObject:
   m_ObjectHideFlags: 0
@@ -22659,6 +23493,7 @@ MonoBehaviour:
   highlight: {fileID: 491580958}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &354596549
 GameObject:
   m_ObjectHideFlags: 0
@@ -22809,6 +23644,7 @@ MonoBehaviour:
   highlight: {fileID: 1567051144}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &357170768
 GameObject:
   m_ObjectHideFlags: 0
@@ -22959,6 +23795,7 @@ MonoBehaviour:
   highlight: {fileID: 940824140}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &357656408
 GameObject:
   m_ObjectHideFlags: 0
@@ -23193,6 +24030,7 @@ MonoBehaviour:
   highlight: {fileID: 608416804}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &362419131
 GameObject:
   m_ObjectHideFlags: 0
@@ -23343,6 +24181,7 @@ MonoBehaviour:
   highlight: {fileID: 1666778479}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &363024778
 GameObject:
   m_ObjectHideFlags: 0
@@ -23913,6 +24752,7 @@ MonoBehaviour:
   highlight: {fileID: 1704835364}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &369933057
 GameObject:
   m_ObjectHideFlags: 0
@@ -24147,6 +24987,7 @@ MonoBehaviour:
   highlight: {fileID: 2112746147}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &371634145
 GameObject:
   m_ObjectHideFlags: 0
@@ -24465,6 +25306,7 @@ MonoBehaviour:
   highlight: {fileID: 1671444564}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &374679037
 GameObject:
   m_ObjectHideFlags: 0
@@ -24699,6 +25541,7 @@ MonoBehaviour:
   highlight: {fileID: 1183484067}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &382189403
 GameObject:
   m_ObjectHideFlags: 0
@@ -25269,6 +26112,7 @@ MonoBehaviour:
   highlight: {fileID: 2133039294}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &394577953
 GameObject:
   m_ObjectHideFlags: 0
@@ -25671,6 +26515,7 @@ MonoBehaviour:
   highlight: {fileID: 1397702858}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &402791742
 GameObject:
   m_ObjectHideFlags: 0
@@ -25821,6 +26666,7 @@ MonoBehaviour:
   highlight: {fileID: 2065018454}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &404617005
 GameObject:
   m_ObjectHideFlags: 0
@@ -26223,6 +27069,7 @@ MonoBehaviour:
   highlight: {fileID: 1757654553}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &411319498
 GameObject:
   m_ObjectHideFlags: 0
@@ -26457,6 +27304,7 @@ MonoBehaviour:
   highlight: {fileID: 770397226}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &415746234
 GameObject:
   m_ObjectHideFlags: 0
@@ -26607,6 +27455,7 @@ MonoBehaviour:
   highlight: {fileID: 2136088013}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &417268925
 GameObject:
   m_ObjectHideFlags: 0
@@ -26933,6 +27782,7 @@ MonoBehaviour:
   highlight: {fileID: 776081506}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &425614073
 GameObject:
   m_ObjectHideFlags: 0
@@ -27083,6 +27933,7 @@ MonoBehaviour:
   highlight: {fileID: 1334539173}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &425973036
 GameObject:
   m_ObjectHideFlags: 0
@@ -27233,6 +28084,7 @@ MonoBehaviour:
   highlight: {fileID: 647833724}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &432476506
 GameObject:
   m_ObjectHideFlags: 0
@@ -27383,6 +28235,7 @@ MonoBehaviour:
   highlight: {fileID: 1854043312}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &432640460
 GameObject:
   m_ObjectHideFlags: 0
@@ -27617,6 +28470,7 @@ MonoBehaviour:
   highlight: {fileID: 823217055}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &433948846
 GameObject:
   m_ObjectHideFlags: 0
@@ -27767,6 +28621,7 @@ MonoBehaviour:
   highlight: {fileID: 432640460}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &436188493
 GameObject:
   m_ObjectHideFlags: 0
@@ -28169,6 +29024,7 @@ MonoBehaviour:
   highlight: {fileID: 437681367}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &443278183
 GameObject:
   m_ObjectHideFlags: 0
@@ -28319,6 +29175,7 @@ MonoBehaviour:
   highlight: {fileID: 1651369065}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &446076793
 GameObject:
   m_ObjectHideFlags: 0
@@ -28553,6 +29410,7 @@ MonoBehaviour:
   highlight: {fileID: 1473898929}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &448857592
 GameObject:
   m_ObjectHideFlags: 0
@@ -28703,6 +29561,7 @@ MonoBehaviour:
   highlight: {fileID: 387148917}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &450719905
 GameObject:
   m_ObjectHideFlags: 0
@@ -29189,6 +30048,7 @@ MonoBehaviour:
   highlight: {fileID: 490714194}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &458080000
 GameObject:
   m_ObjectHideFlags: 0
@@ -29339,6 +30199,7 @@ MonoBehaviour:
   highlight: {fileID: 1094010149}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &460159081
 GameObject:
   m_ObjectHideFlags: 0
@@ -29573,6 +30434,7 @@ MonoBehaviour:
   highlight: {fileID: 817603173}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &463715632
 GameObject:
   m_ObjectHideFlags: 0
@@ -29891,6 +30753,7 @@ MonoBehaviour:
   highlight: {fileID: 1855294662}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &469670037
 GameObject:
   m_ObjectHideFlags: 0
@@ -30125,6 +30988,7 @@ MonoBehaviour:
   highlight: {fileID: 1498881820}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &474355720
 GameObject:
   m_ObjectHideFlags: 0
@@ -30359,6 +31223,7 @@ MonoBehaviour:
   highlight: {fileID: 1805355564}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &475343970
 GameObject:
   m_ObjectHideFlags: 0
@@ -30593,6 +31458,7 @@ MonoBehaviour:
   highlight: {fileID: 1637965284}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &478496567
 GameObject:
   m_ObjectHideFlags: 0
@@ -30743,6 +31609,7 @@ MonoBehaviour:
   highlight: {fileID: 1100652675}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &479304300
 GameObject:
   m_ObjectHideFlags: 0
@@ -31229,6 +32096,7 @@ MonoBehaviour:
   highlight: {fileID: 254441953}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &484115720
 GameObject:
   m_ObjectHideFlags: 0
@@ -31547,6 +32415,7 @@ MonoBehaviour:
   highlight: {fileID: 1315137894}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &486823135
 GameObject:
   m_ObjectHideFlags: 0
@@ -31781,6 +32650,7 @@ MonoBehaviour:
   highlight: {fileID: 2116044843}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &489356539
 GameObject:
   m_ObjectHideFlags: 0
@@ -31931,6 +32801,7 @@ MonoBehaviour:
   highlight: {fileID: 141897757}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &490500065
 GameObject:
   m_ObjectHideFlags: 0
@@ -32669,6 +33540,7 @@ MonoBehaviour:
   highlight: {fileID: 323179899}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &507373059
 GameObject:
   m_ObjectHideFlags: 0
@@ -32987,6 +33859,7 @@ MonoBehaviour:
   highlight: {fileID: 1185316302}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &519698765
 GameObject:
   m_ObjectHideFlags: 0
@@ -33221,6 +34094,7 @@ MonoBehaviour:
   highlight: {fileID: 1335075053}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &521059049
 GameObject:
   m_ObjectHideFlags: 0
@@ -33371,6 +34245,7 @@ MonoBehaviour:
   highlight: {fileID: 10986163}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &521428906
 GameObject:
   m_ObjectHideFlags: 0
@@ -33941,6 +34816,7 @@ MonoBehaviour:
   highlight: {fileID: 395840574}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &529576273
 GameObject:
   m_ObjectHideFlags: 0
@@ -34091,6 +34967,7 @@ MonoBehaviour:
   highlight: {fileID: 1693212443}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &531561872
 GameObject:
   m_ObjectHideFlags: 0
@@ -34325,6 +35202,7 @@ MonoBehaviour:
   highlight: {fileID: 1782175490}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &534060720
 GameObject:
   m_ObjectHideFlags: 0
@@ -34475,6 +35353,7 @@ MonoBehaviour:
   highlight: {fileID: 49988314}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1001 &537082586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34766,6 +35645,7 @@ MonoBehaviour:
   highlight: {fileID: 340076114}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &539080856
 GameObject:
   m_ObjectHideFlags: 0
@@ -34916,6 +35796,7 @@ MonoBehaviour:
   highlight: {fileID: 1851949936}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &540184114
 GameObject:
   m_ObjectHideFlags: 0
@@ -35150,6 +36031,7 @@ MonoBehaviour:
   highlight: {fileID: 45276477}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &542976034
 GameObject:
   m_ObjectHideFlags: 0
@@ -35300,6 +36182,7 @@ MonoBehaviour:
   highlight: {fileID: 1967438628}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &544458405
 GameObject:
   m_ObjectHideFlags: 0
@@ -35534,6 +36417,7 @@ MonoBehaviour:
   highlight: {fileID: 937662707}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &546684011
 GameObject:
   m_ObjectHideFlags: 0
@@ -35684,6 +36568,7 @@ MonoBehaviour:
   highlight: {fileID: 1852575327}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &554699644
 GameObject:
   m_ObjectHideFlags: 0
@@ -35834,6 +36719,7 @@ MonoBehaviour:
   highlight: {fileID: 213409770}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &555185134
 GameObject:
   m_ObjectHideFlags: 0
@@ -35984,6 +36870,7 @@ MonoBehaviour:
   highlight: {fileID: 1574866931}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &560178965
 GameObject:
   m_ObjectHideFlags: 0
@@ -36134,6 +37021,7 @@ MonoBehaviour:
   highlight: {fileID: 1663284150}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &562201367
 GameObject:
   m_ObjectHideFlags: 0
@@ -36284,6 +37172,7 @@ MonoBehaviour:
   highlight: {fileID: 1636588310}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &563528433
 GameObject:
   m_ObjectHideFlags: 0
@@ -36518,6 +37407,7 @@ MonoBehaviour:
   highlight: {fileID: 1794629244}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &568903308
 GameObject:
   m_ObjectHideFlags: 0
@@ -36920,6 +37810,7 @@ MonoBehaviour:
   highlight: {fileID: 1816446172}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &578538563
 GameObject:
   m_ObjectHideFlags: 0
@@ -37154,6 +38045,7 @@ MonoBehaviour:
   highlight: {fileID: 369933057}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &581348526
 GameObject:
   m_ObjectHideFlags: 0
@@ -37304,6 +38196,7 @@ MonoBehaviour:
   highlight: {fileID: 515540750}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &585304939
 GameObject:
   m_ObjectHideFlags: 0
@@ -37454,6 +38347,7 @@ MonoBehaviour:
   highlight: {fileID: 610668877}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &585790140
 GameObject:
   m_ObjectHideFlags: 0
@@ -37688,6 +38582,7 @@ MonoBehaviour:
   highlight: {fileID: 776540379}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &587678619
 GameObject:
   m_ObjectHideFlags: 0
@@ -38258,6 +39153,7 @@ MonoBehaviour:
   highlight: {fileID: 1434989120}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &599360355
 GameObject:
   m_ObjectHideFlags: 0
@@ -38408,6 +39304,7 @@ MonoBehaviour:
   highlight: {fileID: 1241572155}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &600702021
 GameObject:
   m_ObjectHideFlags: 0
@@ -38642,6 +39539,7 @@ MonoBehaviour:
   highlight: {fileID: 760880763}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &603419771
 GameObject:
   m_ObjectHideFlags: 0
@@ -38960,6 +39858,7 @@ MonoBehaviour:
   highlight: {fileID: 653593876}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &608416804
 GameObject:
   m_ObjectHideFlags: 0
@@ -39278,6 +40177,7 @@ MonoBehaviour:
   highlight: {fileID: 916671145}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &613847311
 GameObject:
   m_ObjectHideFlags: 0
@@ -39428,6 +40328,7 @@ MonoBehaviour:
   highlight: {fileID: 1355465033}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &617364258
 GameObject:
   m_ObjectHideFlags: 0
@@ -39662,6 +40563,7 @@ MonoBehaviour:
   highlight: {fileID: 1959196242}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &618627109
 GameObject:
   m_ObjectHideFlags: 0
@@ -39896,6 +40798,7 @@ MonoBehaviour:
   highlight: {fileID: 1559143729}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &622921695
 GameObject:
   m_ObjectHideFlags: 0
@@ -40130,6 +41033,7 @@ MonoBehaviour:
   highlight: {fileID: 103400530}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &624941501
 GameObject:
   m_ObjectHideFlags: 0
@@ -40280,6 +41184,7 @@ MonoBehaviour:
   highlight: {fileID: 1385517333}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &626520312
 GameObject:
   m_ObjectHideFlags: 0
@@ -40430,6 +41335,7 @@ MonoBehaviour:
   highlight: {fileID: 799733598}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &627905106
 GameObject:
   m_ObjectHideFlags: 0
@@ -40580,6 +41486,7 @@ MonoBehaviour:
   highlight: {fileID: 1982074055}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &628750792
 GameObject:
   m_ObjectHideFlags: 0
@@ -40730,6 +41637,7 @@ MonoBehaviour:
   highlight: {fileID: 2110426331}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &629314059
 GameObject:
   m_ObjectHideFlags: 0
@@ -40880,6 +41788,7 @@ MonoBehaviour:
   highlight: {fileID: 810828855}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &639227147
 GameObject:
   m_ObjectHideFlags: 0
@@ -41030,6 +41939,7 @@ MonoBehaviour:
   highlight: {fileID: 1578909587}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &644811575
 GameObject:
   m_ObjectHideFlags: 0
@@ -41180,6 +42090,7 @@ MonoBehaviour:
   highlight: {fileID: 591092539}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &645658983
 GameObject:
   m_ObjectHideFlags: 0
@@ -41330,6 +42241,7 @@ MonoBehaviour:
   highlight: {fileID: 927811182}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &647326838
 GameObject:
   m_ObjectHideFlags: 0
@@ -41816,6 +42728,7 @@ MonoBehaviour:
   highlight: {fileID: 436188493}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &659389233
 GameObject:
   m_ObjectHideFlags: 0
@@ -41966,6 +42879,7 @@ MonoBehaviour:
   highlight: {fileID: 230250386}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &659683120
 GameObject:
   m_ObjectHideFlags: 0
@@ -42200,6 +43114,7 @@ MonoBehaviour:
   highlight: {fileID: 905022980}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &663599339
 GameObject:
   m_ObjectHideFlags: 0
@@ -42518,6 +43433,7 @@ MonoBehaviour:
   highlight: {fileID: 2146363962}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &669062912
 GameObject:
   m_ObjectHideFlags: 0
@@ -42752,6 +43668,7 @@ MonoBehaviour:
   highlight: {fileID: 1082688332}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &676292775
 GameObject:
   m_ObjectHideFlags: 0
@@ -42902,6 +43819,7 @@ MonoBehaviour:
   highlight: {fileID: 848679589}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &676611368
 GameObject:
   m_ObjectHideFlags: 0
@@ -43052,6 +43970,7 @@ MonoBehaviour:
   highlight: {fileID: 90253562}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &679682532
 GameObject:
   m_ObjectHideFlags: 0
@@ -43202,6 +44121,7 @@ MonoBehaviour:
   highlight: {fileID: 1196294389}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &682783930
 GameObject:
   m_ObjectHideFlags: 0
@@ -43436,6 +44356,7 @@ MonoBehaviour:
   highlight: {fileID: 1264970862}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &686865691
 GameObject:
   m_ObjectHideFlags: 0
@@ -43586,6 +44507,7 @@ MonoBehaviour:
   highlight: {fileID: 1983025215}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &691248653
 GameObject:
   m_ObjectHideFlags: 0
@@ -43736,6 +44658,7 @@ MonoBehaviour:
   highlight: {fileID: 1704135259}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &695009789
 GameObject:
   m_ObjectHideFlags: 0
@@ -43886,6 +44809,7 @@ MonoBehaviour:
   highlight: {fileID: 765849508}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &698713184
 GameObject:
   m_ObjectHideFlags: 0
@@ -44036,6 +44960,7 @@ MonoBehaviour:
   highlight: {fileID: 2014862568}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &701964169
 GameObject:
   m_ObjectHideFlags: 0
@@ -44186,6 +45111,7 @@ MonoBehaviour:
   highlight: {fileID: 1039175440}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &702943548
 GameObject:
   m_ObjectHideFlags: 0
@@ -44420,6 +45346,7 @@ MonoBehaviour:
   highlight: {fileID: 1075930037}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &711265127
 GameObject:
   m_ObjectHideFlags: 0
@@ -44570,6 +45497,7 @@ MonoBehaviour:
   highlight: {fileID: 466284248}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &712952658
 GameObject:
   m_ObjectHideFlags: 0
@@ -44804,6 +45732,7 @@ MonoBehaviour:
   highlight: {fileID: 1796086617}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &718511667
 GameObject:
   m_ObjectHideFlags: 0
@@ -44954,6 +45883,7 @@ MonoBehaviour:
   highlight: {fileID: 840117934}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &722626735
 GameObject:
   m_ObjectHideFlags: 0
@@ -45188,6 +46118,7 @@ MonoBehaviour:
   highlight: {fileID: 872493525}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &729677130
 GameObject:
   m_ObjectHideFlags: 0
@@ -45506,6 +46437,7 @@ MonoBehaviour:
   highlight: {fileID: 822612927}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &738654155
 GameObject:
   m_ObjectHideFlags: 0
@@ -45656,6 +46588,7 @@ MonoBehaviour:
   highlight: {fileID: 617364258}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &742727694
 GameObject:
   m_ObjectHideFlags: 0
@@ -45806,6 +46739,7 @@ MonoBehaviour:
   highlight: {fileID: 1787448895}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &746835292
 GameObject:
   m_ObjectHideFlags: 0
@@ -45956,6 +46890,7 @@ MonoBehaviour:
   highlight: {fileID: 881196255}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &747163037
 GameObject:
   m_ObjectHideFlags: 0
@@ -46190,6 +47125,7 @@ MonoBehaviour:
   highlight: {fileID: 1301585100}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &748853779
 GameObject:
   m_ObjectHideFlags: 0
@@ -46424,6 +47360,7 @@ MonoBehaviour:
   highlight: {fileID: 469670037}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &750800774
 GameObject:
   m_ObjectHideFlags: 0
@@ -46742,6 +47679,7 @@ MonoBehaviour:
   highlight: {fileID: 1562629403}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &752617219
 GameObject:
   m_ObjectHideFlags: 0
@@ -46892,6 +47830,7 @@ MonoBehaviour:
   highlight: {fileID: 1330869418}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &754558081
 GameObject:
   m_ObjectHideFlags: 0
@@ -47126,6 +48065,7 @@ MonoBehaviour:
   highlight: {fileID: 1189094745}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &756692495
 GameObject:
   m_ObjectHideFlags: 0
@@ -47528,6 +48468,7 @@ MonoBehaviour:
   highlight: {fileID: 823888195}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &765849508
 GameObject:
   m_ObjectHideFlags: 0
@@ -48350,6 +49291,7 @@ MonoBehaviour:
   highlight: {fileID: 291618781}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &776081506
 GameObject:
   m_ObjectHideFlags: 0
@@ -48752,6 +49694,7 @@ MonoBehaviour:
   highlight: {fileID: 781400268}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &781400268
 GameObject:
   m_ObjectHideFlags: 0
@@ -49070,6 +50013,7 @@ MonoBehaviour:
   highlight: {fileID: 1452990320}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &790405681
 GameObject:
   m_ObjectHideFlags: 0
@@ -49556,6 +50500,7 @@ MonoBehaviour:
   highlight: {fileID: 264576116}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &799733598
 GameObject:
   m_ObjectHideFlags: 0
@@ -49790,6 +50735,7 @@ MonoBehaviour:
   highlight: {fileID: 1504196455}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &802071961
 GameObject:
   m_ObjectHideFlags: 0
@@ -49940,6 +50886,7 @@ MonoBehaviour:
   highlight: {fileID: 18888253}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &802222944
 GameObject:
   m_ObjectHideFlags: 0
@@ -50594,6 +51541,7 @@ MonoBehaviour:
   highlight: {fileID: 1681116114}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &822612927
 GameObject:
   m_ObjectHideFlags: 0
@@ -50828,6 +51776,7 @@ MonoBehaviour:
   highlight: {fileID: 421377557}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &823217055
 GameObject:
   m_ObjectHideFlags: 0
@@ -51146,6 +52095,7 @@ MonoBehaviour:
   highlight: {fileID: 273757617}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &829448162
 GameObject:
   m_ObjectHideFlags: 0
@@ -51296,6 +52246,7 @@ MonoBehaviour:
   highlight: {fileID: 109358198}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &833254331
 GameObject:
   m_ObjectHideFlags: 0
@@ -51446,6 +52397,7 @@ MonoBehaviour:
   highlight: {fileID: 1022630006}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &838625856
 GameObject:
   m_ObjectHideFlags: 0
@@ -51596,6 +52548,7 @@ MonoBehaviour:
   highlight: {fileID: 108929938}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &839489062
 GameObject:
   m_ObjectHideFlags: 0
@@ -52250,6 +53203,7 @@ MonoBehaviour:
   highlight: {fileID: 1652462504}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &844734184
 GameObject:
   m_ObjectHideFlags: 0
@@ -52400,6 +53354,7 @@ MonoBehaviour:
   highlight: {fileID: 1699955930}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &846217150
 GameObject:
   m_ObjectHideFlags: 0
@@ -52802,6 +53757,7 @@ MonoBehaviour:
   highlight: {fileID: 1929708462}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &856401361
 GameObject:
   m_ObjectHideFlags: 0
@@ -53120,6 +54076,7 @@ MonoBehaviour:
   highlight: {fileID: 1865006364}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &861455720
 GameObject:
   m_ObjectHideFlags: 0
@@ -53522,6 +54479,7 @@ MonoBehaviour:
   highlight: {fileID: 1376405440}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &871437896
 GameObject:
   m_ObjectHideFlags: 0
@@ -53924,6 +54882,7 @@ MonoBehaviour:
   highlight: {fileID: 2089750298}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &875740416
 GameObject:
   m_ObjectHideFlags: 0
@@ -54074,6 +55033,7 @@ MonoBehaviour:
   highlight: {fileID: 1201336017}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &879678646
 GameObject:
   m_ObjectHideFlags: 0
@@ -54224,6 +55184,7 @@ MonoBehaviour:
   highlight: {fileID: 76065232}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &879679293
 GameObject:
   m_ObjectHideFlags: 0
@@ -54374,6 +55335,7 @@ MonoBehaviour:
   highlight: {fileID: 268676211}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &880166869
 GameObject:
   m_ObjectHideFlags: 0
@@ -54944,6 +55906,7 @@ MonoBehaviour:
   highlight: {fileID: 66438637}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &894252016
 GameObject:
   m_ObjectHideFlags: 0
@@ -55094,6 +56057,7 @@ MonoBehaviour:
   highlight: {fileID: 1315510176}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &897065652
 GameObject:
   m_ObjectHideFlags: 0
@@ -55244,6 +56208,7 @@ MonoBehaviour:
   highlight: {fileID: 121111120}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &897363792
 GameObject:
   m_ObjectHideFlags: 0
@@ -55394,6 +56359,7 @@ MonoBehaviour:
   highlight: {fileID: 1697155536}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &900554218
 GameObject:
   m_ObjectHideFlags: 0
@@ -55712,6 +56678,7 @@ MonoBehaviour:
   highlight: {fileID: 1128219074}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &901839484
 GameObject:
   m_ObjectHideFlags: 0
@@ -55862,6 +56829,7 @@ MonoBehaviour:
   highlight: {fileID: 1316038746}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &902940839
 GameObject:
   m_ObjectHideFlags: 0
@@ -56012,6 +56980,7 @@ MonoBehaviour:
   highlight: {fileID: 840737149}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &904003736
 GameObject:
   m_ObjectHideFlags: 0
@@ -56330,6 +57299,7 @@ MonoBehaviour:
   highlight: {fileID: 1545365831}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &916671145
 GameObject:
   m_ObjectHideFlags: 0
@@ -56564,6 +57534,7 @@ MonoBehaviour:
   highlight: {fileID: 1816413194}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &918467284
 GameObject:
   m_ObjectHideFlags: 0
@@ -56882,6 +57853,7 @@ MonoBehaviour:
   highlight: {fileID: 83818118}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &927364925
 GameObject:
   m_ObjectHideFlags: 0
@@ -57032,6 +58004,7 @@ MonoBehaviour:
   highlight: {fileID: 1389340290}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &927811182
 GameObject:
   m_ObjectHideFlags: 0
@@ -57266,6 +58239,7 @@ MonoBehaviour:
   highlight: {fileID: 224782294}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &931969302
 GameObject:
   m_ObjectHideFlags: 0
@@ -57416,6 +58390,7 @@ MonoBehaviour:
   highlight: {fileID: 1520144310}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &933021406
 GameObject:
   m_ObjectHideFlags: 0
@@ -57818,6 +58793,7 @@ MonoBehaviour:
   highlight: {fileID: 1110835545}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &937662707
 GameObject:
   m_ObjectHideFlags: 0
@@ -58220,6 +59196,7 @@ MonoBehaviour:
   highlight: {fileID: 659683120}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &944873170
 GameObject:
   m_ObjectHideFlags: 0
@@ -58370,6 +59347,7 @@ MonoBehaviour:
   highlight: {fileID: 842260102}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &947913156
 GameObject:
   m_ObjectHideFlags: 0
@@ -58688,6 +59666,7 @@ MonoBehaviour:
   highlight: {fileID: 1136679258}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &958753470
 GameObject:
   m_ObjectHideFlags: 0
@@ -58838,6 +59817,7 @@ MonoBehaviour:
   highlight: {fileID: 1507182466}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1001 &962604594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59065,6 +60045,7 @@ MonoBehaviour:
   highlight: {fileID: 1065362573}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &965557636
 GameObject:
   m_ObjectHideFlags: 0
@@ -59215,6 +60196,7 @@ MonoBehaviour:
   highlight: {fileID: 1646588492}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &966055328
 GameObject:
   m_ObjectHideFlags: 0
@@ -59365,6 +60347,7 @@ MonoBehaviour:
   highlight: {fileID: 1442376080}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &978224677
 GameObject:
   m_ObjectHideFlags: 0
@@ -59515,6 +60498,7 @@ MonoBehaviour:
   highlight: {fileID: 1214388635}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &978706270
 GameObject:
   m_ObjectHideFlags: 0
@@ -59665,6 +60649,7 @@ MonoBehaviour:
   highlight: {fileID: 1740820313}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &981998216
 GameObject:
   m_ObjectHideFlags: 0
@@ -59899,6 +60884,7 @@ MonoBehaviour:
   highlight: {fileID: 1453833884}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &983517738
 GameObject:
   m_ObjectHideFlags: 0
@@ -60049,6 +61035,7 @@ MonoBehaviour:
   highlight: {fileID: 871437896}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &988262103
 GameObject:
   m_ObjectHideFlags: 0
@@ -60283,6 +61270,7 @@ MonoBehaviour:
   highlight: {fileID: 141441098}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &997300546
 GameObject:
   m_ObjectHideFlags: 0
@@ -60433,6 +61421,7 @@ MonoBehaviour:
   highlight: {fileID: 1866097284}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &997488520
 GameObject:
   m_ObjectHideFlags: 0
@@ -60583,6 +61572,7 @@ MonoBehaviour:
   highlight: {fileID: 1704783551}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &999905507
 GameObject:
   m_ObjectHideFlags: 0
@@ -60733,6 +61723,7 @@ MonoBehaviour:
   highlight: {fileID: 863283344}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1000993844
 GameObject:
   m_ObjectHideFlags: 0
@@ -60883,6 +61874,7 @@ MonoBehaviour:
   highlight: {fileID: 846217150}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1001714944
 GameObject:
   m_ObjectHideFlags: 0
@@ -61033,6 +62025,7 @@ MonoBehaviour:
   highlight: {fileID: 1980143120}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1004131338
 GameObject:
   m_ObjectHideFlags: 0
@@ -61183,6 +62176,7 @@ MonoBehaviour:
   highlight: {fileID: 1454746246}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1004400068
 GameObject:
   m_ObjectHideFlags: 0
@@ -61417,6 +62411,7 @@ MonoBehaviour:
   highlight: {fileID: 1221182318}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1011229699
 GameObject:
   m_ObjectHideFlags: 0
@@ -61567,6 +62562,7 @@ MonoBehaviour:
   highlight: {fileID: 281686461}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1014178078
 GameObject:
   m_ObjectHideFlags: 0
@@ -61717,6 +62713,7 @@ MonoBehaviour:
   highlight: {fileID: 1740974662}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1014358841
 GameObject:
   m_ObjectHideFlags: 0
@@ -61867,6 +62864,7 @@ MonoBehaviour:
   highlight: {fileID: 209614637}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1015531343
 GameObject:
   m_ObjectHideFlags: 0
@@ -62017,6 +63015,7 @@ MonoBehaviour:
   highlight: {fileID: 1366041046}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1015557455
 GameObject:
   m_ObjectHideFlags: 0
@@ -62251,6 +63250,7 @@ MonoBehaviour:
   highlight: {fileID: 1778205098}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1022630006
 GameObject:
   m_ObjectHideFlags: 0
@@ -62653,6 +63653,7 @@ MonoBehaviour:
   highlight: {fileID: 1939988349}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1034049079
 GameObject:
   m_ObjectHideFlags: 0
@@ -63055,6 +64056,7 @@ MonoBehaviour:
   highlight: {fileID: 1615870694}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1039175440
 GameObject:
   m_ObjectHideFlags: 0
@@ -63373,6 +64375,7 @@ MonoBehaviour:
   highlight: {fileID: 578538563}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1045565124
 GameObject:
   m_ObjectHideFlags: 0
@@ -63523,6 +64526,7 @@ MonoBehaviour:
   highlight: {fileID: 1561654538}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1046437678
 GameObject:
   m_ObjectHideFlags: 0
@@ -63673,6 +64677,7 @@ MonoBehaviour:
   highlight: {fileID: 340052809}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1053277740
 GameObject:
   m_ObjectHideFlags: 0
@@ -63823,6 +64828,7 @@ MonoBehaviour:
   highlight: {fileID: 390360832}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1054009122
 GameObject:
   m_ObjectHideFlags: 0
@@ -63973,6 +64979,7 @@ MonoBehaviour:
   highlight: {fileID: 438209187}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1054925508
 GameObject:
   m_ObjectHideFlags: 0
@@ -64123,6 +65130,7 @@ MonoBehaviour:
   highlight: {fileID: 1160241942}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1060301006
 GameObject:
   m_ObjectHideFlags: 0
@@ -64273,6 +65281,7 @@ MonoBehaviour:
   highlight: {fileID: 1683466025}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1065362573
 GameObject:
   m_ObjectHideFlags: 0
@@ -64507,6 +65516,7 @@ MonoBehaviour:
   highlight: {fileID: 89977178}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1069256673
 GameObject:
   m_ObjectHideFlags: 0
@@ -64741,6 +65751,7 @@ MonoBehaviour:
   highlight: {fileID: 1973439766}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1074910095
 GameObject:
   m_ObjectHideFlags: 0
@@ -64891,6 +65902,7 @@ MonoBehaviour:
   highlight: {fileID: 1787787466}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1075671169
 GameObject:
   m_ObjectHideFlags: 0
@@ -65293,6 +66305,7 @@ MonoBehaviour:
   highlight: {fileID: 988262103}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1080397975
 GameObject:
   m_ObjectHideFlags: 0
@@ -65443,6 +66456,7 @@ MonoBehaviour:
   highlight: {fileID: 1531350171}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1082688332
 GameObject:
   m_ObjectHideFlags: 0
@@ -65845,6 +66859,7 @@ MonoBehaviour:
   highlight: {fileID: 32229775}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1084521901
 GameObject:
   m_ObjectHideFlags: 0
@@ -65995,6 +67010,7 @@ MonoBehaviour:
   highlight: {fileID: 104368174}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1085498360
 GameObject:
   m_ObjectHideFlags: 0
@@ -66229,6 +67245,7 @@ MonoBehaviour:
   highlight: {fileID: 192400029}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1094010149
 GameObject:
   m_ObjectHideFlags: 0
@@ -66547,6 +67564,7 @@ MonoBehaviour:
   highlight: {fileID: 1842372362}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1099711022
 GameObject:
   m_ObjectHideFlags: 0
@@ -66697,6 +67715,7 @@ MonoBehaviour:
   highlight: {fileID: 1293436475}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1100652675
 GameObject:
   m_ObjectHideFlags: 0
@@ -66931,6 +67950,7 @@ MonoBehaviour:
   highlight: {fileID: 486823135}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1109925171
 GameObject:
   m_ObjectHideFlags: 0
@@ -67249,6 +68269,7 @@ MonoBehaviour:
   highlight: {fileID: 870334416}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1112630523
 GameObject:
   m_ObjectHideFlags: 0
@@ -67735,6 +68756,7 @@ MonoBehaviour:
   highlight: {fileID: 368192532}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1122430542
 GameObject:
   m_ObjectHideFlags: 0
@@ -67885,6 +68907,7 @@ MonoBehaviour:
   highlight: {fileID: 1848696467}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1122768559
 GameObject:
   m_ObjectHideFlags: 0
@@ -68035,6 +69058,7 @@ MonoBehaviour:
   highlight: {fileID: 1943115056}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1126838131
 GameObject:
   m_ObjectHideFlags: 0
@@ -68185,6 +69209,7 @@ MonoBehaviour:
   highlight: {fileID: 187322713}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1128219074
 GameObject:
   m_ObjectHideFlags: 0
@@ -68587,6 +69612,7 @@ MonoBehaviour:
   highlight: {fileID: 1998511680}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1136679258
 GameObject:
   m_ObjectHideFlags: 0
@@ -68821,6 +69847,7 @@ MonoBehaviour:
   highlight: {fileID: 1464888982}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1140421534
 GameObject:
   m_ObjectHideFlags: 0
@@ -68971,6 +69998,7 @@ MonoBehaviour:
   highlight: {fileID: 544458405}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1141298571
 GameObject:
   m_ObjectHideFlags: 0
@@ -69205,6 +70233,7 @@ MonoBehaviour:
   highlight: {fileID: 589870912}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1143958760
 GameObject:
   m_ObjectHideFlags: 0
@@ -69355,6 +70384,7 @@ MonoBehaviour:
   highlight: {fileID: 527694771}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1147248028
 GameObject:
   m_ObjectHideFlags: 0
@@ -69505,6 +70535,7 @@ MonoBehaviour:
   highlight: {fileID: 1208299014}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1147309733
 GameObject:
   m_ObjectHideFlags: 0
@@ -69655,6 +70686,7 @@ MonoBehaviour:
   highlight: {fileID: 1699725428}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1151823713
 GameObject:
   m_ObjectHideFlags: 0
@@ -69805,6 +70837,7 @@ MonoBehaviour:
   highlight: {fileID: 1983922110}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1156441865
 GameObject:
   m_ObjectHideFlags: 0
@@ -70123,6 +71156,7 @@ MonoBehaviour:
   highlight: {fileID: 918743100}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1160241942
 GameObject:
   m_ObjectHideFlags: 0
@@ -70609,6 +71643,7 @@ MonoBehaviour:
   highlight: {fileID: 1242971158}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1173483078
 GameObject:
   m_ObjectHideFlags: 0
@@ -70759,6 +71794,7 @@ MonoBehaviour:
   highlight: {fileID: 1324827417}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1175763474
 GameObject:
   m_ObjectHideFlags: 0
@@ -70993,6 +72029,7 @@ MonoBehaviour:
   highlight: {fileID: 1082964378}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1183484067
 GameObject:
   m_ObjectHideFlags: 0
@@ -71227,6 +72264,7 @@ MonoBehaviour:
   highlight: {fileID: 85325633}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1185316302
 GameObject:
   m_ObjectHideFlags: 0
@@ -71461,6 +72499,7 @@ MonoBehaviour:
   highlight: {fileID: 572288341}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1188805869
 GameObject:
   m_ObjectHideFlags: 0
@@ -71779,6 +72818,7 @@ MonoBehaviour:
   highlight: {fileID: 257274901}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1194837390
 GameObject:
   m_ObjectHideFlags: 0
@@ -71929,6 +72969,7 @@ MonoBehaviour:
   highlight: {fileID: 17345528}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1196294389
 GameObject:
   m_ObjectHideFlags: 0
@@ -72163,6 +73204,7 @@ MonoBehaviour:
   highlight: {fileID: 1352893907}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1201336017
 GameObject:
   m_ObjectHideFlags: 0
@@ -72481,6 +73523,7 @@ MonoBehaviour:
   highlight: {fileID: 1619774647}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1202377736
 GameObject:
   m_ObjectHideFlags: 0
@@ -72883,6 +73926,7 @@ MonoBehaviour:
   highlight: {fileID: 1240665219}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1211452929
 GameObject:
   m_ObjectHideFlags: 0
@@ -73033,6 +74077,7 @@ MonoBehaviour:
   highlight: {fileID: 234385281}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1212184704
 GameObject:
   m_ObjectHideFlags: 0
@@ -73183,6 +74228,7 @@ MonoBehaviour:
   highlight: {fileID: 1141298571}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1212623591
 GameObject:
   m_ObjectHideFlags: 0
@@ -73333,6 +74379,7 @@ MonoBehaviour:
   highlight: {fileID: 69509253}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1214388635
 GameObject:
   m_ObjectHideFlags: 0
@@ -73567,6 +74614,7 @@ MonoBehaviour:
   highlight: {fileID: 316454908}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1216588287
 GameObject:
   m_ObjectHideFlags: 0
@@ -73717,6 +74765,7 @@ MonoBehaviour:
   highlight: {fileID: 2142424402}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1217918493
 GameObject:
   m_ObjectHideFlags: 0
@@ -74035,6 +75084,7 @@ MonoBehaviour:
   highlight: {fileID: 1085498360}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1224020147
 GameObject:
   m_ObjectHideFlags: 0
@@ -74185,6 +75235,7 @@ MonoBehaviour:
   highlight: {fileID: 2105752312}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1225059693
 GameObject:
   m_ObjectHideFlags: 0
@@ -74419,6 +75470,7 @@ MonoBehaviour:
   highlight: {fileID: 185852550}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1228231598
 GameObject:
   m_ObjectHideFlags: 0
@@ -74569,6 +75621,7 @@ MonoBehaviour:
   highlight: {fileID: 933420521}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1230957305
 GameObject:
   m_ObjectHideFlags: 0
@@ -74719,6 +75772,7 @@ MonoBehaviour:
   highlight: {fileID: 460159081}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1232689712
 GameObject:
   m_ObjectHideFlags: 0
@@ -75037,6 +76091,7 @@ MonoBehaviour:
   highlight: {fileID: 603419771}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1238116187
 GameObject:
   m_ObjectHideFlags: 0
@@ -75439,6 +76494,7 @@ MonoBehaviour:
   highlight: {fileID: 83591704}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1242971158
 GameObject:
   m_ObjectHideFlags: 0
@@ -75757,6 +76813,7 @@ MonoBehaviour:
   highlight: {fileID: 750800774}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1245426387
 GameObject:
   m_ObjectHideFlags: 0
@@ -75907,6 +76964,7 @@ MonoBehaviour:
   highlight: {fileID: 136541756}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1245928120
 GameObject:
   m_ObjectHideFlags: 0
@@ -76057,6 +77115,7 @@ MonoBehaviour:
   highlight: {fileID: 222486673}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1247883268
 GameObject:
   m_ObjectHideFlags: 0
@@ -76207,6 +77266,7 @@ MonoBehaviour:
   highlight: {fileID: 404617005}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1249139927
 GameObject:
   m_ObjectHideFlags: 0
@@ -76441,6 +77501,7 @@ MonoBehaviour:
   highlight: {fileID: 1891235374}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1251434996
 GameObject:
   m_ObjectHideFlags: 0
@@ -76591,6 +77652,7 @@ MonoBehaviour:
   highlight: {fileID: 1363801753}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1253473983
 GameObject:
   m_ObjectHideFlags: 0
@@ -76825,6 +77887,7 @@ MonoBehaviour:
   highlight: {fileID: 1731345239}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1260839524
 GameObject:
   m_ObjectHideFlags: 0
@@ -76975,6 +78038,7 @@ MonoBehaviour:
   highlight: {fileID: 765924766}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1261352290
 GameObject:
   m_ObjectHideFlags: 0
@@ -77125,6 +78189,7 @@ MonoBehaviour:
   highlight: {fileID: 1903458075}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1264970862
 GameObject:
   m_ObjectHideFlags: 0
@@ -77695,6 +78760,7 @@ MonoBehaviour:
   highlight: {fileID: 847210318}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1278483242
 GameObject:
   m_ObjectHideFlags: 0
@@ -77929,6 +78995,7 @@ MonoBehaviour:
   highlight: {fileID: 1277865750}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1281850118
 GameObject:
   m_ObjectHideFlags: 0
@@ -78079,6 +79146,7 @@ MonoBehaviour:
   highlight: {fileID: 1323003785}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1286432621
 GameObject:
   m_ObjectHideFlags: 0
@@ -78313,6 +79381,7 @@ MonoBehaviour:
   highlight: {fileID: 1130596693}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1288938666
 GameObject:
   m_ObjectHideFlags: 0
@@ -78547,6 +79616,7 @@ MonoBehaviour:
   highlight: {fileID: 722626735}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1290185546
 GameObject:
   m_ObjectHideFlags: 0
@@ -78697,6 +79767,7 @@ MonoBehaviour:
   highlight: {fileID: 387967154}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1290186250
 GameObject:
   m_ObjectHideFlags: 0
@@ -79015,6 +80086,7 @@ MonoBehaviour:
   highlight: {fileID: 813593619}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1297986123
 GameObject:
   m_ObjectHideFlags: 0
@@ -79165,6 +80237,7 @@ MonoBehaviour:
   highlight: {fileID: 882439017}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1298233195
 GameObject:
   m_ObjectHideFlags: 0
@@ -79315,6 +80388,7 @@ MonoBehaviour:
   highlight: {fileID: 44287940}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1299139878
 GameObject:
   m_ObjectHideFlags: 0
@@ -79465,6 +80539,7 @@ MonoBehaviour:
   highlight: {fileID: 1351818401}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1299394846
 GameObject:
   m_ObjectHideFlags: 0
@@ -79615,6 +80690,7 @@ MonoBehaviour:
   highlight: {fileID: 15614711}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1299554222
 GameObject:
   m_ObjectHideFlags: 0
@@ -79765,6 +80841,7 @@ MonoBehaviour:
   highlight: {fileID: 1621083270}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1300589273
 GameObject:
   m_ObjectHideFlags: 0
@@ -80083,6 +81160,7 @@ MonoBehaviour:
   highlight: {fileID: 1625113357}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1310906667
 GameObject:
   m_ObjectHideFlags: 0
@@ -80233,6 +81311,7 @@ MonoBehaviour:
   highlight: {fileID: 1508372829}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1311772897
 GameObject:
   m_ObjectHideFlags: 0
@@ -80383,6 +81462,7 @@ MonoBehaviour:
   highlight: {fileID: 1363122827}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1313444974
 GameObject:
   m_ObjectHideFlags: 0
@@ -80869,6 +81949,7 @@ MonoBehaviour:
   highlight: {fileID: 119498841}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1318795563
 GameObject:
   m_ObjectHideFlags: 0
@@ -81019,6 +82100,7 @@ MonoBehaviour:
   highlight: {fileID: 206039505}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1322656989
 GameObject:
   m_ObjectHideFlags: 0
@@ -81169,6 +82251,7 @@ MonoBehaviour:
   highlight: {fileID: 484115720}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1323003785
 GameObject:
   m_ObjectHideFlags: 0
@@ -81571,6 +82654,7 @@ MonoBehaviour:
   highlight: {fileID: 2062515941}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1326984429
 GameObject:
   m_ObjectHideFlags: 0
@@ -81721,6 +82805,7 @@ MonoBehaviour:
   highlight: {fileID: 456424013}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1327607652
 GameObject:
   m_ObjectHideFlags: 0
@@ -81871,6 +82956,7 @@ MonoBehaviour:
   highlight: {fileID: 475343970}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1330869418
 GameObject:
   m_ObjectHideFlags: 0
@@ -82105,6 +83191,7 @@ MonoBehaviour:
   highlight: {fileID: 1698250130}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1333748632
 GameObject:
   m_ObjectHideFlags: 0
@@ -82255,6 +83342,7 @@ MonoBehaviour:
   highlight: {fileID: 1037142276}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1334539173
 GameObject:
   m_ObjectHideFlags: 0
@@ -82573,6 +83661,7 @@ MonoBehaviour:
   highlight: {fileID: 236500762}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1341605757
 GameObject:
   m_ObjectHideFlags: 0
@@ -82723,6 +83812,7 @@ MonoBehaviour:
   highlight: {fileID: 1249139927}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1344081525
 GameObject:
   m_ObjectHideFlags: 0
@@ -82873,6 +83963,7 @@ MonoBehaviour:
   highlight: {fileID: 474355720}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1345726930
 GameObject:
   m_ObjectHideFlags: 0
@@ -83023,6 +84114,7 @@ MonoBehaviour:
   highlight: {fileID: 1964345436}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1348497542
 GameObject:
   m_ObjectHideFlags: 0
@@ -83257,6 +84349,7 @@ MonoBehaviour:
   highlight: {fileID: 1363175090}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1351818401
 GameObject:
   m_ObjectHideFlags: 0
@@ -83659,6 +84752,7 @@ MonoBehaviour:
   highlight: {fileID: 812910864}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1358345700
 GameObject:
   m_ObjectHideFlags: 0
@@ -83893,6 +84987,7 @@ MonoBehaviour:
   highlight: {fileID: 1166300177}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1361083510
 GameObject:
   m_ObjectHideFlags: 0
@@ -84043,6 +85138,7 @@ MonoBehaviour:
   highlight: {fileID: 405134732}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1362516034
 GameObject:
   m_ObjectHideFlags: 0
@@ -84193,6 +85289,7 @@ MonoBehaviour:
   highlight: {fileID: 1754103643}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1363122827
 GameObject:
   m_ObjectHideFlags: 0
@@ -84679,6 +85776,7 @@ MonoBehaviour:
   highlight: {fileID: 1778568111}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1366041046
 GameObject:
   m_ObjectHideFlags: 0
@@ -84997,6 +86095,7 @@ MonoBehaviour:
   highlight: {fileID: 1079898313}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1371950588
 GameObject:
   m_ObjectHideFlags: 0
@@ -85147,6 +86246,7 @@ MonoBehaviour:
   highlight: {fileID: 2134885941}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1372934415
 GameObject:
   m_ObjectHideFlags: 0
@@ -85633,6 +86733,7 @@ MonoBehaviour:
   highlight: {fileID: 2140506128}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1382185557
 GameObject:
   m_ObjectHideFlags: 0
@@ -85783,6 +86884,7 @@ MonoBehaviour:
   highlight: {fileID: 1937972932}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1383785854
 GameObject:
   m_ObjectHideFlags: 0
@@ -85933,6 +87035,7 @@ MonoBehaviour:
   highlight: {fileID: 904003736}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1385517333
 GameObject:
   m_ObjectHideFlags: 0
@@ -86251,6 +87354,7 @@ MonoBehaviour:
   highlight: {fileID: 168417231}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1001 &1396999346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86546,6 +87650,7 @@ MonoBehaviour:
   highlight: {fileID: 981998216}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1398405629
 GameObject:
   m_ObjectHideFlags: 0
@@ -86780,6 +87885,7 @@ MonoBehaviour:
   highlight: {fileID: 394577953}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1399416369
 GameObject:
   m_ObjectHideFlags: 0
@@ -86930,6 +88036,7 @@ MonoBehaviour:
   highlight: {fileID: 1372934415}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1406692913
 GameObject:
   m_ObjectHideFlags: 0
@@ -87164,6 +88271,7 @@ MonoBehaviour:
   highlight: {fileID: 1507504988}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1420650642
 GameObject:
   m_ObjectHideFlags: 0
@@ -87314,6 +88422,7 @@ MonoBehaviour:
   highlight: {fileID: 383521243}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1421376903
 GameObject:
   m_ObjectHideFlags: 0
@@ -87632,6 +88741,7 @@ MonoBehaviour:
   highlight: {fileID: 759813596}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1422562021
 GameObject:
   m_ObjectHideFlags: 0
@@ -87782,6 +88892,7 @@ MonoBehaviour:
   highlight: {fileID: 1490767958}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1422587618
 GameObject:
   m_ObjectHideFlags: 0
@@ -88077,6 +89188,7 @@ MonoBehaviour:
   highlight: {fileID: 767177679}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1426446841
 GameObject:
   m_ObjectHideFlags: 0
@@ -88227,6 +89339,7 @@ MonoBehaviour:
   highlight: {fileID: 495672476}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1430612776
 GameObject:
   m_ObjectHideFlags: 0
@@ -88461,6 +89574,7 @@ MonoBehaviour:
   highlight: {fileID: 1290186250}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1001 &1433005504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88756,6 +89870,7 @@ MonoBehaviour:
   highlight: {fileID: 756692495}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1438555930
 GameObject:
   m_ObjectHideFlags: 0
@@ -89326,6 +90441,7 @@ MonoBehaviour:
   highlight: {fileID: 1641470323}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1453768194
 GameObject:
   m_ObjectHideFlags: 0
@@ -89476,6 +90592,7 @@ MonoBehaviour:
   highlight: {fileID: 1839748070}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1453833884
 GameObject:
   m_ObjectHideFlags: 0
@@ -89794,6 +90911,7 @@ MonoBehaviour:
   highlight: {fileID: 795279509}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1456357630
 GameObject:
   m_ObjectHideFlags: 0
@@ -89944,6 +91062,7 @@ MonoBehaviour:
   highlight: {fileID: 490500065}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1458200016
 GameObject:
   m_ObjectHideFlags: 0
@@ -90094,6 +91213,7 @@ MonoBehaviour:
   highlight: {fileID: 587678619}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1460321986
 GameObject:
   m_ObjectHideFlags: 0
@@ -90244,6 +91364,7 @@ MonoBehaviour:
   highlight: {fileID: 593098899}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1462832035
 GameObject:
   m_ObjectHideFlags: 0
@@ -90478,6 +91599,7 @@ MonoBehaviour:
   highlight: {fileID: 1364223625}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1464888982
 GameObject:
   m_ObjectHideFlags: 0
@@ -90880,6 +92002,7 @@ MonoBehaviour:
   highlight: {fileID: 374679037}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1475606392
 GameObject:
   m_ObjectHideFlags: 0
@@ -91030,6 +92153,7 @@ MonoBehaviour:
   highlight: {fileID: 1201688569}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1478559507
 GameObject:
   m_ObjectHideFlags: 0
@@ -91180,6 +92304,7 @@ MonoBehaviour:
   highlight: {fileID: 175012445}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1482315190
 GameObject:
   m_ObjectHideFlags: 0
@@ -91330,6 +92455,7 @@ MonoBehaviour:
   highlight: {fileID: 1485289977}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1485289977
 GameObject:
   m_ObjectHideFlags: 0
@@ -91564,6 +92690,7 @@ MonoBehaviour:
   highlight: {fileID: 1973810377}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1490767958
 GameObject:
   m_ObjectHideFlags: 0
@@ -91882,6 +93009,7 @@ MonoBehaviour:
   highlight: {fileID: 1451317166}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1497811679
 GameObject:
   m_ObjectHideFlags: 0
@@ -92452,6 +93580,7 @@ MonoBehaviour:
   highlight: {fileID: 281071676}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1504196455
 GameObject:
   m_ObjectHideFlags: 0
@@ -92686,6 +93815,7 @@ MonoBehaviour:
   highlight: {fileID: 498614018}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1505188565
 GameObject:
   m_ObjectHideFlags: 0
@@ -93088,6 +94218,7 @@ MonoBehaviour:
   highlight: {fileID: 663599339}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1508274594
 GameObject:
   m_ObjectHideFlags: 0
@@ -93238,6 +94369,7 @@ MonoBehaviour:
   highlight: {fileID: 1421983873}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1508372829
 GameObject:
   m_ObjectHideFlags: 0
@@ -93472,6 +94604,7 @@ MonoBehaviour:
   highlight: {fileID: 357656408}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1510954179
 GameObject:
   m_ObjectHideFlags: 0
@@ -93622,6 +94755,7 @@ MonoBehaviour:
   highlight: {fileID: 1827118474}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1513758725
 GameObject:
   m_ObjectHideFlags: 0
@@ -94024,6 +95158,7 @@ MonoBehaviour:
   highlight: {fileID: 371634145}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1520144310
 GameObject:
   m_ObjectHideFlags: 0
@@ -94342,6 +95477,7 @@ MonoBehaviour:
   highlight: {fileID: 1811108415}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1524370196
 GameObject:
   m_ObjectHideFlags: 0
@@ -94492,6 +95628,7 @@ MonoBehaviour:
   highlight: {fileID: 802222944}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1525957974
 GameObject:
   m_ObjectHideFlags: 0
@@ -94642,6 +95779,7 @@ MonoBehaviour:
   highlight: {fileID: 1993353200}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1529795654
 GameObject:
   m_ObjectHideFlags: 0
@@ -94792,6 +95930,7 @@ MonoBehaviour:
   highlight: {fileID: 1238116187}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1531350171
 GameObject:
   m_ObjectHideFlags: 0
@@ -95278,6 +96417,7 @@ MonoBehaviour:
   highlight: {fileID: 101826042}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1536728928
 GameObject:
   m_ObjectHideFlags: 0
@@ -95428,6 +96568,7 @@ MonoBehaviour:
   highlight: {fileID: 1990343035}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1537193908
 GameObject:
   m_ObjectHideFlags: 0
@@ -95746,6 +96887,7 @@ MonoBehaviour:
   highlight: {fileID: 729677130}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1542946997
 GameObject:
   m_ObjectHideFlags: 0
@@ -95896,6 +97038,7 @@ MonoBehaviour:
   highlight: {fileID: 1502206440}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1545365831
 GameObject:
   m_ObjectHideFlags: 0
@@ -96214,6 +97357,7 @@ MonoBehaviour:
   highlight: {fileID: 1946805609}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1546472245
 GameObject:
   m_ObjectHideFlags: 0
@@ -96364,6 +97508,7 @@ MonoBehaviour:
   highlight: {fileID: 255174390}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1549499051
 GameObject:
   m_ObjectHideFlags: 0
@@ -96598,6 +97743,7 @@ MonoBehaviour:
   highlight: {fileID: 1794447494}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1556733741
 GameObject:
   m_ObjectHideFlags: 0
@@ -96748,6 +97894,7 @@ MonoBehaviour:
   highlight: {fileID: 1348497542}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1556786963
 GameObject:
   m_ObjectHideFlags: 0
@@ -96898,6 +98045,7 @@ MonoBehaviour:
   highlight: {fileID: 1075671169}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1558450160
 GameObject:
   m_ObjectHideFlags: 0
@@ -97216,6 +98364,7 @@ MonoBehaviour:
   highlight: {fileID: 96236758}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1561654538
 GameObject:
   m_ObjectHideFlags: 0
@@ -97618,6 +98767,7 @@ MonoBehaviour:
   highlight: {fileID: 231313554}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1574866931
 GameObject:
   m_ObjectHideFlags: 0
@@ -97852,6 +99002,7 @@ MonoBehaviour:
   highlight: {fileID: 585790140}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1575965629
 GameObject:
   m_ObjectHideFlags: 0
@@ -98002,6 +99153,7 @@ MonoBehaviour:
   highlight: {fileID: 1188805869}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1578909587
 GameObject:
   m_ObjectHideFlags: 0
@@ -98236,6 +99388,7 @@ MonoBehaviour:
   highlight: {fileID: 2121863854}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1587048714
 GameObject:
   m_ObjectHideFlags: 0
@@ -98386,6 +99539,7 @@ MonoBehaviour:
   highlight: {fileID: 1004400068}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1591244431
 GameObject:
   m_ObjectHideFlags: 0
@@ -98536,6 +99690,7 @@ MonoBehaviour:
   highlight: {fileID: 2140565561}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1592216227
 GameObject:
   m_ObjectHideFlags: 0
@@ -98686,6 +99841,7 @@ MonoBehaviour:
   highlight: {fileID: 1811932485}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1593700607
 GameObject:
   m_ObjectHideFlags: 0
@@ -98836,6 +99992,7 @@ MonoBehaviour:
   highlight: {fileID: 1324551879}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1594560295
 GameObject:
   m_ObjectHideFlags: 0
@@ -99070,6 +100227,7 @@ MonoBehaviour:
   highlight: {fileID: 1156441865}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1599695074
 GameObject:
   m_ObjectHideFlags: 0
@@ -99220,6 +100378,7 @@ MonoBehaviour:
   highlight: {fileID: 783843264}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1602287915
 GameObject:
   m_ObjectHideFlags: 0
@@ -99370,6 +100529,7 @@ MonoBehaviour:
   highlight: {fileID: 1739151954}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1604564909
 GameObject:
   m_ObjectHideFlags: 0
@@ -99520,6 +100680,7 @@ MonoBehaviour:
   highlight: {fileID: 1452816474}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1606407917
 GameObject:
   m_ObjectHideFlags: 0
@@ -99670,6 +100831,7 @@ MonoBehaviour:
   highlight: {fileID: 1109925171}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1606484867
 GameObject:
   m_ObjectHideFlags: 0
@@ -99820,6 +100982,7 @@ MonoBehaviour:
   highlight: {fileID: 200161313}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1606606996
 GameObject:
   m_ObjectHideFlags: 0
@@ -99970,6 +101133,7 @@ MonoBehaviour:
   highlight: {fileID: 369177432}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1608656298
 GameObject:
   m_ObjectHideFlags: 0
@@ -100120,6 +101284,7 @@ MonoBehaviour:
   highlight: {fileID: 806454712}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1610435650
 GameObject:
   m_ObjectHideFlags: 0
@@ -100270,6 +101435,7 @@ MonoBehaviour:
   highlight: {fileID: 1707788275}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1611269685
 GameObject:
   m_ObjectHideFlags: 0
@@ -100420,6 +101586,7 @@ MonoBehaviour:
   highlight: {fileID: 493442386}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1611407073
 GameObject:
   m_ObjectHideFlags: 0
@@ -100570,6 +101737,7 @@ MonoBehaviour:
   highlight: {fileID: 1175763474}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1615870694
 GameObject:
   m_ObjectHideFlags: 0
@@ -100888,6 +102056,7 @@ MonoBehaviour:
   highlight: {fileID: 261254788}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1619774647
 GameObject:
   m_ObjectHideFlags: 0
@@ -101122,6 +102291,7 @@ MonoBehaviour:
   highlight: {fileID: 2103459466}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1620383039
 GameObject:
   m_ObjectHideFlags: 0
@@ -101272,6 +102442,7 @@ MonoBehaviour:
   highlight: {fileID: 1889247250}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1621083270
 GameObject:
   m_ObjectHideFlags: 0
@@ -101506,6 +102677,7 @@ MonoBehaviour:
   highlight: {fileID: 2022870151}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1625113357
 GameObject:
   m_ObjectHideFlags: 0
@@ -101740,6 +102912,7 @@ MonoBehaviour:
   highlight: {fileID: 371854189}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1628861657
 GameObject:
   m_ObjectHideFlags: 0
@@ -101890,6 +103063,7 @@ MonoBehaviour:
   highlight: {fileID: 313866355}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1633935682
 GameObject:
   m_ObjectHideFlags: 0
@@ -102040,6 +103214,7 @@ MonoBehaviour:
   highlight: {fileID: 840619707}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1634172577
 GameObject:
   m_ObjectHideFlags: 0
@@ -102358,6 +103533,7 @@ MonoBehaviour:
   highlight: {fileID: 226370469}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1636398334
 GameObject:
   m_ObjectHideFlags: 0
@@ -102676,6 +103852,7 @@ MonoBehaviour:
   highlight: {fileID: 1946879030}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1637965284
 GameObject:
   m_ObjectHideFlags: 0
@@ -102910,6 +104087,7 @@ MonoBehaviour:
   highlight: {fileID: 289984469}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1638743153
 GameObject:
   m_ObjectHideFlags: 0
@@ -103060,6 +104238,7 @@ MonoBehaviour:
   highlight: {fileID: 1438555930}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1639317719
 GameObject:
   m_ObjectHideFlags: 0
@@ -103210,6 +104389,7 @@ MonoBehaviour:
   highlight: {fileID: 236900986}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1641470323
 GameObject:
   m_ObjectHideFlags: 0
@@ -103444,6 +104624,7 @@ MonoBehaviour:
   highlight: {fileID: 1381374279}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1643652767
 GameObject:
   m_ObjectHideFlags: 0
@@ -103594,6 +104775,7 @@ MonoBehaviour:
   highlight: {fileID: 1821602098}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1646588492
 GameObject:
   m_ObjectHideFlags: 0
@@ -103828,6 +105010,7 @@ MonoBehaviour:
   highlight: {fileID: 1225059693}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1651369065
 GameObject:
   m_ObjectHideFlags: 0
@@ -104062,6 +105245,7 @@ MonoBehaviour:
   highlight: {fileID: 1719421494}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1652462504
 GameObject:
   m_ObjectHideFlags: 0
@@ -104296,6 +105480,7 @@ MonoBehaviour:
   highlight: {fileID: 211467619}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1655222690
 GameObject:
   m_ObjectHideFlags: 0
@@ -104530,6 +105715,7 @@ MonoBehaviour:
   highlight: {fileID: 139660932}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1658013110
 GameObject:
   m_ObjectHideFlags: 0
@@ -104680,6 +105866,7 @@ MonoBehaviour:
   highlight: {fileID: 1269917524}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1663284150
 GameObject:
   m_ObjectHideFlags: 0
@@ -104998,6 +106185,7 @@ MonoBehaviour:
   highlight: {fileID: 1253473983}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1670895811
 GameObject:
   m_ObjectHideFlags: 0
@@ -105148,6 +106336,7 @@ MonoBehaviour:
   highlight: {fileID: 105473539}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1671444564
 GameObject:
   m_ObjectHideFlags: 0
@@ -105382,6 +106571,7 @@ MonoBehaviour:
   highlight: {fileID: 279041867}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1676799529
 GameObject:
   m_ObjectHideFlags: 0
@@ -105532,6 +106722,7 @@ MonoBehaviour:
   highlight: {fileID: 1837160496}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1679581802
 GameObject:
   m_ObjectHideFlags: 0
@@ -105682,6 +106873,7 @@ MonoBehaviour:
   highlight: {fileID: 2117201465}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1679679148
 GameObject:
   m_ObjectHideFlags: 0
@@ -105832,6 +107024,7 @@ MonoBehaviour:
   highlight: {fileID: 1767081542}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1681116114
 GameObject:
   m_ObjectHideFlags: 0
@@ -106234,6 +107427,7 @@ MonoBehaviour:
   highlight: {fileID: 1313444974}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1693212443
 GameObject:
   m_ObjectHideFlags: 0
@@ -106468,6 +107662,7 @@ MonoBehaviour:
   highlight: {fileID: 1545938995}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1694348404
 GameObject:
   m_ObjectHideFlags: 0
@@ -106618,6 +107813,7 @@ MonoBehaviour:
   highlight: {fileID: 712952658}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1696667344
 GameObject:
   m_ObjectHideFlags: 0
@@ -106768,6 +107964,7 @@ MonoBehaviour:
   highlight: {fileID: 1022953445}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1697155536
 GameObject:
   m_ObjectHideFlags: 0
@@ -107086,6 +108283,7 @@ MonoBehaviour:
   highlight: {fileID: 1975039580}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1699725428
 GameObject:
   m_ObjectHideFlags: 0
@@ -107404,6 +108602,7 @@ MonoBehaviour:
   highlight: {fileID: 1531825821}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1704135259
 GameObject:
   m_ObjectHideFlags: 0
@@ -107638,6 +108837,7 @@ MonoBehaviour:
   highlight: {fileID: 1026513240}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1704783551
 GameObject:
   m_ObjectHideFlags: 0
@@ -107956,6 +109156,7 @@ MonoBehaviour:
   highlight: {fileID: 647326838}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1707056540
 GameObject:
   m_ObjectHideFlags: 0
@@ -108358,6 +109559,7 @@ MonoBehaviour:
   highlight: {fileID: 1502462573}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1710115049
 GameObject:
   m_ObjectHideFlags: 0
@@ -108508,6 +109710,7 @@ MonoBehaviour:
   highlight: {fileID: 1897003992}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1710897691
 GameObject:
   m_ObjectHideFlags: 0
@@ -108742,6 +109945,7 @@ MonoBehaviour:
   highlight: {fileID: 1838383771}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1718406635
 GameObject:
   m_ObjectHideFlags: 0
@@ -109060,6 +110264,7 @@ MonoBehaviour:
   highlight: {fileID: 2003282456}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1731345239
 GameObject:
   m_ObjectHideFlags: 0
@@ -109294,6 +110499,7 @@ MonoBehaviour:
   highlight: {fileID: 218268649}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1736648154
 GameObject:
   m_ObjectHideFlags: 0
@@ -109444,6 +110650,7 @@ MonoBehaviour:
   highlight: {fileID: 531561872}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1738779702
 GameObject:
   m_ObjectHideFlags: 0
@@ -109594,6 +110801,7 @@ MonoBehaviour:
   highlight: {fileID: 138228848}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1739151954
 GameObject:
   m_ObjectHideFlags: 0
@@ -109828,6 +111036,7 @@ MonoBehaviour:
   highlight: {fileID: 327570985}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1740820313
 GameObject:
   m_ObjectHideFlags: 0
@@ -110146,6 +111355,7 @@ MonoBehaviour:
   highlight: {fileID: 479867673}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1746174516
 GameObject:
   m_ObjectHideFlags: 0
@@ -110296,6 +111506,7 @@ MonoBehaviour:
   highlight: {fileID: 1112630523}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1751695344
 GameObject:
   m_ObjectHideFlags: 0
@@ -110446,6 +111657,7 @@ MonoBehaviour:
   highlight: {fileID: 1499007280}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1752374331
 GameObject:
   m_ObjectHideFlags: 0
@@ -110680,6 +111892,7 @@ MonoBehaviour:
   highlight: {fileID: 188699413}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1754103643
 GameObject:
   m_ObjectHideFlags: 0
@@ -110914,6 +112127,7 @@ MonoBehaviour:
   highlight: {fileID: 1497811679}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1757654553
 GameObject:
   m_ObjectHideFlags: 0
@@ -111148,6 +112362,7 @@ MonoBehaviour:
   highlight: {fileID: 1707056540}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1764271128
 GameObject:
   m_ObjectHideFlags: 0
@@ -111298,6 +112513,7 @@ MonoBehaviour:
   highlight: {fileID: 793536992}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1766890206
 GameObject:
   m_ObjectHideFlags: 0
@@ -111448,6 +112664,7 @@ MonoBehaviour:
   highlight: {fileID: 351667937}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1767081542
 GameObject:
   m_ObjectHideFlags: 0
@@ -111682,6 +112899,7 @@ MonoBehaviour:
   highlight: {fileID: 622921695}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1767577774
 GameObject:
   m_ObjectHideFlags: 0
@@ -111832,6 +113050,7 @@ MonoBehaviour:
   highlight: {fileID: 1398405629}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1768457537
 GameObject:
   m_ObjectHideFlags: 0
@@ -111982,6 +113201,7 @@ MonoBehaviour:
   highlight: {fileID: 163739925}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1772168736
 GameObject:
   m_ObjectHideFlags: 0
@@ -112132,6 +113352,7 @@ MonoBehaviour:
   highlight: {fileID: 483153391}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1774496359
 GameObject:
   m_ObjectHideFlags: 0
@@ -112282,6 +113503,7 @@ MonoBehaviour:
   highlight: {fileID: 292215979}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1776342250
 GameObject:
   m_ObjectHideFlags: 0
@@ -112432,6 +113654,7 @@ MonoBehaviour:
   highlight: {fileID: 1516889591}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1778086804
 GameObject:
   m_ObjectHideFlags: 0
@@ -112582,6 +113805,7 @@ MonoBehaviour:
   highlight: {fileID: 1217918493}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1778205098
 GameObject:
   m_ObjectHideFlags: 0
@@ -113068,6 +114292,7 @@ MonoBehaviour:
   highlight: {fileID: 593367575}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1786054858
 GameObject:
   m_ObjectHideFlags: 0
@@ -113218,6 +114443,7 @@ MonoBehaviour:
   highlight: {fileID: 747163037}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1786193810
 GameObject:
   m_ObjectHideFlags: 0
@@ -113368,6 +114594,7 @@ MonoBehaviour:
   highlight: {fileID: 1288938666}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1787448895
 GameObject:
   m_ObjectHideFlags: 0
@@ -113602,6 +114829,7 @@ MonoBehaviour:
   highlight: {fileID: 1236494473}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1787787466
 GameObject:
   m_ObjectHideFlags: 0
@@ -113920,6 +115148,7 @@ MonoBehaviour:
   highlight: {fileID: 1780785957}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1793916226
 GameObject:
   m_ObjectHideFlags: 0
@@ -114238,6 +115467,7 @@ MonoBehaviour:
   highlight: {fileID: 191651629}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1794629244
 GameObject:
   m_ObjectHideFlags: 0
@@ -114472,6 +115702,7 @@ MonoBehaviour:
   highlight: {fileID: 918467284}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1796086617
 GameObject:
   m_ObjectHideFlags: 0
@@ -114706,6 +115937,7 @@ MonoBehaviour:
   highlight: {fileID: 2037158329}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1800922619
 GameObject:
   m_ObjectHideFlags: 0
@@ -114856,6 +116088,7 @@ MonoBehaviour:
   highlight: {fileID: 563528433}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1804041399
 GameObject:
   m_ObjectHideFlags: 0
@@ -115426,6 +116659,7 @@ MonoBehaviour:
   highlight: {fileID: 239447406}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1814863394
 GameObject:
   m_ObjectHideFlags: 0
@@ -115576,6 +116810,7 @@ MonoBehaviour:
   highlight: {fileID: 1809827354}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1815115285
 GameObject:
   m_ObjectHideFlags: 0
@@ -115726,6 +116961,7 @@ MonoBehaviour:
   highlight: {fileID: 1549499051}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1815155400
 GameObject:
   m_ObjectHideFlags: 0
@@ -115876,6 +117112,7 @@ MonoBehaviour:
   highlight: {fileID: 254860312}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1816413194
 GameObject:
   m_ObjectHideFlags: 0
@@ -116278,6 +117515,7 @@ MonoBehaviour:
   highlight: {fileID: 1040855696}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1821602098
 GameObject:
   m_ObjectHideFlags: 0
@@ -116512,6 +117750,7 @@ MonoBehaviour:
   highlight: {fileID: 143985048}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1827118474
 GameObject:
   m_ObjectHideFlags: 0
@@ -116830,6 +118069,7 @@ MonoBehaviour:
   highlight: {fileID: 1516159076}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1830405998
 GameObject:
   m_ObjectHideFlags: 0
@@ -116980,6 +118220,7 @@ MonoBehaviour:
   highlight: {fileID: 2006575861}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1837160496
 GameObject:
   m_ObjectHideFlags: 0
@@ -117550,6 +118791,7 @@ MonoBehaviour:
   highlight: {fileID: 450915066}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1848696467
 GameObject:
   m_ObjectHideFlags: 0
@@ -117868,6 +119110,7 @@ MonoBehaviour:
   highlight: {fileID: 1932227540}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1851949936
 GameObject:
   m_ObjectHideFlags: 0
@@ -118270,6 +119513,7 @@ MonoBehaviour:
   highlight: {fileID: 1634172577}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1855294662
 GameObject:
   m_ObjectHideFlags: 0
@@ -118504,6 +119748,7 @@ MonoBehaviour:
   highlight: {fileID: 765964429}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1861230633
 GameObject:
   m_ObjectHideFlags: 0
@@ -118654,6 +119899,7 @@ MonoBehaviour:
   highlight: {fileID: 573068206}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1865006364
 GameObject:
   m_ObjectHideFlags: 0
@@ -118888,6 +120134,7 @@ MonoBehaviour:
   highlight: {fileID: 1374557942}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1866097284
 GameObject:
   m_ObjectHideFlags: 0
@@ -119122,6 +120369,7 @@ MonoBehaviour:
   highlight: {fileID: 2140600582}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1868969936
 GameObject:
   m_ObjectHideFlags: 0
@@ -119356,6 +120604,7 @@ MonoBehaviour:
   highlight: {fileID: 1938345081}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1873563644
 GameObject:
   m_ObjectHideFlags: 0
@@ -119506,6 +120755,7 @@ MonoBehaviour:
   highlight: {fileID: 702943548}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1874146043
 GameObject:
   m_ObjectHideFlags: 0
@@ -119656,6 +120906,7 @@ MonoBehaviour:
   highlight: {fileID: 1707234926}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1880094818
 GameObject:
   m_ObjectHideFlags: 0
@@ -119806,6 +121057,7 @@ MonoBehaviour:
   highlight: {fileID: 1533581281}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1880276945
 GameObject:
   m_ObjectHideFlags: 0
@@ -119956,6 +121208,7 @@ MonoBehaviour:
   highlight: {fileID: 2015813200}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1880712596
 GameObject:
   m_ObjectHideFlags: 0
@@ -120106,6 +121359,7 @@ MonoBehaviour:
   highlight: {fileID: 411319498}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1888220664
 GameObject:
   m_ObjectHideFlags: 0
@@ -120508,6 +121762,7 @@ MonoBehaviour:
   highlight: {fileID: 237247388}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1891235374
 GameObject:
   m_ObjectHideFlags: 0
@@ -120826,6 +122081,7 @@ MonoBehaviour:
   highlight: {fileID: 1472542903}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1899170891
 GameObject:
   m_ObjectHideFlags: 0
@@ -121144,6 +122400,7 @@ MonoBehaviour:
   highlight: {fileID: 885636529}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1913543778
 GameObject:
   m_ObjectHideFlags: 0
@@ -121378,6 +122635,7 @@ MonoBehaviour:
   highlight: {fileID: 280434886}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1913773487
 GameObject:
   m_ObjectHideFlags: 0
@@ -121528,6 +122786,7 @@ MonoBehaviour:
   highlight: {fileID: 861455720}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1914146031
 GameObject:
   m_ObjectHideFlags: 0
@@ -121846,6 +123105,7 @@ MonoBehaviour:
   highlight: {fileID: 1168112977}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1926915762
 GameObject:
   m_ObjectHideFlags: 0
@@ -121996,6 +123256,7 @@ MonoBehaviour:
   highlight: {fileID: 1868969936}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1929708462
 GameObject:
   m_ObjectHideFlags: 0
@@ -122398,6 +123659,7 @@ MonoBehaviour:
   highlight: {fileID: 1984083797}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1938345081
 GameObject:
   m_ObjectHideFlags: 0
@@ -122716,6 +123978,7 @@ MonoBehaviour:
   highlight: {fileID: 409807496}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1941206539
 GameObject:
   m_ObjectHideFlags: 0
@@ -122866,6 +124129,7 @@ MonoBehaviour:
   highlight: {fileID: 1406692913}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1943115056
 GameObject:
   m_ObjectHideFlags: 0
@@ -123100,6 +124364,7 @@ MonoBehaviour:
   highlight: {fileID: 900554218}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1945321032
 GameObject:
   m_ObjectHideFlags: 0
@@ -123250,6 +124515,7 @@ MonoBehaviour:
   highlight: {fileID: 1817563063}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1946805609
 GameObject:
   m_ObjectHideFlags: 0
@@ -123568,6 +124834,7 @@ MonoBehaviour:
   highlight: {fileID: 313779883}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1948220096
 GameObject:
   m_ObjectHideFlags: 0
@@ -123718,6 +124985,7 @@ MonoBehaviour:
   highlight: {fileID: 1839650623}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1948809149
 GameObject:
   m_ObjectHideFlags: 0
@@ -123952,6 +125220,7 @@ MonoBehaviour:
   highlight: {fileID: 1300589273}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1954055289
 GameObject:
   m_ObjectHideFlags: 0
@@ -124102,6 +125371,7 @@ MonoBehaviour:
   highlight: {fileID: 2075901828}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1956549971
 GameObject:
   m_ObjectHideFlags: 0
@@ -124420,6 +125690,7 @@ MonoBehaviour:
   highlight: {fileID: 78066292}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1963585688
 GameObject:
   m_ObjectHideFlags: 0
@@ -124570,6 +125841,7 @@ MonoBehaviour:
   highlight: {fileID: 900766845}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1964103845
 GameObject:
   m_ObjectHideFlags: 0
@@ -124720,6 +125992,7 @@ MonoBehaviour:
   highlight: {fileID: 2099730628}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1964345436
 GameObject:
   m_ObjectHideFlags: 0
@@ -124954,6 +126227,7 @@ MonoBehaviour:
   highlight: {fileID: 191834584}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1967438628
 GameObject:
   m_ObjectHideFlags: 0
@@ -125188,6 +126462,7 @@ MonoBehaviour:
   highlight: {fileID: 1202377736}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1973439766
 GameObject:
   m_ObjectHideFlags: 0
@@ -125506,6 +126781,7 @@ MonoBehaviour:
   highlight: {fileID: 1286432621}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1974325315
 GameObject:
   m_ObjectHideFlags: 0
@@ -125656,6 +126932,7 @@ MonoBehaviour:
   highlight: {fileID: 1136262145}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1975039580
 GameObject:
   m_ObjectHideFlags: 0
@@ -125890,6 +127167,7 @@ MonoBehaviour:
   highlight: {fileID: 1899170891}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1980143120
 GameObject:
   m_ObjectHideFlags: 0
@@ -126124,6 +127402,7 @@ MonoBehaviour:
   highlight: {fileID: 1157103325}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1982074055
 GameObject:
   m_ObjectHideFlags: 0
@@ -126778,6 +128057,7 @@ MonoBehaviour:
   highlight: {fileID: 1710897691}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1992569892
 GameObject:
   m_ObjectHideFlags: 0
@@ -127096,6 +128376,7 @@ MonoBehaviour:
   highlight: {fileID: 483732704}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &1998511680
 GameObject:
   m_ObjectHideFlags: 0
@@ -127414,6 +128695,7 @@ MonoBehaviour:
   highlight: {fileID: 259136883}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2006575861
 GameObject:
   m_ObjectHideFlags: 0
@@ -127648,6 +128930,7 @@ MonoBehaviour:
   highlight: {fileID: 1718406635}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2014016443
 GameObject:
   m_ObjectHideFlags: 0
@@ -128050,6 +129333,7 @@ MonoBehaviour:
   highlight: {fileID: 1015557455}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2019838163
 GameObject:
   m_ObjectHideFlags: 0
@@ -128200,6 +129484,7 @@ MonoBehaviour:
   highlight: {fileID: 682783930}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2022870151
 GameObject:
   m_ObjectHideFlags: 0
@@ -128434,6 +129719,7 @@ MonoBehaviour:
   highlight: {fileID: 856939360}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2025479796
 GameObject:
   m_ObjectHideFlags: 0
@@ -128584,6 +129870,7 @@ MonoBehaviour:
   highlight: {fileID: 2016988}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2034148460
 GameObject:
   m_ObjectHideFlags: 0
@@ -128734,6 +130021,7 @@ MonoBehaviour:
   highlight: {fileID: 1505188565}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2035661144
 GameObject:
   m_ObjectHideFlags: 0
@@ -128884,6 +130172,7 @@ MonoBehaviour:
   highlight: {fileID: 109118235}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2036675584
 GameObject:
   m_ObjectHideFlags: 0
@@ -129034,6 +130323,7 @@ MonoBehaviour:
   highlight: {fileID: 479304300}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2037158329
 GameObject:
   m_ObjectHideFlags: 0
@@ -129352,6 +130642,7 @@ MonoBehaviour:
   highlight: {fileID: 521428906}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2045933120
 GameObject:
   m_ObjectHideFlags: 0
@@ -129502,6 +130793,7 @@ MonoBehaviour:
   highlight: {fileID: 856401361}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2046426542
 GameObject:
   m_ObjectHideFlags: 0
@@ -129652,6 +130944,7 @@ MonoBehaviour:
   highlight: {fileID: 934506367}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2048522616
 GameObject:
   m_ObjectHideFlags: 0
@@ -129802,6 +131095,7 @@ MonoBehaviour:
   highlight: {fileID: 1537193908}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2050670071
 GameObject:
   m_ObjectHideFlags: 0
@@ -129952,6 +131246,7 @@ MonoBehaviour:
   highlight: {fileID: 32067189}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2054219108
 GameObject:
   m_ObjectHideFlags: 0
@@ -130102,6 +131397,7 @@ MonoBehaviour:
   highlight: {fileID: 1491240810}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2054782049
 GameObject:
   m_ObjectHideFlags: 0
@@ -130252,6 +131548,7 @@ MonoBehaviour:
   highlight: {fileID: 1513758725}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2055539569
 GameObject:
   m_ObjectHideFlags: 0
@@ -130486,6 +131783,7 @@ MonoBehaviour:
   highlight: {fileID: 751098877}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2062515941
 GameObject:
   m_ObjectHideFlags: 0
@@ -130804,6 +132102,7 @@ MonoBehaviour:
   highlight: {fileID: 947913156}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2065018454
 GameObject:
   m_ObjectHideFlags: 0
@@ -131038,6 +132337,7 @@ MonoBehaviour:
   highlight: {fileID: 528273202}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2075901828
 GameObject:
   m_ObjectHideFlags: 0
@@ -131356,6 +132656,7 @@ MonoBehaviour:
   highlight: {fileID: 1992569892}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2084551996
 GameObject:
   m_ObjectHideFlags: 0
@@ -131506,6 +132807,7 @@ MonoBehaviour:
   highlight: {fileID: 754558081}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2085801961
 GameObject:
   m_ObjectHideFlags: 0
@@ -131656,6 +132958,7 @@ MonoBehaviour:
   highlight: {fileID: 327765993}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2088637128
 GameObject:
   m_ObjectHideFlags: 0
@@ -131806,6 +133109,7 @@ MonoBehaviour:
   highlight: {fileID: 1914146031}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2089370820
 GameObject:
   m_ObjectHideFlags: 0
@@ -132124,6 +133428,7 @@ MonoBehaviour:
   highlight: {fileID: 748853779}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2094239745
 GameObject:
   m_ObjectHideFlags: 0
@@ -132274,6 +133579,7 @@ MonoBehaviour:
   highlight: {fileID: 1232689712}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2095089329
 GameObject:
   m_ObjectHideFlags: 0
@@ -132424,6 +133730,7 @@ MonoBehaviour:
   highlight: {fileID: 455415482}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2096315474
 GameObject:
   m_ObjectHideFlags: 0
@@ -132574,6 +133881,7 @@ MonoBehaviour:
   highlight: {fileID: 519698765}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2098051176
 GameObject:
   m_ObjectHideFlags: 0
@@ -132724,6 +134032,7 @@ MonoBehaviour:
   highlight: {fileID: 790405681}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2099730628
 GameObject:
   m_ObjectHideFlags: 0
@@ -132958,6 +134267,7 @@ MonoBehaviour:
   highlight: {fileID: 1120060194}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2103459466
 GameObject:
   m_ObjectHideFlags: 0
@@ -133276,6 +134586,7 @@ MonoBehaviour:
   highlight: {fileID: 100487493}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2110426331
 GameObject:
   m_ObjectHideFlags: 0
@@ -133594,6 +134905,7 @@ MonoBehaviour:
   highlight: {fileID: 1558450160}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2113872728
 GameObject:
   m_ObjectHideFlags: 0
@@ -133744,6 +135056,7 @@ MonoBehaviour:
   highlight: {fileID: 1948809149}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2116044843
 GameObject:
   m_ObjectHideFlags: 0
@@ -134146,6 +135459,7 @@ MonoBehaviour:
   highlight: {fileID: 2062533684}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2124777629
 GameObject:
   m_ObjectHideFlags: 0
@@ -134296,6 +135610,7 @@ MonoBehaviour:
   highlight: {fileID: 1534798141}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2125883572
 GameObject:
   m_ObjectHideFlags: 0
@@ -134530,6 +135845,7 @@ MonoBehaviour:
   highlight: {fileID: 180046567}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2129857936
 GameObject:
   m_ObjectHideFlags: 0
@@ -134680,6 +135996,7 @@ MonoBehaviour:
   highlight: {fileID: 1462832035}
   driveable: 1
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2130653538
 GameObject:
   m_ObjectHideFlags: 0
@@ -134830,6 +136147,7 @@ MonoBehaviour:
   highlight: {fileID: 154649609}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2133039294
 GameObject:
   m_ObjectHideFlags: 0
@@ -135064,6 +136382,7 @@ MonoBehaviour:
   highlight: {fileID: 35777612}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2134885941
 GameObject:
   m_ObjectHideFlags: 0
@@ -135382,6 +136701,7 @@ MonoBehaviour:
   highlight: {fileID: 773838965}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1 &2140506128
 GameObject:
   m_ObjectHideFlags: 0
@@ -136036,6 +137356,7 @@ MonoBehaviour:
   highlight: {fileID: 1204089187}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!1001 &2307468036976428989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136109,3 +137430,4 @@ SceneRoots:
   - {fileID: 1433005504}
   - {fileID: 537082586}
   - {fileID: 962604594}
+  - {fileID: 283273147}
