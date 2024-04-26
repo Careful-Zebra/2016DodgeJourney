@@ -58,7 +58,7 @@ public class ManualDrive : MonoBehaviour {
 
     #region private variables
     //whether the car has just rotated or not
-    private Boolean justTurned;
+    private Tile justTurned;
     private float actualSpeed;
 
 
@@ -76,7 +76,7 @@ public class ManualDrive : MonoBehaviour {
     private void Awake() {
         hman = GameObject.Find("Canvas (HUD)").GetComponent<HUDManager>();
         rb = GetComponent<Rigidbody2D>();
-        justTurned = false;
+        justTurned = null;
     }
 
     // Start is called before the first frame update
@@ -213,6 +213,7 @@ public class ManualDrive : MonoBehaviour {
                 tempDir = 0;
             }
         }
+        int x = 1;
         print("finished setdest");
     }
 
@@ -285,7 +286,7 @@ public class ManualDrive : MonoBehaviour {
             if (lTurns.Contains(curTile))
             {
 
-                if (!justTurned)
+                if (justTurned != curTile)
                 {
                     if (dir == 0)
                     {
@@ -295,7 +296,7 @@ public class ManualDrive : MonoBehaviour {
                         {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
-                            justTurned = true;
+                            justTurned = curTile;
 
                             dir = 3;
 
@@ -307,7 +308,7 @@ public class ManualDrive : MonoBehaviour {
                         {
                             Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                             transform.rotation = transform.rotation * leftTurn;
-                            justTurned = true;
+                            justTurned = curTile;
 
                             dir = 1;
 
@@ -322,7 +323,7 @@ public class ManualDrive : MonoBehaviour {
                             {
                                 Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                                 transform.rotation = transform.rotation * leftTurn;
-                                justTurned = true;
+                                justTurned = curTile;
                                 dir = 0;
                             }
                         } else
@@ -332,7 +333,7 @@ public class ManualDrive : MonoBehaviour {
                             {
                                 Quaternion leftTurn = Quaternion.Euler(0, 0, 90);
                                 transform.rotation = transform.rotation * leftTurn;
-                                justTurned = true;
+                                justTurned = curTile;
                                 dir = 2;
                             }
                         }
@@ -342,7 +343,7 @@ public class ManualDrive : MonoBehaviour {
             //if the tile we are in is a right turning one
             } else if (rTurns.Contains(curTile))
             {
-                if (!justTurned)
+                if (justTurned != curTile)
                 {
                     if (dir == 0)
                     {
@@ -351,7 +352,7 @@ public class ManualDrive : MonoBehaviour {
                         {
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
-                            justTurned = true;
+                            justTurned = curTile;
                             dir = 1;
                         }
                     } else if (dir == 2)
@@ -361,7 +362,7 @@ public class ManualDrive : MonoBehaviour {
                         {
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
-                            justTurned = true;
+                            justTurned = curTile;
                             dir = 3;
                         }
                     }
@@ -373,7 +374,7 @@ public class ManualDrive : MonoBehaviour {
 
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
-                            justTurned = true;
+                            justTurned = curTile;
                             dir = 2;
                         }
                     } else
@@ -384,7 +385,7 @@ public class ManualDrive : MonoBehaviour {
 
                             Quaternion rightTurn = Quaternion.Euler(0, 0, -90);
                             transform.rotation = transform.rotation * rightTurn;
-                            justTurned = true;
+                            justTurned = curTile;
                             dir = 0;
                         }
                     }
@@ -393,21 +394,20 @@ public class ManualDrive : MonoBehaviour {
             else if (curTile == destination)
             {
                 //flip the car around at the end.
-                Quaternion oneEighty = Quaternion.Euler(0, 0, -180);
-                transform.rotation = transform.rotation * oneEighty;
-                ArrayList temp = lTurns;
-                lTurns = rTurns;
-                rTurns = temp;
-                rb.velocity = transform.right * speed;
-                justTurned = false;
-                dir = (dir + 2) % 4;
+                // Quaternion oneEighty = Quaternion.Euler(0, 0, -180);
+                // transform.rotation = transform.rotation * oneEighty;
+                // ArrayList temp = lTurns;
+                // lTurns = rTurns;
+                // rTurns = temp;
+                // rb.velocity = transform.right * speed;
+                // justTurned = false;
+                // dir = (dir + 2) % 4;
 
-                hman.score += 5;
+                Destroy(this);
+
+                // hman.score += 5;
             }
-            else
-            {
-                justTurned = false;
-            }
+
 
             if (dir == 0)
             {
@@ -440,7 +440,6 @@ public class ManualDrive : MonoBehaviour {
             //     transform.Translate(new Vector3(0, 0.6f, 0));
             // }
             dir = (dir + 2) % 4;
-            justTurned = false;
         }
 
         if (rb.velocity == Vector2.zero) {
@@ -691,9 +690,12 @@ public class ManualDrive : MonoBehaviour {
             path.Push(currentTile);
             prev.TryGetValue(currentTile, out currentTile);
         }
+
+        path.Push(currentTile);
         
         int len = path.Count;
         Tile[] returner = new Tile[len];
+        // returner[0] = TileCarIsIn();
         for (int i = 0; i < len; i++)
         {
             returner[i] = path.Pop();

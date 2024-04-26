@@ -44,7 +44,8 @@ public class CarSpawner : MonoBehaviour {
             destinationTag = "House";
         }
 
-        facingDirection = Mathf.CeilToInt(transform.position.z + 180f) / 90;  // Orientation of 2D objects is determined by z
+        // facingDirection = ((Mathf.CeilToInt(transform.position.z + 180f) / 90) - 1) % 4;  // Orientation of 2D objects is determined by z
+        facingDirection = 1;
     }
 
     void Update() {
@@ -58,7 +59,7 @@ public class CarSpawner : MonoBehaviour {
             return;
         }
         if (levelInfo.ProbabilisticallySpawnCar()) {
-            GameObject newCar = Instantiate(car, transform.position, transform.rotation);
+            GameObject newCar = Instantiate(car, transform.position, Quaternion.Euler(0, 0, 0));
             ManualDrive newCarManualDrive = newCar.GetComponent<ManualDrive>();
             // Initialize newCar's parameters.
             newCarManualDrive.Destination = GetRandomDestinationTile();
