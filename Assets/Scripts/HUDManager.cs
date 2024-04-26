@@ -69,7 +69,10 @@ public class HUDManager : MonoBehaviour
 
         //updating average car velocity
         meanCarSpeed /= ch.setOfCars.Count;
-        meanCarSpeedText.text = meanCarSpeedString.Replace("%S", Math.Round(meanCarSpeed, 2).ToString());
+        if (ch.setOfCars.Count > 0)
+        {
+            meanCarSpeedText.text = meanCarSpeedString.Replace("%S", Math.Round(meanCarSpeed, 2).ToString());
+        }
 
         //updating score
         score +=  2 * Time.deltaTime;
