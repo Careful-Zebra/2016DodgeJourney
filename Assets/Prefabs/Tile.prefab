@@ -136,6 +136,7 @@ MonoBehaviour:
   highlight: {fileID: 1190528191399351889}
   driveable: 0
   trafficLightPrefab: {fileID: 7012342553548979277, guid: e61030fc75f369d4eb16ed2798e9fa5d, type: 3}
+  stopSignPrefab: {fileID: 0}
 --- !u!212 &6009939018647384177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -174,8 +175,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 491181607
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
