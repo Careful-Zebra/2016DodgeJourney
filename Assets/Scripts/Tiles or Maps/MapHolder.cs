@@ -42,14 +42,14 @@ public class MapHolder : MonoBehaviour {
             if (!child.Driveable())
             {
                 Color desiredColor = new Color();
-                desiredColor.r = 123;
-                desiredColor.g = 123;
-                desiredColor.b = 123;
+                desiredColor.r = 224f/255f;
+                desiredColor.g = 216f/255f;
+                desiredColor.b = 255f/255f;
                 desiredColor.a = 1f;
 
                 Color desiredColor2 = Color.yellow;
                 desiredColor2.a = 1f;
-                child.gameObject.GetComponent<SpriteRenderer>().color = desiredColor2;
+                child.gameObject.GetComponent<SpriteRenderer>().color = desiredColor;
             }
 
             child.SetStopSignPrefab(pfabber.GiveMeAStopSignPrefab()); 
