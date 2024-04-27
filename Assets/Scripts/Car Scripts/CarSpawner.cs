@@ -56,6 +56,7 @@ public class CarSpawner : MonoBehaviour {
     void TrySpawnCar() {
         if (spawnTime > 0f) {
             spawnTime -= Time.deltaTime;
+            spawnCooldown -= Time.deltaTime * 0.5f;
             return;
         }
         if (levelInfo.ProbabilisticallySpawnCar()) {
@@ -66,7 +67,7 @@ public class CarSpawner : MonoBehaviour {
             newCarManualDrive.MapHolder = mapHolder;
             newCarManualDrive.direction = facingDirection;
             //carHolder.AddCarToSet(car.GetComponent<CarController>());
-            Debug.Log("Initializing new car");
+            // Debug.Log("Initializing new car");
 
             spawnTime = spawnCooldown;
         }
