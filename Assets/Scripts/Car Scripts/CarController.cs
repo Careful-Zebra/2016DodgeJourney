@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CarController : MonoBehaviour {
@@ -60,7 +60,7 @@ public class CarController : MonoBehaviour {
         isDead = true;
 
         // subtract 5 from the score and add 1 to the collisions
-        hman.score -= 5;
+        hman.score -= 15;
         hman.AddCollision();
 
         StartCoroutine(Die());
