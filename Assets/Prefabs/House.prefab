@@ -183,4 +183,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 7575587640653155868, guid: ca164b039d4b8c649821fe9c9bdfc10d, type: 3}
-  spawnCooldown: 5
+  spawnCooldown: 2

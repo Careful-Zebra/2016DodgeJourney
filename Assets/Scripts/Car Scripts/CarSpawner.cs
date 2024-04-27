@@ -10,7 +10,6 @@ using UnityEngine;
 public class CarSpawner : MonoBehaviour {
 
     [SerializeField] private GameObject car;
-    [SerializeField] private float spawnCooldown;  // How long building should wait before spawning another car
 
     // [SerializeField]
     // [Tooltip("The object that holds references to the CarController scripts of all cars")]
@@ -27,7 +26,7 @@ public class CarSpawner : MonoBehaviour {
         GameObject mapHolderObject = GameObject.Find("MapHolder");
         mapHolder = mapHolderObject.GetComponent<MapHolder>();
         levelInfo = mapHolderObject.GetComponent<LevelInfo>();
-        spawnTime += Random.Range(0f, spawnCooldown);
+        spawnTime += Random.Range(0f, levelInfo.CarSpawnCooldown);
 
         Debug.Log(gameObject.tag);
         // List<GameObject> building_list;
@@ -68,7 +67,7 @@ public class CarSpawner : MonoBehaviour {
             //carHolder.AddCarToSet(car.GetComponent<CarController>());
             Debug.Log("Initializing new car");
 
-            spawnTime = spawnCooldown;
+            spawnTime = levelInfo.CarSpawnCooldown;
         }
     }
 
