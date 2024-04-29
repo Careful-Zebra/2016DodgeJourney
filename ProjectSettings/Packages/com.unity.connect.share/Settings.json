@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/ellah/gdd/2016DodgeJourney/WebGL Builds/Build 3;C:/Users/ellah/gdd/2016DodgeJourney/WebGL Builds/New Build;C:/Users/ellah/gdd/2016DodgeJourney/WebGL Builds;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/ellah/gdd/2016DodgeJourney/WebGL Builds/Build 4;C:/Users/ellah/gdd/2016DodgeJourney/WebGL Builds/New Build;;;;;;;;\"}"
             }
         ]
     }

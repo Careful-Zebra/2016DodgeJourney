@@ -39,7 +39,7 @@ public class HUDManager : MonoBehaviour
     public float score;
     private string scoreString;
 
-    private int numCollisions;
+    private float numCollisions;
     private string numCollisionsString;
     #endregion
 
@@ -75,7 +75,7 @@ public class HUDManager : MonoBehaviour
         }
 
         //updating score
-        score +=  2 * Time.deltaTime;
+        score +=  2.85f * Time.deltaTime;
         scoreText.text = scoreString.Replace("%S", Math.Round(score, 2).ToString());
 
         // win/loss conditions:
@@ -93,7 +93,7 @@ public class HUDManager : MonoBehaviour
 
     public void AddCollision()
     {
-        numCollisions += 1;
+        numCollisions += 0.5f;
         collisionText.text = numCollisionsString.Replace("%S", numCollisions.ToString());
     }
 

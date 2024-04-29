@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -29,11 +30,14 @@ public class CarController : MonoBehaviour {
     #region Not sure what to call this, private variables? Currently it just has the CarHolder - ella
 
     private CarHolder carHolder;
+    private PrefabManager pfabManager;
+    private GameObject explosion;
 
     #endregion
 
     private void Awake() {
         hman = GameObject.Find("Canvas (HUD)").GetComponent<HUDManager>();
+        pfabManager = GameObject.Find("PrefabManager").GetComponent<PrefabManager>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         mat = GetComponent<Material>();
@@ -60,7 +64,8 @@ public class CarController : MonoBehaviour {
         isDead = true;
 
         // subtract 5 from the score and add 1 to the collisions
-        hman.score -= 15;
+        explosion = Instantiate(pfabManager.GiveMeAnExplosion(), gameObject.transform.position, Quaternion.identity);
+        hman.score -= 1;
         hman.AddCollision();
 
         StartCoroutine(Die());
@@ -91,6 +96,13 @@ public class CarController : MonoBehaviour {
 
         //removes this carcontroller script from the set of carcontroller scripts used for score and hud
         carHolder.RemoveCarFromSet(this);
+        float dumbVariable = 0.5f;
+        while (dumbVariable > 0)
+        {
+            dumbVariable -= Time.deltaTime;
+        }
+        Destroy(explosion);
+        
         
     }
 

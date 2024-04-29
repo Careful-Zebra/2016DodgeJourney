@@ -448,7 +448,7 @@ public class ManualDrive : MonoBehaviour {
                 //carHolder.RemoveCarFromSet(gameObject.GetComponent<CarController>());
 
                 // add 1 to the collisions counter (debatable whether this counts as a collision or not)
-                hman.AddCollision();
+                //hman.AddCollision();
 
                 Destroy(gameObject);
             }

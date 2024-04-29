@@ -18,7 +18,7 @@ public class StopSignManager : MonoBehaviour
     }
 
     void Update() {
-        if (cars.Count != 0) {
+        if (cars.Count > 1) {
             GameObject frontCar = (GameObject) cars.Peek();
             if (frontCar == null) { 
                 cars.Dequeue();
