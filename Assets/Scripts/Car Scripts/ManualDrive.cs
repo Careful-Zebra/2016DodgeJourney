@@ -64,6 +64,7 @@ public class ManualDrive : MonoBehaviour {
 
     //yeah sorry
     private int stopSignCount = 0;
+    private Boolean stoppedForSign = false;
 
     private int killCount = 0;
 
@@ -418,6 +419,9 @@ public class ManualDrive : MonoBehaviour {
 
             rb.velocity = HandleTraffic(tempVelocity, curTile);
             rb.velocity = checkAhead(rb.velocity);
+            if (rb.velocity != Vector2.zero) {
+                stoppedForSign = false;
+            }
             
 
         }
@@ -429,17 +433,22 @@ public class ManualDrive : MonoBehaviour {
             ArrayList temp = lTurns;
             lTurns = rTurns;
             rTurns = temp;
-            rb.velocity = transform.right * speed;
-            // if (dir == 0 ) {
-            //     transform.Translate(new Vector3(0.6f, 0, 0));
-            // } else if (dir == 1) {
-            //     transform.Translate(new Vector3(0, -0.6f, 0));
-            // } else if (dir == 2) {
-            //     transform.Translate(new Vector3(-0.6f, 0, 0));
-            // } else {
-            //     transform.Translate(new Vector3(0, 0.6f, 0));
-            // }
+            
+            if (dir == 0 ) {
+                transform.position = new Vector3((float) Math.Truncate(transform.position.x) + 0.8f, transform.position.y, transform.position.z);
+                // transform.position = transform.position + new Vector3(0.6f, 0, 0);
+            } else if (dir == 1) {
+                transform.position = new Vector3(transform.position.x, (float) Math.Truncate(transform.position.y) + 0.2f, transform.position.z);
+                // transform.position = transform.position + new Vector3(0, -0.6f, 0);
+            } else if (dir == 2) {
+                transform.position = new Vector3((float) Math.Truncate(transform.position.x) + 0.2f, transform.position.y, transform.position.z);
+                // transform.position = transform.position  + new Vector3(-0.6f, 0, 0);
+            } else {
+                transform.position = new Vector3(transform.position.x, (float) Math.Truncate(transform.position.y) + 0.8f, transform.position.z);
+                // transform.position = transform.position + new Vector3(0, 0.6f, 0);
+            }
             dir = (dir + 2) % 4;
+            rb.velocity = transform.right * speed;
         }
 
         if (rb.velocity == Vector2.zero) {
@@ -473,7 +482,16 @@ public class ManualDrive : MonoBehaviour {
         // Debug.DrawRay(transform.position, transform.right, Color.red, layerMask);
         if (hit.collider != null && hit.collider.gameObject.CompareTag("Car"))
         {
-            velocity = Vector2.zero;
+            // if (actualSpeed > 0) {
+            //     actualSpeed = actualSpeed - 0.1f;
+            // } else  {
+            //     actualSpeed = 0;
+            // }
+            // velocity = transform.right * actualSpeed;
+            return Vector2.zero;
+        // } else if (actualSpeed < speed) {
+        //     actualSpeed = actualSpeed + 0.1f;
+        // }
         }
 
         return velocity;
@@ -496,15 +514,23 @@ public class ManualDrive : MonoBehaviour {
                 }
             } else if (curTile.TrafficObj() == "Stop Sign") {
                 if (!curTile.TrafficGO().GetComponent<StopSignManager>().CanIGo(gameObject)) {
+                    stoppedForSign = true;
                     return Vector2.zero;
                 } else if (stopSignCount < 25) {
+                    
                     stopSignCount++;
                     return Vector2.zero;
+                } else {
+                    stoppedForSign = false;
                 }
                 
             } 
         }
         return tempVelocity;
+    }
+
+    public Boolean StoppedForSign() {
+        return stoppedForSign;
     }
 
     #region Ella things (sorry)

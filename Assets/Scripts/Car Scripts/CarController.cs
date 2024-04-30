@@ -65,7 +65,7 @@ public class CarController : MonoBehaviour {
 
         // subtract 5 from the score and add 1 to the collisions
         explosion = Instantiate(pfabManager.GiveMeAnExplosion(), gameObject.transform.position, Quaternion.identity);
-        hman.score -= 1;
+        hman.score -= 2.8f;
         hman.AddCollision();
 
         StartCoroutine(Die());

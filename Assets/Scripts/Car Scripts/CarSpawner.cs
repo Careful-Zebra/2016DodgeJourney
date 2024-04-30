@@ -56,7 +56,10 @@ public class CarSpawner : MonoBehaviour {
     void TrySpawnCar() {
         if (spawnTime > 0f) {
             spawnTime -= Time.deltaTime;
-            spawnCooldown -= Time.deltaTime * 0.25f;
+            if (spawnCooldown > 3.5) {
+                spawnCooldown -= Time.deltaTime * 0.25f;
+            }
+            // print(spawnCooldown);
             return;
         }
         if (levelInfo.ProbabilisticallySpawnCar()) {
